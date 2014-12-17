@@ -28,18 +28,20 @@
   padding: 0.5em 0;
 }
 
-.guide .pattern .display {
+.guide .pattern div {
   width: 100%;
   margin-bottom: 1em;
 }
 
-.guide .pattern .source {
-  width: 40%;
-  float: left;
-}
-
-.guide .pattern .style {
-  width: 40%;
-  float: left;
-  margin-left: 10%;
+@media only all and (min-width: 41em) {
+  .guide .pattern .source, 
+  .guide .pattern .style {
+    width: 40%;
+    float: left;
+    margin-bottom: 0;
+  }
+  
+  .guide .pattern .style {
+    margin-left: 10%;
+  }
 }

@@ -1,9 +1,5 @@
 /* @group Typography */
 
-html {
-	border-top: 0.5em solid #693;
-	background-color: #eee;
-}
 body {
 	background-color: #fefefe;
 	background: rgba(255,255,255,0.9);

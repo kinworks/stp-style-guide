@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="styles/solarized_dark.css">
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+      // Webfont loader
+  		/*
+	    WebFontConfig = {
+	      typekit: { id: 'zns5qtn' }
+	    };
+
+	    (function() {
+	      var wf = document.createElement('script');
+	      wf.src = ('<?php echo get_template_directory_uri(); ?>/js/webfont-1.4.7.min.js'); //UPDATE
+	      wf.type = 'text/javascript';
+	      wf.async = 'true';
+	      var s = document.getElementsByTagName('script')[0];
+	      s.parentNode.insertBefore(wf, s);
+	    })();
+	    */
+	  </script>
   </head>
   <body>
   

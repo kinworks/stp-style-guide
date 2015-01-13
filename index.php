@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pattern Primer</title>
-    <link rel="stylesheet" href="global.css">
+    <title>STP Style Guide</title>
+    <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="guide.css">
     <link rel="stylesheet" href="styles/solarized_dark.css">
     <script src="js/highlight.pack.js"></script>

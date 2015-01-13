@@ -1,0 +1,258 @@
+//::::::::::::::::::::::::::::
+// Mixins - Table of contents
+//::::::::::::::::::::::::::::
+
+
+//:::::: Rounded corners ::::::
+// @include border-radius($radius);               // for all corners
+//
+// @include border-top-radius($radius);           // for top corners only
+// @include border-bottom-radius($radius);        // for bottom corners only
+// @include border-left-radius($radius);          // for left-hand-side corners only
+// @include border-right-radius($radius);         // for right-hand-side corners only
+//
+// @include border-top-left-radius($radius);      // for top left corner only
+// @include border-top-right-radiuss($radius);    // for top right corner only
+// @include border-bottom-left-radius($radius);   // for bottom left corner only
+// @include border-bottom-right-radius($radius);  // for bottom right corner only
+
+//:::::: Box shadow ::::::
+// @include box-shadow($arguments);               // default is 0 0 10px rgba(128, 128, 128, 0.25)
+
+//:::::: Responsive tables ::::::
+// @include responsive-table;                     // no arguments
+
+//:::::: Opacity ::::::
+// @include opacity($value);                      // values: 0 to 1 where 0 is transparent and 1 is solid.
+
+//:::::: Transitions ::::::
+// @include transition($property, $duration, $method);    // $duration variable must contain 's' e.g. '0.3s', $property defaults to 'all' & $method to 'ease-in-out'
+
+//:::::: Gradients ::::::                                                                   // $colour = fallback
+// @include gradient-linear($color, $start, $stop);                                         // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+// @include gradient-linear-double($color, $start, $stop);                                  // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+// @include gradient-linear-half($color, $start, $stop);                                    // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+// @include gradient-linear-triple($color, $start, $stop);                                  // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+// @include gradient-linear-quintuple($color, $start, $middle1, $middle2, $middle3, $stop); // defaults $color: #F5F5F5, $start: #EEE, $middle1: #EEE, $middle2:#EEE, $middle3: #FFF, $stop: #FFF
+// @include gradient-clear();                                                               // no arguments - this is to remove any gradients
+// @include gradient-solid($color);                                                         // no default
+
+//::::: Background Size
+// @include background-size($size);                                                         // no default
+
+//:::::::::::::::::::::::::
+// Rounded corners
+//:::::::::::::::::::::::::
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+//:::::::::::::::::::::::::
+// Single side border-radius
+//:::::::::::::::::::::::::
+@mixin border-top-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-topright: $radius;
+  -moz-border-radius-bottomright: $radius;
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+//:::::::::::::::::::::::::
+// Single corner border-radius
+//:::::::::::::::::::::::::
+@mixin border-top-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-top-right-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-bottom-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin border-bottom-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  border-bottom-right-radius: $radius;
+  background-clip: padding-box;
+}
+
+
+//:::::::::::::::::::::::::
+// Shadow
+//:::::::::::::::::::::::::
+@mixin box-shadow($arguments: 0 0 10px rgba(128, 128, 128, 0.25)) {
+  -webkit-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+
+//:::::::::::::::::::::::::
+// Opacity
+//:::::::::::::::::::::::::
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+//:::::::::::::::::::::::::
+// Responsive tables
+//:::::::::::::::::::::::::
+@mixin responsive-table{
+  table {border: 0;padding-bottom: 0;display: block;width: 100%;}
+  table caption {display: block;}
+  table thead {display: none;}
+  table tbody, table tr, table th, table td {border: 0;display: block;padding: 0;text-align: left;white-space: normal;}
+  table th[data-title]:before,table td[data-title]:before {content: attr(data-title) ":\00A0";font-weight: bold;}
+  table th, table td {padding-bottom: 0.7em;}
+  table th:not([data-title]) {font-weight: bold;}
+  table th {display: none;}
+  table td:empty {display: none;}
+  table tr {border-bottom: 1em #fff solid;}
+  @media only screen and (min-width: 41em) {
+    table th[data-title]:before,table td[data-title]:before {content: "";font-weight: bold;}
+    table th:not([data-title]) {font-weight: bold;}
+    table td:empty {display: table-cell;}
+    table thead {display: table-header-group;}
+    table tbody {display: table-header-group;}
+    table tbody, table tr, table th, table td {border: 0;padding: 0;text-align: left;white-space: normal;}
+    table th, table td, table th {display: table-cell;}
+    table tr {display: table-row;}
+    table  {border-style: none;border-top-width: 0;width: auto;}        
+    table tr {border-style: none;border-bottom-width: 0;border-bottom: 1em #fff solid;}
+    table th, table td {border-style: none;padding-right: 1em;text-align: left;min-width: 50px;vertical-align: top;}
+    table th + th,table th + td,table td + th,table td + td {border-left-width: 1px;}
+    table thead tr:last-child {border-bottom-width: 2px;}
+    table thead th,table tr.index th {font-weight: bold;line-height: 1.25;}
+    table thead th {padding-bottom: .25em;} 
+    table tbody:first-of-type tr.index th {padding-top: 1em;}
+    table tbody th {font-weight: normal;}
+  }// end of MQ
+}
+
+
+//:::::::::::::::::::::::::
+// Transitions
+//:::::::::::::::::::::::::
+@mixin transition($property: all, $duration: 0.3s, $method: ease-in-out) {
+  -webkit-transition: $property $duration $method;
+  -moz-transition: $property $duration $method;
+  -ms-transition: $property $duration $method;
+  -o-transition: $property $duration $method;
+  transition: $property $duration $method;
+}
+
+
+//:::::::::::::::::::::::::
+// Gradients
+//:::::::::::::::::::::::::
+@mixin gradient-linear($color: #F5F5F5, $start: #EEE, $stop: #FFF) {
+  background-color: $color;
+  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, $start), color-stop(1, $stop));
+  background-image: -webkit-linear-gradient($start, $stop);
+  background-image: -ms-linear-gradient(top, $start, $stop);
+  //filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",$start,$stop)); // IE6 & IE7
+  //-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",$start,$stop); // IE8+
+  background-image: -moz-linear-gradient(center top, $start 0%, $stop 100%);
+  background-image: -o-linear-gradient(center top, $start, $stop);
+  background-image: linear-gradient(center top, $start, $stop);
+}
+@mixin gradient-linear-double($color: #F5F5F5, $start: #EEE, $stop: #FFF){
+  background-color: $color;
+  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, $start), color-stop(1, $stop));
+  background-image: -webkit-linear-gradient($start, $start, $stop, $stop);
+  background-image: -ms-linear-gradient(top, $start, $start, $stop, $stop);
+  //filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",$start,$stop)); // IE6 & IE7
+  //-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",$start,$stop); // IE8+
+  background-image: -moz-linear-gradient(center top, $start 0%, $stop 100%);
+  background-image: -o-linear-gradient(center top, $start, $start, $stop, $stop);
+  background-image: linear-gradient(center top, $start, $start, $stop, $stop);
+}
+@mixin gradient-linear-half($color: #F5F5F5, $start: #EEE, $stop: #FFF){
+  background-color: $color;
+  background-image: -webkit-gradient(linear, left top, left top, color-stop(0, $start), color-stop(0.5, $stop));
+  background-image: -webkit-linear-gradient($start, $stop, $stop, $stop);
+  background-image: -ms-linear-gradient(top, $start, $stop, $stop, $stop);
+  //filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",$start,$stop)); // IE6 & IE7
+  //-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",$start,$stop); // IE8+
+  background-image: -moz-linear-gradient(center top, $start 0%, $stop 50%);
+  background-image: -o-linear-gradient(center top, $start, $stop, $stop, $stop);
+  background-image: linear-gradient(center top, $start, $stop, $stop, $stop);
+}
+@mixin gradient-linear-triple($color: #F5F5F5, $start: #EEE, $stop: #FFF){
+  background-color: $color;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, $start),(49% $start), color-stop(53%, $stop), color-stop(100%, $stop));
+  background-image: -webkit-linear-gradient(top,$start 1%,$start 49%,$stop 53%,$stop 100%);
+  background-image: -ms-linear-gradient(top, $start 1%,$start 49%,$stop 53%,$stop 100%);
+  background-image: -moz-linear-gradient(top, $start 1%,$start 49%,$stop 53%,$stop 100%);
+  background-image: -o-linear-gradient(top, $start 1%,$start 49%,$stop 53%,$stop 100%);
+  background-image: linear-gradient(top, $start 1%,$start 49%,$stop 53%,$stop 100%);
+}
+
+@mixin gradient-linear-quintuple($color: #F5F5F5, $start: #EEE, $middle1: #EEE, $middle2:#EEE, $middle3: #FFF, $stop: #FFF){
+  background-color: $color;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start), color-stop(13%, $middle1),color-stop(31%, $middle2), color-stop(44%, $middle3), color-stop(100%, $stop));
+  background-image: -webkit-linear-gradient(top,$start 0%, $middle1 13%, $middle2 31%, $middle3 44%, $stop 100%);
+  background-image: -ms-linear-gradient(top,$start 0%, $middle1 13%, $middle2 31%, $middle3 44%, $stop 100%);
+  background-image: -moz-linear-gradient(top,$start 0%, $middle1 13%, $middle2 31%, $middle3 44%, $stop 100%);
+  background-image: -o-linear-gradient(top,$start 0%, $middle1 13%, $middle2 31%, $middle3 44%, $stop 100%);
+  background-image: linear-gradient(top,$start 0%, $middle1 13%, $middle2 31%, $middle3 44%, $stop 100%);
+}
+@mixin gradient-clear() {
+  background-color: transparent;
+  background-image: none;
+}
+@mixin gradient-solid($color) {
+  background-color: $color;
+  background-image: none;
+}
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -ms-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size; 
+}

@@ -79,6 +79,13 @@
   margin-top: -1.7em;
 }
 
+.panels ul li {
+  border: 0.1em solid #eaeaea;
+  &:focus {
+    border: 0.1em solid #E1BC29;
+  }
+}
+
 /* ==========================================================================
    Tabbed UI
    ========================================================================== */
@@ -120,7 +127,11 @@
 
 .js-tabs [aria-selected=true] {
 	color: #fff;
-	background-color: #000;
+	background-color: $charcoal;
+	border: 0.1em solid $charcoal;
+	&:focus {
+    border: 0.1em solid #E1BC29;
+  }
 }
 
 /* Prevent FOUC */

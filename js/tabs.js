@@ -34,22 +34,6 @@ var helper = (function(win, doc, undefined) {
 
 		var tabs = function() {
 
-			/* Feature detect for localStorage courtesy of 
-			   http://mathiasbynens.be/notes/localstorage-pattern
-			   ========================================================================== */
-
-			var storage,
-				fail,
-				uid;
-
-			try {
-				uid = new Date;
-				(storage = win.localStorage).setItem(uid, uid);
-				fail = storage.getItem(uid) != uid;
-				storage.removeItem(uid);
-				fail && (storage = false);
-			} catch(e) {}
-
 
 
 			/* DOM nodes we'll need
@@ -169,15 +153,6 @@ var helper = (function(win, doc, undefined) {
 
 			helper.add_event(container, 'click', clicked);
 			helper.add_event(container, 'keydown', kbd);
-
-
-
-			/* If a tab id is in localStorage open the corresponding panel
-			   ========================================================================== */
-
-			if(storage && localStorage['tab']) {
-				show_hide(document.getElementById(localStorage['tab']));
-			}
 		};
 
 		// Make all that happen

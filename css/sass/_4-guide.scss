@@ -32,18 +32,21 @@
 
 .guide .pattern div {
   width: 100%;
-  margin-bottom: 1em;
+}
+
+.guide .pattern .panels {
+  margin-top: 0.5em;
 }
 
 @media only all and (min-width: 41em) {
-  .guide .pattern .source, 
-  .guide .pattern .style {
+  .guide .pattern .display, 
+  .guide .pattern .panels {
     width: 40%;
     float: left;
-    margin-bottom: 0;
+    margin-top: 0;
   }
   
-  .guide .pattern .style {
+  .guide .pattern .panels {
     margin-left: 10%;
   }
 }
@@ -62,9 +65,7 @@
 /* Tabs
    ========================================================================== */
 .js-tabs [role=tablist] {
-	border-bottom: 1px solid #000;
 	padding: 0;
-	margin: 0 0 1.4375em;
 }
 
 .js-tabs [role=tab] {
@@ -106,7 +107,7 @@
 	display: none;
 }
 
-.js-tabs [aria-labelledby=tab1] {
+.js-tabs .js-panel.first {
   display: block;
 }
 

@@ -42,13 +42,13 @@
 @media only all and (min-width: 41em) {
   .guide .pattern .display, 
   .guide .pattern .panels {
-    width: 40%;
+    width: 46%;
     float: left;
     margin-top: 0;
   }
   
   .guide .pattern .panels {
-    margin-left: 10%;
+    margin-left: 8%;
   }
 }
 
@@ -71,6 +71,12 @@
 .hljs {
   background-color: $charcoal !important;
   font-size: 1.1em;
+  padding: 1em !important;
+}
+
+.source pre,
+.style pre {
+  margin-top: -1.7em;
 }
 
 /* ==========================================================================

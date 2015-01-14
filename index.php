@@ -66,11 +66,11 @@
             <li role="tab" id="tab<?php echo $markup ?>" aria-controls="markup<?php echo $markup ?>" tabindex="0" aria-selected="true" data-tabgroup="<?php echo $i ?>">
               Markup
             </li>
-            <li role="tab" id="tab<?php echo $css ?>" aria-controls="css<?php echo $css ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>">
-              CSS
-            </li>
             <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>">
-              Sass
+              SCSS
+            </li>
+            <li role="tab" id="tab<?php echo $css ?>" aria-controls="css<?php echo $css ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>">
+              Generated CSS
             </li>
           </ul>
           <div class="source js-panel first" id="markup<?php echo $markup ?>" role="tabpanel" aria-labelledby="tab<?php echo $markup ?>" data-tabgroup="<?php echo $i ?>">
@@ -79,16 +79,16 @@
               <code><?php echo htmlspecialchars(file_get_contents($file)); ?></code>
             </pre>
           </div>
-          <div class="style js-panel" id="css<?php echo $css ?>" role="tabpanel" aria-labelledby="tab<?php echo $css ?>" data-tabgroup="<?php echo $i ?>">
-            <h2 class="js-panel__title">CSS</h2>
-            <pre>
-              <code><?php echo file_get_contents("css/output/".basename($file, ".html").".css"); ?></code>
-            </pre>
-          </div>
           <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>">
-            <h2 class="js-panel__title">Sass</h2>
+            <h2 class="js-panel__title">SCSS</h2>
             <pre>
               <code><?php echo file_get_contents("css/sass/".basename($file, ".html").".scss"); ?></code>
+            </pre>
+          </div>
+          <div class="style js-panel" id="css<?php echo $css ?>" role="tabpanel" aria-labelledby="tab<?php echo $css ?>" data-tabgroup="<?php echo $i ?>">
+            <h2 class="js-panel__title">Generated CSS</h2>
+            <pre>
+              <code><?php echo file_get_contents("css/output/".basename($file, ".html").".css"); ?></code>
             </pre>
           </div>
         </div>

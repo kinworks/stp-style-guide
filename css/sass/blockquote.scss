@@ -1,3 +1,6 @@
+// Ignore - Pattern uses mixins, which have to be imported directly
+@import '_2-mixins.scss';
+
 blockquote {
 	margin: 1em;
 	border-top: 0.1em solid;
@@ -11,10 +14,7 @@ blockquote {
 	color: #888;
 	border-color: #ccc;
 	border-color: rgba(0,0,0,0.2);
-	-webkit-border-radius: 0.25em;
-	-moz-border-radius: 0.25em;
-	-o-border-radius: 0.25em;
-	border-radius: 0.25em;
+	@include border-radius(0.25em);
 }
 blockquote em {
 	font-style: normal;

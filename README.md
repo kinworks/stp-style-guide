@@ -30,10 +30,10 @@ We tend to alias a [Sass watch](http://sass-lang.com/documentation/file.SASS_REF
 
 #### Compilation Command
 
-```sass --watch -r sass-globbing --sourcemap css/sass:css/output```
+```sass --watch -r sass-globbing --style expanded --sourcemap css/sass:css/output```
 
 #### As a bash alias
 
-```alias stylewatch='sass --watch -r sass-globbing --sourcemap css/sass:css/output'```
+```alias stylewatch='sass --watch -r sass-globbing --style expanded --sourcemap css/sass:css/output'```
 
 _Don't forget to [source your bash_profile again](http://stackoverflow.com/questions/4608187/how-to-reload-bash-profile-from-the-command-line) after editing it, or the alias won't work._

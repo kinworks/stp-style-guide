@@ -14,6 +14,7 @@
   margin: 0 2.5%;
   padding: 0 2.5%;
   border: none;
+  font-size: 16px;
 }
 
 .guide h2 {
@@ -56,6 +57,20 @@
   font-weight: 500; //Medium
   font-size: 2.5em;
   line-height: 1em;
+}
+
+/* =======================
+  Code Blocks
+========================*/
+
+.hljs,
+.hljs * {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+.hljs {
+  background-color: $charcoal !important;
+  font-size: 1.1em;
 }
 
 /* ==========================================================================

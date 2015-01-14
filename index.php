@@ -11,25 +11,29 @@
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">
-      // Webfont loader
-  		/*
+      // Webfont loader - see https://github.com/typekit/webfontloader for details
 	    WebFontConfig = {
-	      typekit: { id: 'zns5qtn' }
+	      typekit: { id: 'zjw5zyc' } // This is currently Ben's personal Typekit - needs an update when STP have their own account
 	    };
-
 	    (function() {
 	      var wf = document.createElement('script');
-	      wf.src = ('js/webfont-1.4.7.min.js'); //UPDATE
+	      wf.src = ('js/webfontloader.min.js');
 	      wf.type = 'text/javascript';
 	      wf.async = 'true';
 	      var s = document.getElementsByTagName('script')[0];
 	      s.parentNode.insertBefore(wf, s);
 	    })();
-	    */
 	  </script>
   </head>
   <body>
+    <header class="header">
+      <h1>Scotland's Towns Partnership - Style Guide</h1>
+    </header>
     <div id="js-binder">
+    <?php // ReadMe ?>
+  
+  
+    <?php // Iterates through every partial html file and embeds it, also displaying a code panel for the styles and markup ?>
     <?php
     $files = glob("patterns/*.html");
     sort($files);

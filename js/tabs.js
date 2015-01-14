@@ -2,7 +2,7 @@ var helper = (function(win, doc, undefined) {
 
 	return {
 		// Cross browser events
-		add_event: function(el, ev, fn) {console.log(el,ev,fn);
+		add_event: function(el, ev, fn) {
 			'addEventListener' in win ? 
 				el.addEventListener(ev, fn, false) : 
 				el.attachEvent('on' + ev, fn);
@@ -56,37 +56,40 @@ var helper = (function(win, doc, undefined) {
 			   ========================================================================== */
 
 			var wrapper = helper.get_single_by_class('js-tab-ui'),
-			  tabs = helper.get_many_by_class('js-tabs-list'),
 				panels = helper.get_many_by_class('js-panel'),
 				tab_names = helper.get_many_by_class('js-panel__title'),
 				i,
-				panel_count = panels.length;
+				panel_count = panels.length,
+				container = document.getElementById('js-binder');
 
 
 
 			/* Show hide the panels, update the tabs' attributes
 			   ========================================================================== */
 
-			var show_hide = function(x_id) {
+			var show_hide = function(el) {
 				for(i=0; i<panel_count; i++) {
 					// display the correct panel, hide the others
-					if(panels[i].getAttribute('aria-labelledby') === x_id) {
+					if(panels[i].getAttribute('aria-labelledby') === el.id) {
 						panels[i].style.display = 'block';
-					} else {
+					} else if(panels[i].getAttribute('data-tabgroup') === el.getAttribute('data-tabgroup')) {
 						panels[i].style.display = 'none';
 					}
-
-					// update the ARIA
-					if(items[i].id === x_id) {
-						items[i].setAttribute('aria-selected', 'true');
-					} else {
-						items[i].setAttribute('aria-selected', 'false');
-					}
 				}
+				
+				// update the ARIA
+				var parent = el.parentNode,
+				    children = parent.children;
+				    
+				for(i=0; i<children.length; i++) {
+  				children[i].setAttribute('aria-selected', 'false');
+				}
+				
+				el.setAttribute('aria-selected','true');
 
 				// put the tab id into localStorage
 				if(storage) {
-					localStorage['tab'] = x_id;
+					localStorage['tab'] = el.id;
 				}
 			}
 
@@ -101,7 +104,7 @@ var helper = (function(win, doc, undefined) {
 				clicked_element = event.target || event.srcElement;
 
 				if(clicked_element.nodeName.toLowerCase() === 'li') {
-					show_hide(clicked_element.id);
+					show_hide(clicked_element);
 				} else {
 					return; // stop clicks on the <ul> hiding everything
 				}
@@ -152,7 +155,7 @@ var helper = (function(win, doc, undefined) {
 
 				// space bar
 				if(key_code === 32) {
-					show_hide(focused_element.id);
+					show_hide(focused_element);
 				}
 
 				// Prevent space bar moving the page down
@@ -164,8 +167,8 @@ var helper = (function(win, doc, undefined) {
 			/* Event listeners
 			   ========================================================================== */
 
-			helper.add_event(tabs, 'click', clicked);
-			helper.add_event(tabs, 'keydown', kbd);
+			helper.add_event(container, 'click', clicked);
+			helper.add_event(container, 'keydown', kbd);
 
 
 
@@ -173,7 +176,7 @@ var helper = (function(win, doc, undefined) {
 			   ========================================================================== */
 
 			if(storage && localStorage['tab']) {
-				show_hide(localStorage['tab']);
+				show_hide(document.getElementById(localStorage['tab']));
 			}
 		};
 

@@ -45,7 +45,22 @@
     </header>
     <div id="js-binder">
     <?php // ReadMe ?>
-  
+    
+    <h1 class="guidance">Introduction</h1>
+    
+    <p class="guidance">
+      For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">GitHub</a>.
+    </p>
+    
+    <h2 class="guidance">Global CSS reset and 'defaults'</h2>
+    
+    <p class="guidance">
+      The baseline for this style guide consists of a CSS reset and a small set of common 'defaults'. These should be used when implementing code from this style guide, or the appropriate steps taken to make sure your replicated component behaves in the same way if you choose not to use them.
+    </p>
+    
+    <p class="guidance">
+      The CSS reset used is <a href="http://necolas.github.io/normalize.css/" target="blank">Normalize</a> at version <b class="update">3.0.2</b>. You can pull the code used as is straight from the style guide repo in <a href="https://github.com/kinworks/stp-style-guide/blob/<?php echo $branchname; ?>/css/sass/_1-normalize.scss" target="_blank">/css/sass/_1-normalize.scss</a>.
+    </p>
   
     <?php // Iterates through every partial html file and embeds it, also displaying a code panel for the styles and markup ?>
     <?php

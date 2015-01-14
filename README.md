@@ -4,6 +4,8 @@ stp-style-guide
 
 **Author**: Kin ([http://kin.works](http://kin.works))
 
+This Style Guide is based on [Jeremy Keith's](https://adactio.com/) [Pattern Primer](https://github.com/adactio/Pattern-Primer).
+
 ## View online
 You can view the Style Guide at [http://style.stp.kin.works](http://style.stp.kin.works)
 

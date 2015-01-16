@@ -32,6 +32,10 @@
   margin-top: 0.5em;
 }
 
+a {
+  color: #01B2CC;
+}
+
 p.guidance {
   margin-bottom: 2em;
   font-size: 1.2em;
@@ -81,6 +85,17 @@ p.guidance {
   background-color: $charcoal !important;
   font-size: 1.1em;
   padding: 1em !important;
+  max-height: 17em;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 0.2em solid $charcoal;
+    background-color: rgba(255,255,255,.7);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
+  }
 }
 
 .source pre,

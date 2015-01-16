@@ -2,43 +2,88 @@
 // Mixins - Table of contents
 //::::::::::::::::::::::::::::
 
-
 //:::::: Rounded corners ::::::
-// @include border-radius($radius);               // for all corners
+
+// for all corners:
+// @include border-radius($radius);               
 //
-// @include border-top-radius($radius);           // for top corners only
-// @include border-bottom-radius($radius);        // for bottom corners only
-// @include border-left-radius($radius);          // for left-hand-side corners only
-// @include border-right-radius($radius);         // for right-hand-side corners only
+// for top corners only:
+// @include border-top-radius($radius);  
+// 
+// for bottom corners only:       
+// @include border-bottom-radius($radius);   
 //
-// @include border-top-left-radius($radius);      // for top left corner only
-// @include border-top-right-radiuss($radius);    // for top right corner only
-// @include border-bottom-left-radius($radius);   // for bottom left corner only
-// @include border-bottom-right-radius($radius);  // for bottom right corner only
+// for left-hand-side corners only:     
+// @include border-left-radius($radius);  
+// 
+// for right-hand-side corners only:
+// @include border-right-radius($radius);         
+//
+// for top left corner only:
+// @include border-top-left-radius($radius); 
+// 
+// for top right corner only:    
+// @include border-top-right-radiuss($radius);  
+//
+// for bottom left corner only:
+// @include border-bottom-left-radius($radius); 
+//
+// for bottom right corner only:
+// @include border-bottom-right-radius($radius);  
 
 //:::::: Box shadow ::::::
-// @include box-shadow($arguments);               // default is 0 0 10px rgba(128, 128, 128, 0.25)
+//
+// @include box-shadow($arguments);
+//
+// default is 0 0 10px rgba(128, 128, 128, 0.25)               
 
 //:::::: Responsive tables ::::::
-// @include responsive-table;                     // no arguments
+//
+// @include responsive-table;
+//
+// no arguments                     
 
 //:::::: Opacity ::::::
-// @include opacity($value);                      // values: 0 to 1 where 0 is transparent and 1 is solid.
+//
+// @include opacity($value); 
+//
+// values: 0 to 1 where 0 is transparent and 1 is solid.                     
 
 //:::::: Transitions ::::::
-// @include transition($property, $duration, $method);    // $duration variable must contain 's' e.g. '0.3s', $property defaults to 'all' & $method to 'ease-in-out'
+//
+// @include transition($property, $duration, $method);    
+//
+// $duration variable must contain 's' e.g. '0.3s', 
+// $property defaults to 'all' & $method to 'ease-in-out'
 
-//:::::: Gradients ::::::                                                                   // $colour = fallback
-// @include gradient-linear($color, $start, $stop);                                         // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
-// @include gradient-linear-double($color, $start, $stop);                                  // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
-// @include gradient-linear-half($color, $start, $stop);                                    // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
-// @include gradient-linear-triple($color, $start, $stop);                                  // defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
-// @include gradient-linear-quintuple($color, $start, $middle1, $middle2, $middle3, $stop); // defaults $color: #F5F5F5, $start: #EEE, $middle1: #EEE, $middle2:#EEE, $middle3: #FFF, $stop: #FFF
-// @include gradient-clear();                                                               // no arguments - this is to remove any gradients
-// @include gradient-solid($color);                                                         // no default
+//:::::: Gradients ::::::   
+//                                                                
+//// where $colour = fallback solid color;
+//
+// @include gradient-linear($color, $start, $stop); 
+//// defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+//
+// @include gradient-linear-double($color, $start, $stop);                                  
+//// defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+//
+// @include gradient-linear-half($color, $start, $stop);                                    
+//// defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+//
+// @include gradient-linear-triple($color, $start, $stop);                                  
+//// defaults $color: #F5F5F5, $start: #EEE, $stop: #FFF
+//
+// @include gradient-linear-quintuple($color, $start, $middle1, $middle2, $middle3, $stop); 
+//// defaults $color: #F5F5F5, $start: #EEE, $middle1: #EEE, $middle2:#EEE, $middle3: #FFF, $stop: #FFF
+//
+// @include gradient-clear();                                                               
+//// no arguments - this is to remove any gradients
+// @include gradient-solid($color);                                                         
+//// no default
 
 //::::: Background Size
-// @include background-size($size);                                                         // no default
+//
+// @include background-size($size);                                                         
+//// no default
 
 //:::::::::::::::::::::::::
 // Rounded corners

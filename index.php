@@ -52,8 +52,11 @@
       For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">GitHub</a>.
     </p>
     
+    <br/>
     
-  <?php // CSS reset pattern box ?>
+    <h1 class="guidance">Core Assets</h1>
+    
+  <?php // CSS reset pattern box ======================================================?>
     
     <div class="pattern">
         <div class="display">
@@ -88,7 +91,7 @@
         </div>
       </div>
 
-<?php // CSS defaults pattern box ?>
+<?php // CSS defaults pattern box ====================================================== ?>
     
     <div class="pattern">
         <div class="display">
@@ -105,7 +108,7 @@
         <div class="js-tab-ui panels">
           <ul class="js-tabs-list" role="tablist">
             <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
-              CSS
+              SCSS
             </li>
             <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_3-defaults.scss" target="_blank">
               <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
@@ -123,10 +126,127 @@
         </div>
       </div>
 
+<?php // Mixins pattern box ====================================================== ?>
     
+    <div class="pattern">
+        <div class="display">
+          <h2 class="guidance">Our SASS Mixins</h2>
     
-  
-    <?php // BEGIN REGULAR PATTERN LIBRARY
+          <p class="guidance">
+            A handful of these will be used for items in this style guide. Usage is entirely optional, but they're useful — and if you're copying code from the style guide containing a mixin, you'll need the appropriate section of this file too. 
+          </p>
+    
+        </div>
+        <div class="js-tab-ui panels">
+          <ul class="js-tabs-list" role="tablist">
+            <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
+              SCSS
+            </li>
+            <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_2-mixins.scss" target="_blank">
+              <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
+                View Raw File &raquo;
+              </li>
+            </a>
+
+          </ul>
+          <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
+            <h2 class="js-panel__title">SCSS</h2>
+            <pre>
+              <code><?php echo file_get_contents("css/sass/_2-mixins.scss"); ?></code>
+            </pre>
+          </div>
+        </div>
+      </div>
+      
+    <?php // COLOUR / COLOR / COLUUÜUR ==============================================?>
+      
+      <br/>
+      <h1 class="guidance">Colour</h1>
+      
+      <div class="pattern colour">
+        <div class="display">
+           <div class="swatches">
+             
+              <h2>Brand</h2>
+              <ul>
+                <li>
+                  <span class="aqua"><!--color fill--></span>
+                  <b>$aqua</b>
+                </li>
+                <li>
+                  <span class="mid-aqua"><!--color fill--></span>
+                  <b>$mid-aqua</b>
+                </li>
+                <li>
+                  <span class="dark-aqua"><!--color fill--></span>
+                  <b>$dark-aqua</b>
+                </li>
+              </ul>
+              
+              <h2>Modules / Body</h2>
+              <ul>
+                <li>
+                  <span class="charcoal"><!--color fill--></span>
+                  <b>$charcoal</b>
+                </li>
+                <li>
+                  <span class="white"><!--color fill--></span>
+                  <b>$white</b>
+                </li>
+                <li>
+                  <span class="grey"><!--color fill--></span>
+                  <b>$grey</b>
+                </li>
+                <li>
+                  <span class="shadow"><!--color fill--></span>
+                  <b>$shadow</b>
+                </li>
+              </ul>
+              
+              <h2>Calls to Action / Contrast</h2>
+              <ul>
+                <li>
+                  <span class=""><!--color fill--></span>
+                  <b>$</b>
+                </li>
+                <li>
+                  <span class=""><!--color fill--></span>
+                  <b>$</b>
+                </li>
+                <li>
+                  <span class=""><!--color fill--></span>
+                  <b>$</b>
+                </li>
+              </ul>
+
+
+              
+            </div>
+      
+        </div>
+        <div class="js-tab-ui panels">
+          <ul class="js-tabs-list" role="tablist">
+            <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
+              SCSS
+            </li>
+            <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_4-colours.scss" target="_blank">
+              <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
+                View Raw File &raquo;
+              </li>
+            </a>
+
+          </ul>
+          <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
+            <h2 class="js-panel__title">SCSS</h2>
+            <pre>
+              <code><?php echo file_get_contents("css/sass/_4-colours.scss"); ?></code>
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      
+    <?php // BEGIN REGULAR PATTERN LIBRARY ===============================================
       
       //Iterates through every partial html file and embeds it, also displaying a code panel for the styles and markup ?>
     <?php

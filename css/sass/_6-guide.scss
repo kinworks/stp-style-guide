@@ -42,6 +42,61 @@ p.guidance {
   max-width: 61em;
 }
 
+.swatches h2 {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+}
+
+.swatches ul {
+  list-style-type: none;
+}
+
+.swatches li {
+  width: 12.8em;
+  height: 14em;
+  border: 0.1em solid #ddd;
+  padding: 1.4em;
+  margin: 0 2em 2em 0;
+  float: left;
+}
+
+.swatches span.aqua {
+  background-color: $aqua;
+}
+
+.swatches span.mid-aqua {
+  background-color: $mid-aqua;
+}
+
+.swatches span.dark-aqua {
+  background-color: $dark-aqua;
+}
+
+.swatches span.charcoal {
+  background-color: $charcoal;
+}
+
+.swatches span.white {
+  background-color: $white;
+}
+
+.swatches span.grey {
+  background-color: $grey;
+}
+
+.swatches span.shadow {
+  background-color: $shadow;
+}
+
+.swatches li span {
+  display: inline-block;
+  width: 10em;
+  height: 9em;
+  border: 0.1em solid #ddd;
+  margin: 0 0 0.5em 0;
+}
+
 @media only all and (min-width: 41em) {
   .guide .pattern .display, 
   .guide .pattern .panels {
@@ -96,6 +151,10 @@ p.guidance {
     background-color: rgba(255,255,255,.7);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
   }
+}
+
+.colour .hljs {
+  max-height: 50em;
 }
 
 .source pre,

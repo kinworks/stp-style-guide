@@ -52,17 +52,83 @@
       For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">GitHub</a>.
     </p>
     
-    <h2 class="guidance">Global CSS reset and 'defaults'</h2>
+    
+  <?php // CSS reset pattern box ?>
+    
+    <div class="pattern">
+        <div class="display">
+          <h2 class="guidance">Global CSS reset</h2>
+    
+          <p class="guidance">
+            The baseline for this style guide consists of a CSS reset and a small set of common 'defaults'. These should be used when implementing code from this style guide, or the appropriate steps taken to make sure your replicated component behaves in the same way if you choose not to use them.
+          </p>
     
     <p class="guidance">
-      The baseline for this style guide consists of a CSS reset and a small set of common 'defaults'. These should be used when implementing code from this style guide, or the appropriate steps taken to make sure your replicated component behaves in the same way if you choose not to use them.
+      The CSS reset used is <a href="http://necolas.github.io/normalize.css/" target="blank">Normalize</a> at version <b class="update">3.0.2</b>.
     </p>
+        </div>
+        <div class="js-tab-ui panels">
+          <ul class="js-tabs-list" role="tablist">
+            <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
+              CSS
+            </li>
+            <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_1-normalize.scss" target="_blank">
+              <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
+                View Raw File &raquo;
+              </li>
+            </a>
+
+          </ul>
+          <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
+            <h2 class="js-panel__title">SCSS</h2>
+            <pre>
+              <code><?php echo file_get_contents("css/sass/_1-normalize.scss"); ?></code>
+            </pre>
+          </div>
+        </div>
+      </div>
+
+<?php // CSS defaults pattern box ?>
+    
+    <div class="pattern">
+        <div class="display">
+          <h2 class="guidance">Our 'defaults'</h2>
+    
+          <p class="guidance">
+            The baseline for this style guide consists of a CSS reset and a small set of common 'defaults'. These should be used when implementing code from this style guide, or the appropriate steps taken to make sure your replicated component behaves in the same way if you choose not to use them.
+          </p>
     
     <p class="guidance">
-      The CSS reset used is <a href="http://necolas.github.io/normalize.css/" target="blank">Normalize</a> at version <b class="update">3.0.2</b>. You can pull the code used as is straight from the style guide repo in <a href="https://github.com/kinworks/stp-style-guide/blob/<?php echo $branchname; ?>/css/sass/_1-normalize.scss" target="_blank">/css/sass/_1-normalize.scss</a>.
+      The item of highest priority in our 'defaults' is probably the decision to <a href="http://quirksmode.org/css/user-interface/boxsizing.html" tagrte="_blank">use IE's box model for everything;</a> otherwise, you can choose to include these as a global defaults file (as we do) or selectively implement features from it to help you achieve the same end visual behaviours for the components in this style guide.
     </p>
+        </div>
+        <div class="js-tab-ui panels">
+          <ul class="js-tabs-list" role="tablist">
+            <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
+              CSS
+            </li>
+            <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_3-defaults.scss" target="_blank">
+              <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
+                View Raw File &raquo;
+              </li>
+            </a>
+
+          </ul>
+          <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>" style="display: block;">
+            <h2 class="js-panel__title">SCSS</h2>
+            <pre>
+              <code><?php echo file_get_contents("css/sass/_3-defaults.scss"); ?></code>
+            </pre>
+          </div>
+        </div>
+      </div>
+
+    
+    
   
-    <?php // Iterates through every partial html file and embeds it, also displaying a code panel for the styles and markup ?>
+    <?php // BEGIN REGULAR PATTERN LIBRARY
+      
+      //Iterates through every partial html file and embeds it, also displaying a code panel for the styles and markup ?>
     <?php
     $files = glob("patterns/*.html");
     sort($files);

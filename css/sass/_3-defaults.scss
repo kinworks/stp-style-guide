@@ -1,10 +1,11 @@
 //::::::::::::::::::::::::::
 //::  Kin Defaults  ::::::::
 //::::::::::::::::::::::::::
+//::: PURPOSE: Default non-reset browser / box model fixes, 
+//::: any other default choices we use across projects.
 
-//:::: PURPOSE: Default non-reset browser / box model fixes, any other default choices we use across projects.
-
-// make everything to behave as IE box model - see http://quirksmode.org/css/user-interface/boxsizing.html
+// Make everything to behave as IE box model - 
+// see http://quirksmode.org/css/user-interface/boxsizing.html
 
 * {
   -webkit-box-sizing: border-box; // Safari <= 5
@@ -14,7 +15,7 @@
   box-sizing: border-box;
 }
 
-// tell webkit to jog on with its auto-margins
+// Tell webkit to jog on with its auto-margins
 
 * {
   -webkit-margin-before: 0em;
@@ -27,14 +28,17 @@
   -webkit-padding-end: 0;
 }
 
-// remove the webkit glow on forms when focused on, but be sure to replace it with an outline of some kind - this should then be overridden when styling focus throughout the document 
+// Remove the webkit glow on forms when focused on, but be sure 
+// to replace it with an outline of some kind - this should then 
+// be overridden when styling focus throughout the document 
 
 *:focus {
   outline: none; 
   border: 0.1em solid #E1BC29;
 } 
 
-// let us decide how to style form input submit buttons on mobile browsers
+// Let us decide how to style form input submit buttons 
+// on mobile browsers
 
 input[type='submit']
 {
@@ -44,11 +48,12 @@ input[type='submit']
    border-radius: 0;  
 }
 
-//clearfix
+// Clearfix
 
 .clearfix:before, .clearfix:after {
   display: table;
   line-height: 0;
   content: "";
 }
+
 .clearfix:after {clear: both;}

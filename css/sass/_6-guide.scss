@@ -21,7 +21,7 @@
   clear: both;
   overflow: hidden;
   border-bottom: 0.1em #959595 solid;
-  padding: 0.5em 0;
+  padding: 2em 0 0.5em 0;
 }
 
 .guide .pattern div {
@@ -45,13 +45,13 @@ p.guidance {
 @media only all and (min-width: 41em) {
   .guide .pattern .display, 
   .guide .pattern .panels {
-    width: 46%;
+    width: 48%;
     float: left;
     margin-top: 0;
   }
   
   .guide .pattern .panels {
-    margin-left: 8%;
+    margin-left: 4%;
   }
 }
 
@@ -108,6 +108,11 @@ p.guidance {
   &:focus {
     border: 0.1em solid #E1BC29;
   }
+}
+
+.panels ul li.linkout {
+  background-color: #fff;
+  color: #01B2CC;
 }
 
 /* ==========================================================================

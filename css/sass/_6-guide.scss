@@ -36,6 +36,13 @@ a {
   color: #01B2CC;
 }
 
+h1.guidance,
+h2.guidance {
+  color: $dark-aqua;
+  text-transform: none;
+  font-weight: 500;
+}
+
 p.guidance {
   margin-bottom: 2em;
   font-size: 1.2em;
@@ -45,7 +52,7 @@ p.guidance {
 .swatches h2 {
   width: 100%;
   float: left;
-  margin: 0 0 1em 0;
+  margin: 1em 0 1.3em 0;
 }
 
 .swatches ul {
@@ -89,12 +96,50 @@ p.guidance {
   background-color: $shadow;
 }
 
+.swatches span.purple {
+  background-color: $purple;
+}
+
+.swatches span.blue {
+  background-color: $blue;
+}
+
 .swatches li span {
   display: inline-block;
   width: 10em;
   height: 9em;
   border: 0.1em solid #ddd;
   margin: 0 0 0.5em 0;
+}
+
+.display .webfontloader ul li {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+  &::before {
+   content: "— "; 
+  }
+}
+
+.webfontloader .display ul {
+  margin-bottom: 3em;
+}
+
+.webfontloader .hljs {
+  max-height: 23em;
+}
+
+.hierarchy h2.guidance {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 0.1em solid #ccc;
+}
+
+.hierarchy .panels {
+  padding-top: 3em;
+}
+
+.hierarchy .hljs {
+  max-height: 40em;
 }
 
 @media only all and (min-width: 41em) {

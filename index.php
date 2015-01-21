@@ -13,7 +13,7 @@
     <script type="text/javascript">
       // Webfont loader - see https://github.com/typekit/webfontloader for details
 	    WebFontConfig = {
-	      typekit: { id: 'zjw5zyc' } // This is currently Ben's personal Typekit - needs an update when STP have their own account
+	      typekit: { id: 'ovp2cfb' } // This is currently Ben's personal Typekit - needs an update when STP have their own account
 	    };
 	    (function() {
 	      var wf = document.createElement('script');
@@ -252,6 +252,10 @@
               <li>The &lt;script&gt; found in 'Markup' (right) in your &lt;head&gt;, and; </li>
               <li>the fallback CSS (right)</li>
             </ul>
+            
+            <p class="guidance">
+              The current kit ID, from a Typekit account owned by STP, is <b>ovp2cfb</b> and weighs around 98kb.
+            </p>
             
           </div>
           <div class="js-tab-ui panels">

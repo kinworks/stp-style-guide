@@ -3,14 +3,37 @@ here - you can set the sizes however you like,
 we just didn't want to define them against specific heading tags 
 (h1, h2 etc) when that might not make sense in all contexts -->
 
-<h1 class="heading heading__large">Large Heading</h1>
+<h1 class="heading heading__large">Large Heading (2em)</h1>
 
-<h2 class="heading heading__medium">Medium Heading</h2>
+<h2 class="heading heading__medium">Medium Heading (1.75em)</h2>
 
-<h3 class="heading heading__small">Small Heading</h3>
+<h3 class="heading heading__small">Small Heading (1.5em)</h3>
 
 <p class="text text__callout text--aqua">
 This is a callout, such as an introduction, or a prompt for further action. It's set in 1.4em URW Franklin Gothic loaded in from Typekit, in 400 weight. We're using $mid-aqua for this text, and never use $aqua for text on a $white background as it doesn't conform to accessibility requirements for colour contrast.
 </p> 
 
 <p>This is a text paragraph set in 1.2em URW Franklin Gothic loaded in from Typekit. The weight used in 'regular' text is 400. The weight used for <b>bold text</b> is 500. Speaking of formatting, the <i>italic style should probably be in here too.</i></p>
+
+<p>
+  <a href="#">Links by default are $mid-aqua</a> but should be coloured according to their context;
+</p>
+
+<p class="bg-grey">
+  <a href="#" class="link--dark-aqua">Links against $grey are $dark-aqua;</a>
+</p>
+
+<p class="bg-charcoal">
+  <a href="#" class="link--aqua">Links against $charcoal are $aqua;</a>
+</p>
+
+<p class="bg-aqua">
+  <a href="#" class="link--white">Links against $mid-aqua are $white.</a>
+</p>
+
+<p class="text__small">
+Small text (1em) is used only for footer content, footnotes or 
+legal conditions / credits.  
+</p>
+
+<br/>

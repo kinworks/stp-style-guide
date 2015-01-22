@@ -32,10 +32,6 @@
   margin-top: 0.5em;
 }
 
-a {
-  color: #01B2CC;
-}
-
 h1.guidance,
 h2.guidance {
   color: $dark-aqua;
@@ -60,12 +56,13 @@ p.guidance {
 }
 
 .swatches li {
-  width: 12.8em;
-  height: 14em;
+  width: 6.4em;
+  height: 8em;
   border: 0.1em solid #ddd;
-  padding: 1.4em;
+  padding: 0.7em;
   margin: 0 2em 2em 0;
   float: left;
+  border-bottom: 0.2em solid $grey;
 }
 
 .swatches span.aqua {
@@ -104,12 +101,16 @@ p.guidance {
   background-color: $blue;
 }
 
+.swatches li b {
+  font-size: 0.9em;
+}
+
 .swatches li span {
   display: inline-block;
-  width: 10em;
-  height: 9em;
+  width: 5em;
+  height: 4.5em;
   border: 0.1em solid #ddd;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.2em 0;
 }
 
 .display .webfontloader ul li {
@@ -125,7 +126,8 @@ p.guidance {
 }
 
 .webfontloader .hljs {
-  max-height: 23em;
+  min-height: 26em;
+  max-height: 26em;
 }
 
 .hierarchy h2.guidance {
@@ -139,7 +141,47 @@ p.guidance {
 }
 
 .hierarchy .hljs {
-  max-height: 40em;
+  max-height: 42em;
+}
+
+.bg-grey,
+.bg-charcoal,
+.bg-aqua {
+  padding: 1em;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.bg-charcoal {
+  background-color: $charcoal;
+}
+
+.bg-aqua {
+  background-color: $mid-aqua;
+}
+
+.buttons .bg-grey,
+.buttons .bg-charcoal,
+.buttons .bg-aqua { 
+  margin-top: 2em;
+  padding: 1em 1em 0 1em
+}
+
+.buttons .panels,
+.buttons .panels div {
+  margin-top: 0;
+}
+
+.buttons .cta {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.buttons .hljs {
+  max-height: 22em;
+  padding: 1em;
 }
 
 @media only all and (min-width: 41em) {

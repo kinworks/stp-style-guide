@@ -1,0 +1,56 @@
+/* Buttons / CTAs */
+
+.cta {
+  background-color: $mid-aqua;
+  color: #fff;
+  border-bottom: 0.2em solid darken($mid-aqua,10%);
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include transition(background-color,0.12s); // Kin Mixin
+  &:after {
+    content: ' »';
+  }
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($mid-aqua,5%);
+  }
+}
+
+.cta--charcoal {
+  background-color: $charcoal;
+  border-bottom: 0.2em solid darken($shadow,15%);
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($charcoal,18%);
+  }
+}
+
+.cta--blue {
+  background-color: $blue;
+  border-bottom: 0.2em solid darken($blue,10%);
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($blue,10%);
+  }
+}
+
+.cta--purple {
+  background-color: $purple;
+  border-bottom: 0.2em solid darken($purple,12%);
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($purple,8%);
+  }
+}
+
+.cta--white {
+  background-color: $white;
+  color: $charcoal;
+  border-bottom: 0.2em solid $shadow;
+  &:hover {
+    text-decoration: underline;
+    background-color: lighten($aqua,50%);
+  }
+}

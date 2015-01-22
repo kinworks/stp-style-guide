@@ -17,7 +17,12 @@
   font-size: 1.5em;
 }
 
+p,
+ul,
+ol,
 .text {
+  font-size: 1.2em;
+  line-height: 1.4em;
   font-style: normal;
   font-weight: 400;
 }
@@ -26,16 +31,13 @@
   font-size: 1.4em;
 }
 
+.text__small {
+  font-size: 1em;
+}
+
 .text--aqua {
   color: $mid-aqua;
   //WCAG 2 AA Compliant only at >=18pt; ratio 4.31 against $white
-}
-
-p,
-ul,
-ol {
-  font-size: 1.2em;
-  line-height: 1.4em;
 }
 
 b, 
@@ -46,6 +48,27 @@ strong {
 i, 
 em {
   font-style: italic;
+}
+
+a {
+  color: $mid-aqua;
+  border-bottom: 0.1em dotted $mid-aqua;
+  text-decoration: none;
+}
+
+.link--dark-aqua {
+  color: $dark-aqua;
+  border-bottom: 0.1em dotted $dark-aqua;
+}
+
+.link--aqua {
+  color: $aqua;
+  border-bottom: 0.1em dotted $aqua;
+}
+
+.link--white {
+  color: $white;
+  border-bottom: 0.1em dotted $white;
 }
 
 //// Franklin Gothic URW - Typekit Weights and Styles available 

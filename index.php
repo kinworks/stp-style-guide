@@ -315,6 +315,38 @@
               </div>
             </div>
         </div>
+        
+<?php // CALLS TO ACTION / BUTTONS ================================= ?>
+
+      <div class="pattern buttons">
+          <div class="display">
+            <h2 class="guidance">Buttons & Calls to Action</h2>
+            <br/> 
+            <?php echo file_get_contents("guidepatterns/buttons.html"); ?>           
+          </div>
+          <div class="js-tab-ui panels">
+              <ul class="js-tabs-list" role="tablist">
+                <li role="tab" id="tab-buttons-markup" aria-controls="tab-buttons-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="buttons">Markup
+                </li>
+                <li role="tab" id="tab-buttons-css" aria-controls="tab-buttons-css-panel" aria-selected="false" data-tabgroup="buttons">
+                  SCSS
+                </li>
+              </ul>
+              <div class="source js-panel first" id="tab-buttons-markup-panel" role="tabpanel" aria-labelledby="tab-buttons-markup" data-tabgroup="buttons">
+                <h2 class="js-panel__title">Markup</h2>
+                <pre>
+                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/buttons.html")); ?></code>
+                </pre>
+              </div>
+              <div class="style js-panel" id="tab-buttons-css-panel" role="tabpanel" aria-labelledby="tab-buttons-css" data-tabgroup="buttons">
+                <h2 class="js-panel__title">CSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/sass/_7-buttons.scss"); ?></code>
+                </pre>
+              </div>
+            </div>
+        </div>
+
 
           
         

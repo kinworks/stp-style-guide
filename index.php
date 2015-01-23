@@ -27,14 +27,24 @@
   </head>
   <?php include('functions.php'); ?>
   <body>
-    <header class="header">
-      <h1>Scotland's Towns Partnership - Style Guide</h1>
-      <span>
-        Version <?php echo $branchname; ?> - <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">View on GitHub</a>
-      </span>
-      
+    
+    <header class="header clearfix">
+      <div class="header__contents">
+        <div class="header__title">
+          <a href="#"><h1 class="heading heading__large">Style Guide</h1></a>
+        </div>
+        <a class="header__logo" href="http://www.scotlandstowns.org" target="_blank" title="Visit Scotland's Towns Partnership"></a>
+      </div>
+      <div class="header__trim"></div>
     </header>
-    <div id="js-binder">
+    
+    <div id="js-binder" class="styleguide">
+    
+      <span class="versioninfo">
+        Version <?php echo $branchname; ?> - <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">
+          View on GitHub</a>
+      </span>
+    
       <?php // ReadMe ?>
       
       <h1 class="guidance">Introduction</h1>

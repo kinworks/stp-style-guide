@@ -3,7 +3,7 @@
 //:::::::::::::::::::::::::::::
 
 .guide {
-  background-color: #fefefe; 
+  background-color: $grey; 
   line-height: 1.5em;
   font-size: 16px;
   border: none;
@@ -15,9 +15,21 @@
   font-size: 16px;
 }
 
+.versioninfo {
+  font-size: 1.1em;
+  color: #222;
+  display: inline-block;
+  margin: 0 0 1em 5%;
+}
+
+.versioninfo a {
+  //color: $dark-aqua;
+}
+
 .guide .styleguide {
-  margin: 0 2.5%;
-  padding: 0 2.5%;
+  background-color: #fff;
+  margin: 0 5%;
+  padding: 1.5em 2.5%;
 }
 
 .guide .pattern {
@@ -27,8 +39,11 @@
   padding: 2em 0 0.5em 0;
 }
 
-.guide .pattern div {
-  width: 100%;
+.guide .pattern iframe {
+  outline: 0;
+  border: 0;
+  width: 30em;
+  overflow: hidden;
 }
 
 .guide .pattern .panels {
@@ -165,24 +180,28 @@ p.guidance {
   background-color: $mid-aqua;
 }
 
-.buttons .bg-grey,
-.buttons .bg-charcoal,
-.buttons .bg-aqua { 
+.pattern-buttons h2 {
+  margin-bottom: 1em;
+}
+
+.pattern-buttons .bg-grey,
+.pattern-buttons .bg-charcoal,
+.pattern-buttons .bg-aqua { 
   margin-top: 2em;
   padding: 1em 1em 0 1em
 }
 
-.buttons .panels,
-.buttons .panels div {
+.pattern-buttons .panels,
+.pattern-buttons .panels div {
   margin-top: 0;
 }
 
-.buttons .cta {
+.pattern-buttons .cta {
   margin-right: 1em;
   margin-bottom: 1em;
 }
 
-.buttons .hljs {
+.pattern-buttons .hljs {
   max-height: 22em;
   padding: 1em;
 }
@@ -198,13 +217,6 @@ p.guidance {
   .guide .pattern .panels {
     margin-left: 4%;
   }
-}
-
-.versioninfo {
-  font-size: 1.1em;
-  color: #bbb;
-  display: inline-block;
-  margin-bottom: 1em;
 }
 
 /* =======================

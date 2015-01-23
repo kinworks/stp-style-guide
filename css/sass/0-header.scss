@@ -1,3 +1,9 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_2-mixins.scss'; @import '_4-colours.scss';
+
+// Mobile-first - stacking header with 100% wide
+// sections, then enhanced via media query
+
 .header {
   background-color: $charcoal;
   width: 100%;
@@ -53,36 +59,37 @@
 @media only all and (min-width: 41em) {
   
   .header {
-    padding: 1.5em 0 0 0;
+    padding: 1.7em 0 0 0;
   }
   
   .header__contents {
     width: 90%;
     margin: 0 5%; // This depends on what sizes you
-    // need to use to line edges up with your page content
+    // need to use to line edges up with content edges
   }
   
   .header__title {
     float: left;
     text-align: left;
     width: auto;
-    padding: 1.2em 1.5em 1em 1.5em;
-    border-bottom: 0.2em solid $mid-aqua;
+    padding: 1.65em 1.8em 1.45em 1.8em;
+    border-bottom: 0.2em solid darken($mid-aqua,3%);
   }
   
   .header__logo {
     float: right;
     width: 13.75em; 
     height: 3.625em;
-    margin: 0em 0 0.9em 0;
+    margin: 0.3em 0 0.9em 0;
   }
   
   .header__trim {
     display: inline-block;
-    height: 1em;
+    float: left;
+    height: 0.4em;
     width: 100%;
-    background-color: $aqua;
+    background-color: lighten($aqua,5%);
+    border-top: 0.1em solid lighten($aqua,15%);
   }
 
-  
-}
+} // End min 41em

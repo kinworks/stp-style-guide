@@ -32,10 +32,21 @@
 // to replace it with an outline of some kind - this should then 
 // be overridden when styling focus throughout the document 
 
+// This ties in with the script tag in our header that sets an outline 
+// on every item for focus, then if JS is present removes it;
+// then uses JS to listen for keyboard use and re-applies for those
+// tabbing through. By @decadecity - 
+// https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus 
+
 *:focus {
-  outline: none; 
-  border: 0.1em solid #E1BC29;
-} 
+  outline: 0.1em solid orange;
+}
+.js *:focus {
+  outline-width: 0px;
+}
+.keyboard *:focus {
+  outline-width: 0.1em;
+}
 
 // Let us decide how to style form input submit buttons 
 // on mobile browsers

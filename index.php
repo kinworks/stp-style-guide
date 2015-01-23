@@ -24,6 +24,17 @@
 	      s.parentNode.insertBefore(wf, s);
 	    })();
 	  </script>
+	  
+	  <script>
+  	  // Outline focus method without disrupting UI via @decadecity - https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus
+      // This assumes we are using a modern browser - you'll need to cut the mustard to use this reliably.
+      document.querySelector('html').classList.add('js');
+      var addKeyboardHook = function () {
+        document.querySelector('html').classList.add('keyboard');
+        document.removeEventListener('keydown', addKeyboardHook);
+      };
+      document.addEventListener('keydown', addKeyboardHook);
+    </script>
   </head>
   <?php include('functions.php'); ?>
   <body>
@@ -38,12 +49,12 @@
       <div class="header__trim"></div>
     </header>
     
-    <div id="js-binder" class="styleguide">
-    
-      <span class="versioninfo">
-        Version <?php echo $branchname; ?> - <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">
+    <span class="versioninfo">
+        Version <?php echo $branchname; ?> - <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">
           View on GitHub</a>
       </span>
+    
+    <div id="js-binder" class="styleguide">
     
       <?php // ReadMe ?>
       
@@ -326,39 +337,78 @@
             </div>
         </div>
         
-<?php // CALLS TO ACTION / BUTTONS ================================= ?>
-
-      <div class="pattern buttons">
+  <?php // HEADER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
+    
+    <div class="pattern pattern-header">
+      
+          <h2 class="guidance">Header Block (External Sites / Tools)</h2>
+          <br/>
+          <p class="guidance">
+            This is the header block style to be used on sites external to — or on a subdomain of — the main STP site at scotlandstowns.org.
+          </p>
+          <p class="guidance">
+            The title heading links to the external site or tool, and the STP logo links to the main site, opening in a new window/tab.
+          </p>
+                
+          <header class="header clearfix">
+            <div class="header__contents">
+              <div class="header__title">
+                <a href="#"><h1 class="heading heading__large">Site Title</h1></a>
+              </div>
+              <a class="header__logo" href="http://www.scotlandstowns.org" 
+              target="_blank" title="Visit Scotland's Towns Partnership"></a>
+            </div>
+            <div class="header__trim"></div>
+          </header>
+      
           <div class="display">
-            <h2 class="guidance">Buttons & Calls to Action</h2>
-            <br/> 
-            <?php echo file_get_contents("guidepatterns/buttons.html"); ?>           
+          
+            <header class="header clearfix">
+              <div class="header__contents">
+                <div class="header__title">
+                  <a href="#"><h1 class="heading heading__large">Site Title</h1></a>
+                </div>
+                <a class="header__logo" href="http://www.scotlandstowns.org" 
+                target="_blank" title="Visit Scotland's Towns Partnership"></a>
+              </div>
+              <div class="header__trim"></div>
+            </header>
+            
+            <iframe src="guidepatterns/mobileheader.html"></iframe>
+          
           </div>
           <div class="js-tab-ui panels">
               <ul class="js-tabs-list" role="tablist">
-                <li role="tab" id="tab-buttons-markup" aria-controls="tab-buttons-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="buttons">Markup
+                <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
                 </li>
-                <li role="tab" id="tab-buttons-css" aria-controls="tab-buttons-css-panel" aria-selected="false" data-tabgroup="buttons">
+                <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
                   SCSS
                 </li>
+                <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                  Generated CSS
+                </li>
               </ul>
-              <div class="source js-panel first" id="tab-buttons-markup-panel" role="tabpanel" aria-labelledby="tab-buttons-markup" data-tabgroup="buttons">
+              <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
                 <h2 class="js-panel__title">Markup</h2>
                 <pre>
-                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/buttons.html")); ?></code>
+                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/header.html")); ?></code>
                 </pre>
               </div>
-              <div class="style js-panel" id="tab-buttons-css-panel" role="tabpanel" aria-labelledby="tab-buttons-css" data-tabgroup="buttons">
-                <h2 class="js-panel__title">CSS</h2>
+              <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+                <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/sass/_7-buttons.scss"); ?></code>
+                  <code><?php echo file_get_contents("css/sass/0-header.scss"); ?></code>
+                </pre>
+              </div>            
+              <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+                <h2 class="js-panel__title">Generated CSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/output/0-header.css"); ?></code>
                 </pre>
               </div>
             </div>
-        </div>
+          </div>
 
-
-          
         
   <?php // BEGIN REGULAR PATTERN LIBRARY ============================
         
@@ -371,8 +421,9 @@
       $markup = $i;
       $css = ++$i;
       $scss = ++$i;
+      
       ?>
-        <div class="pattern">
+        <div class="pattern pattern-<?php echo substr(basename($file, ".html"), 2) ;?>">
           <div class="display">
           <?php include($file); ?>
           </div>

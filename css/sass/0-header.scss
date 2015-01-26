@@ -22,8 +22,9 @@
   width: 100%;
   background-color: $aqua;
   text-align: center;
-  padding: 1em 1em 1em 1em;
+  padding: 0.8em 1em 1em 1em;
   border-bottom: 0.4em solid $mid-aqua;
+  border-top: 0.2em solid lighten($aqua,10%);
 }
 
 .header__title .heading {

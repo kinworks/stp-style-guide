@@ -349,6 +349,9 @@
           <p class="guidance">
             The title heading links to the external site or tool, and the STP logo links to the main site, opening in a new window/tab.
           </p>
+          <p class="guidance">
+            For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
+          </p>
                 
           <header class="header clearfix">
             <div class="header__contents">
@@ -408,6 +411,112 @@
               </div>
             </div>
           </div>
+          
+<?php // FOOTER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
+    
+    <div class="pattern pattern-footer">
+      
+          <h2 class="guidance">Footer Block</h2>
+          <br/>
+          <p class="guidance">
+            This is the footer block style to be on all STP web properties.
+          </p>
+          <p class="guidance">
+            When using this pattern, be sure to verify the hardcoded links to the top-level sections of scotlandtowns.org have not changed on the main site. <b>At time of writing, these URLs do not exist but will at STP launch.</b> If using this pattern on an external site, or subdomain of scotlandstowns.org, the links could open in a new window/tab at your discretion.
+          </p>
+          <p class="guidance">
+            For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
+          </p>
+                
+          <footer class="footer">
+            <div class="footer__container clearfix">
+              <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
+              <a class="footer__twitter clearfix" href="https://twitter.com/ScotlandsTowns" target="_blank">
+                <span class="heading heading__small">Follow us on Twitter &raquo;</span>
+                <span class="icon"></span>
+              </a>
+              <nav class="footer__nav clearfix">
+                <ul>
+                  <li><a href="http://www.scotlandstowns.org/">Home</a></li>
+                  <li><a href="http://www.scotlandstowns.org/news-and-resources">News &amp; Resources</a></li>
+                  <li><a href="http://www.scotlandstowns.org/community">Community</a></li>
+                  <li><a href="http://www.scotlandstowns.org/about-us">About Us</a></li>
+                  <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
+                </ul>
+              </nav>
+              <div class="footer__terms">
+                <p class="text__small">
+                  &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
+                </p>
+              </div>
+            </div>
+          </footer>
+          
+          <br/>
+      
+          <div class="display">
+          
+            <footer class="footer">
+              <div class="footer__container clearfix">
+                <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
+                <a class="footer__twitter clearfix" href="https://twitter.com/ScotlandsTowns" target="_blank">
+                  <span class="heading heading__small">Follow us on Twitter &raquo;</span>
+                  <span class="icon"></span>
+                </a>
+                <nav class="footer__nav clearfix">
+                  <ul>
+                    <li><a href="http://www.scotlandstowns.org/">Home</a></li>
+                    <li><a href="http://www.scotlandstowns.org/news-and-resources">News &amp; Resources</a></li>
+                    <li><a href="http://www.scotlandstowns.org/community">Community</a></li>
+                    <li><a href="http://www.scotlandstowns.org/about-us">About Us</a></li>
+                    <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
+                  </ul>
+                </nav>
+                <div class="footer__terms">
+                  <p class="text__small">
+                    &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
+                  </p>
+                </div>
+              </div>
+            </footer>
+
+            <br/>
+                      
+            <iframe src="guidepatterns/mobilefooter.html"></iframe>
+          
+          </div>
+          <div class="js-tab-ui panels">
+              <ul class="js-tabs-list" role="tablist">
+                <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
+                </li>
+                <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
+                  SCSS
+                </li>
+                <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                  Generated CSS
+                </li>
+              </ul>
+              <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
+                <h2 class="js-panel__title">Markup</h2>
+                <pre>
+                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/footer.html")); ?></code>
+                </pre>
+              </div>
+              <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+                <h2 class="js-panel__title">SCSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/sass/0-header.scss"); ?></code>
+                </pre>
+              </div>            
+              <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+                <h2 class="js-panel__title">Generated CSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/output/0-footer.css"); ?></code>
+                </pre>
+              </div>
+            </div>
+          </div>
+
 
         
   <?php // BEGIN REGULAR PATTERN LIBRARY ============================
@@ -462,6 +571,29 @@
         <?php $i++; ?>
       <?php endforeach; ?>
     </div>
+    <footer class="footer">
+      <div class="footer__container clearfix">
+        <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
+        <a class="footer__twitter clearfix" href="https://twitter.com/ScotlandsTowns" target="_blank">
+          <span class="heading heading__small">Follow us on Twitter &raquo;</span>
+          <span class="icon"></span>
+        </a>
+        <nav class="footer__nav clearfix">
+          <ul>
+            <li><a href="http://www.scotlandstowns.org/">Home</a></li>
+            <li><a href="http://www.scotlandstowns.org/news-and-resources">News &amp; Resources</a></li>
+            <li><a href="http://www.scotlandstowns.org/community">Community</a></li>
+            <li><a href="http://www.scotlandstowns.org/about-us">About Us</a></li>
+            <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
+          </ul>
+        </nav>
+        <div class="footer__terms">
+          <p class="text__small">
+            &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
+          </p>
+        </div>
+      </div>
+    </footer>
   <script src="js/tabs.js"></script>
   </body>
 </html>

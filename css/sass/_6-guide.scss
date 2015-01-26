@@ -289,19 +289,8 @@ p.guidance {
 @media (min-width:19.25em) {
 	.js-tabs [role=tab] {
 		display: inline-block;
-		width: 4em;
-	}
-}
-
-@media (min-width:27.3125em) {
-	.js-tabs [role=tab] {
-		width: 7em;
-	}
-}
-
-@media (min-width:37.1875em) {
-	.js-tabs [role=tab] {
-		width: 10em;
+		width: auto;
+		padding: 0em 1.4em;
 	}
 }
 

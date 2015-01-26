@@ -50,7 +50,7 @@
     </header>
     
     <span class="versioninfo">
-        Version <?php echo $branchname; ?> <?php echo `git describe --tags`; ?> - <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">
+        Version <?php echo $branchname; ?> - <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">
           View on GitHub</a>
       </span>
     

@@ -12,11 +12,14 @@
 
 <?php 
   
-  $stringfromfile = file('.git/packed-refs', FILE_USE_INCLUDE_PATH);
-
-  echo $stringfromfile[2];
-
-
-  $branchname = foo;
+  $tags = `git describe --tags`;
+  
+  echo $tags;
+  
+  $parts = explode("-",$tags); 
+  //break the string up around the "/" character in $mystring 
+  
+  $branchname = $parts['0']; 
+  //grab the first part 
 
 ?>

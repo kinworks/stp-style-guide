@@ -8,13 +8,20 @@
   background-color: $mid-aqua;
   width: 100%;
   border-top: 0.8em solid $aqua;
-  border-bottom: 0.8em solid $dark-aqua;
   padding: 1em 0 0 0;
 }
 
 .footer__container {
   width: 90%;
   margin: 0 auto;
+}
+
+.footer__container.footer__container--dark {
+  width: 100%;
+  padding: 0 5%;
+  margin: 0;
+  background-color: $charcoal;
+  border-top: 0.9em solid $dark-aqua;
 }
 
 .footer__container .heading__medium {
@@ -26,8 +33,12 @@
 
 .footer__twitter {
   width: auto;
+  max-width: 15.4em;
   display: inline-block;
-  margin: 1.4em 0;
+  background-color: $charcoal;
+  margin: 1.6em 0;
+  border-bottom: 0.2em solid darken($dark-aqua,5%);
+  border-top: 0.1em solid lighten($aqua,5%);
   &:hover .heading {
     text-decoration: underline;
     background-color: darken($dark-aqua,5%);
@@ -41,11 +52,8 @@
   display: inline-block;
   float: right;
   width: auto;
-  background-color: $charcoal;
-  padding: 0.5em 0.8em 0.5em 0.8em;
+  padding: 0.6em 0.8em 0.4em 0.8em;
   margin: 0;
-  border-bottom: 0.15em solid darken($shadow,25%);
-  border-top: 0.1em solid lighten($aqua,5%);
   @include transition(background-color,0.12s); // Kin Mixin
 }
 
@@ -53,7 +61,7 @@
   display: inline-block;
   float: right;
   width: 2.5em;
-  height: 2.7em;
+  height: 2.5em;
   background: url('../../assets/twitter-icon.png');
   background-repeat: no-repeat;
   @include background-size(100%); // Kin Mixin
@@ -66,8 +74,10 @@
     background: url('../../assets/twitter-icon@2x.png');  
     @include background-size(100%); // Kin Mixin 
   }
-  border-bottom: 0.2em solid $dark-aqua;
-  border-top: 0.1em solid lighten($aqua,5%);
+}
+
+.footer__nav {
+  margin-bottom: 1.5em;
 }
 
 .footer__nav li {
@@ -89,6 +99,7 @@
 
 .footer__terms {
   margin-bottom: 2em;
+  color: $grey;
 }
 
 // Arbitrary breakpoint from handheld -> full layout - 

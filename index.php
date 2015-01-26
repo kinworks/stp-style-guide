@@ -13,7 +13,7 @@
     <script type="text/javascript">
       // Webfont loader - see https://github.com/typekit/webfontloader for details
 	    WebFontConfig = {
-	      typekit: { id: 'ovp2cfb' } // This is currently Ben's personal Typekit - needs an update when STP have their own account
+	      typekit: { id: 'ovp2cfb' }
 	    };
 	    (function() {
 	      var wf = document.createElement('script');
@@ -444,6 +444,9 @@
                   <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
                 </ul>
               </nav>
+              
+            </div>
+            <div class="footer__container footer__container--dark clearfix">
               <div class="footer__terms">
                 <p class="text__small">
                   &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
@@ -472,6 +475,9 @@
                     <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
                   </ul>
                 </nav>
+                
+              </div>
+              <div class="footer__container footer__container--dark clearfix">
                 <div class="footer__terms">
                   <p class="text__small">
                     &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
@@ -587,6 +593,9 @@
             <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
           </ul>
         </nav>
+        
+      </div>
+      <div class="footer__container footer__container--dark clearfix">
         <div class="footer__terms">
           <p class="text__small">
             &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 

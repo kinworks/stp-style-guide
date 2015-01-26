@@ -19,7 +19,7 @@
   $parts = explode("-",$tags); 
   //break the string up around the "/" character in $mystring 
   
-  $branchname = $parts['0']; 
+  $tagname = $parts['0']; 
   //grab the first part 
 
 ?>

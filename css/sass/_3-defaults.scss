@@ -1,0 +1,70 @@
+//::::::::::::::::::::::::::
+//::  Kin Defaults  ::::::::
+//::::::::::::::::::::::::::
+//::: PURPOSE: Default non-reset browser / box model fixes, 
+//::: any other default choices we use across projects.
+
+// Make everything to behave as IE box model - 
+// see http://quirksmode.org/css/user-interface/boxsizing.html
+
+* {
+  -webkit-box-sizing: border-box; // Safari <= 5
+  -moz-box-sizing: border-box; // Firefox <= 19
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Tell webkit to jog on with its auto-margins
+
+* {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0em;
+  -webkit-padding-after: 0em;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+}
+
+// Remove the webkit glow on forms when focused on, but be sure 
+// to replace it with an outline of some kind - this should then 
+// be overridden when styling focus throughout the document 
+
+// This ties in with the script tag in our header that sets an outline 
+// on every item for focus, then if JS is present removes it;
+// then uses JS to listen for keyboard use and re-applies for those
+// tabbing through. By @decadecity - 
+// https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus 
+
+*:focus {
+  outline: 0.1em solid orange;
+}
+.js *:focus {
+  outline-width: 0px;
+}
+.keyboard *:focus {
+  outline-width: 0.1em;
+}
+
+// Let us decide how to style form input submit buttons 
+// on mobile browsers
+
+input[type='submit']
+{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border-radius: 0;  
+}
+
+// Clearfix
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {clear: both;}

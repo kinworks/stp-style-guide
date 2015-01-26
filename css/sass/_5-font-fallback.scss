@@ -1,0 +1,28 @@
+// Font loading and fallback - some of the commented out 
+// lines are potential adjustment tools to tweak the fallback 
+// font to mimick metrics of the webfont for less FOUT issues
+
+// Fallback / load-in font
+body,
+.wf-loading body,
+.wf-inactive body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, 
+  Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, 
+  "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", 
+  Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  //letter-spacing: -0.04em;
+  //line-height: 273%;
+  font-size: 1em;
+}
+
+// Loaded Webfont
+.wf-active body {
+  font-family: "franklin-gothic-urw", Frutiger, "Frutiger Linotype", 
+  Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", 
+  Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", 
+  Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //letter-spacing: 0;
+  //line-height: 280%;
+  font-size: 1em;
+}

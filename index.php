@@ -50,7 +50,7 @@
     </header>
     
     <span class="versioninfo">
-        Version <?php echo $branchname; ?> - <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">
+        Version <?php echo $tagname; ?> - <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
           View on GitHub</a>
       </span>
     
@@ -61,7 +61,7 @@
       <h1 class="guidance">Introduction</h1>
       
       <p class="guidance">
-        For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $branchname; ?>" target="_blank">GitHub</a>.
+        For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
       </p>
       
       <br/>
@@ -87,7 +87,7 @@
               <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                 CSS
               </li>
-              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_1-normalize.scss" target="_blank">
+              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_1-normalize.scss" target="_blank">
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                   View Raw File &raquo;
                 </li>
@@ -122,7 +122,7 @@
               <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                 SCSS
               </li>
-              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_3-defaults.scss" target="_blank">
+              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_3-defaults.scss" target="_blank">
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                   View Raw File &raquo;
                 </li>
@@ -154,7 +154,7 @@
               <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                 SCSS
               </li>
-              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_2-mixins.scss" target="_blank">
+              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_2-mixins.scss" target="_blank">
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                   View Raw File &raquo;
                 </li>
@@ -233,7 +233,7 @@
               <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="true" data-tabgroup="<?php echo $i ?>">
                 SCSS
               </li>
-              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/css/sass/_4-colours.scss" target="_blank">
+              <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/css/sass/_4-colours.scss" target="_blank">
                 <li role="tab" id="tab<?php echo $scss ?>" aria-controls="scss<?php echo $scss ?>" aria-selected="false" data-tabgroup="<?php echo $i ?>" class="linkout">
                   View Raw File &raquo;
                 </li>
@@ -269,7 +269,7 @@
               To use the Typekit webfonts and fallbacks selected for STP's digital branding, you'll need: 
             </p>
             <ul>
-              <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
+              <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
               <li>The &lt;script&gt; found in 'Markup' (right) in your &lt;head&gt;, and; </li>
               <li>the fallback CSS (right)</li>
             </ul>
@@ -286,7 +286,7 @@
                 <li role="tab" id="tab-wfl-css" aria-controls="tab-wfl-css-panel" aria-selected="false" data-tabgroup="wfl">
                   CSS
                 </li>
-                <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $branchname; ?>/js/webfontloader.min.js" target="_blank">
+                <a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">
                   <li role="tab" class="linkout">
                     Webfontloader.min.js &raquo;
                   </li>

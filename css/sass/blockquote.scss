@@ -1,0 +1,21 @@
+// Ignore - Pattern uses mixins, which have to be imported directly
+@import '_2-mixins.scss';
+
+blockquote {
+	margin: 1em;
+	border-top: 0.1em solid;
+	border-bottom: 0.1em solid;
+	padding: 0 1em;
+	font-family: Palatino, Georgia, serif;
+	font-style: italic;
+	font-size: 1.25em;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	color: #888;
+	border-color: #ccc;
+	border-color: rgba(0,0,0,0.2);
+	@include border-radius(0.25em);
+}
+blockquote em {
+	font-style: normal;
+}

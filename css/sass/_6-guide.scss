@@ -1,0 +1,329 @@
+//:::::::::::::::::::::::::::::
+// Style Guide Layout / Styles
+//:::::::::::::::::::::::::::::
+
+.guide {
+  background-color: $grey; 
+  line-height: 1.5em;
+  font-size: 16px;
+  border: none;
+  color: #333; 
+}
+
+.guide body {
+  border: none;
+  font-size: 16px;
+}
+
+.versioninfo {
+  font-size: 1.1em;
+  color: #222;
+  display: inline-block;
+  margin: 0 0 1em 5%;
+}
+
+.versioninfo a {
+  //color: $dark-aqua;
+}
+
+.guide .styleguide {
+  background-color: #fff;
+  margin: 0 5%;
+  padding: 1.5em 2.5%;
+}
+
+.guide .pattern {
+  clear: both;
+  overflow: hidden;
+  border-bottom: 0.1em #959595 solid;
+  padding: 2em 0 0.5em 0;
+}
+
+.guide .pattern-header iframe {
+  outline: 0;
+  border: 0;
+  width: 30em;
+  overflow: hidden;
+}
+
+.guide .pattern-footer iframe {
+  outline: 0;
+  border: 0;
+  width: 30em;
+  height: 33em;
+  overflow: hidden;
+}
+
+.guide .pattern-footer .hljs {
+  min-height: 50em;
+}
+
+.guide .pattern .panels {
+  margin-top: 0.5em;
+}
+
+h1.guidance,
+h2.guidance {
+  color: $dark-aqua;
+  text-transform: none;
+  font-weight: 500;
+}
+
+p.guidance {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  max-width: 61em;
+}
+
+.swatches h2 {
+  width: 100%;
+  float: left;
+  margin: 1em 0 1.3em 0;
+}
+
+.swatches ul {
+  list-style-type: none;
+}
+
+.swatches li {
+  width: 6.4em;
+  height: 8em;
+  border: 0.1em solid #ddd;
+  padding: 0.7em;
+  margin: 0 2em 2em 0;
+  float: left;
+  border-bottom: 0.2em solid $grey;
+}
+
+.swatches span.aqua {
+  background-color: $aqua;
+}
+
+.swatches span.mid-aqua {
+  background-color: $mid-aqua;
+}
+
+.swatches span.dark-aqua {
+  background-color: $dark-aqua;
+}
+
+.swatches span.charcoal {
+  background-color: $charcoal;
+}
+
+.swatches span.white {
+  background-color: $white;
+}
+
+.swatches span.grey {
+  background-color: $grey;
+}
+
+.swatches span.shadow {
+  background-color: $shadow;
+}
+
+.swatches span.purple {
+  background-color: $purple;
+}
+
+.swatches span.blue {
+  background-color: $blue;
+}
+
+.swatches li b {
+  font-size: 0.9em;
+}
+
+.swatches li span {
+  display: inline-block;
+  width: 5em;
+  height: 4.5em;
+  border: 0.1em solid #ddd;
+  margin: 0 0 0.2em 0;
+}
+
+.display .webfontloader ul li {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+  &::before {
+   content: "— "; 
+  }
+}
+
+.webfontloader .display ul {
+  margin-bottom: 3em;
+}
+
+.webfontloader .hljs {
+  min-height: 26em;
+  max-height: 26em;
+}
+
+.hierarchy h2.guidance {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 0.1em solid #ccc;
+}
+
+.hierarchy .panels {
+  padding-top: 3em;
+}
+
+.hierarchy .hljs {
+  max-height: 42em;
+}
+
+.bg-grey,
+.bg-charcoal,
+.bg-aqua {
+  padding: 1em;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.bg-charcoal {
+  background-color: $charcoal;
+}
+
+.bg-aqua {
+  background-color: $mid-aqua;
+}
+
+.pattern-buttons h2 {
+  margin-bottom: 1em;
+}
+
+.pattern-buttons .bg-grey,
+.pattern-buttons .bg-charcoal,
+.pattern-buttons .bg-aqua { 
+  margin-top: 2em;
+  padding: 1em 1em 0 1em
+}
+
+.pattern-buttons .panels,
+.pattern-buttons .panels div {
+  margin-top: 0;
+}
+
+.pattern-buttons .cta {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.pattern-buttons .hljs {
+  max-height: 22em;
+  padding: 1em;
+}
+
+@media only all and (min-width: 41em) {
+  .guide .pattern .display, 
+  .guide .pattern .panels {
+    width: 48%;
+    float: left;
+    margin-top: 0;
+  }
+  
+  .guide .pattern .panels {
+    margin-left: 4%;
+  }
+}
+
+/* =======================
+  Code Blocks
+========================*/
+
+.hljs,
+.hljs * {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+.hljs {
+  background-color: $charcoal !important;
+  font-size: 1.1em;
+  padding: 1em !important;
+  max-height: 17em;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 0.2em solid $charcoal;
+    background-color: rgba(255,255,255,.7);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
+  }
+}
+
+.colour .hljs {
+  max-height: 50em;
+}
+
+.source pre,
+.style pre {
+  margin-top: -1.75em;
+}
+
+.panels ul li {
+  border: 0.1em solid #eaeaea;
+  &:focus {
+    border: 0.1em solid #E1BC29;
+  }
+}
+
+.panels ul li.linkout {
+  background-color: #fff;
+  color: #01B2CC;
+}
+
+/* ==========================================================================
+   Tabbed UI
+   ========================================================================== */
+
+/* Tabs
+   ========================================================================== */
+.js-tabs [role=tablist] {
+	padding: 0;
+}
+
+.js-tabs [role=tab] {
+	cursor: pointer;
+	color: #000;
+	background-color: #eaeaea;
+	list-style: none;
+	text-align: center;
+	line-height: 2.75;
+	margin: 0 0.25em 0.25em 0;
+}
+
+@media (min-width:19.25em) {
+	.js-tabs [role=tab] {
+		display: inline-block;
+		width: auto;
+		padding: 0em 1.4em;
+	}
+}
+
+.js-tabs [aria-selected=true] {
+	color: #fff;
+	background-color: $charcoal;
+	border: 0.1em solid $charcoal;
+	&:focus {
+    border: 0.1em solid #E1BC29;
+  }
+}
+
+/* Prevent FOUC */
+.js-tabs .js-panel {
+	display: none;
+}
+
+.js-tabs .js-panel.first {
+  display: block;
+}
+
+.js-tabs .js-panel__title {
+	display: none;
+}

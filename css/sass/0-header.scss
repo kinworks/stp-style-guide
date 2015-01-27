@@ -1,0 +1,96 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_2-mixins.scss'; @import '_4-colours.scss';
+
+// Mobile-first - stacking header with 100% wide
+// sections, then enhanced via media query
+
+.header {
+  background-color: $charcoal;
+  width: 100%;
+  margin: 0 0 1.5em 0;
+  text-align: center;
+  border-bottom: 0.2em solid $shadow;
+}
+
+.header__contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__title {
+  display: inline-block;
+  width: 100%;
+  background-color: $aqua;
+  text-align: center;
+  padding: 0.8em 1em 1em 1em;
+  border-bottom: 0.4em solid $mid-aqua;
+  border-top: 0.2em solid lighten($aqua,10%);
+}
+
+.header__title .heading {
+  color: $white;
+  margin: 0 auto;
+  line-height: 1.1em;
+  border-bottom: none;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 10.3125em; //13.75em is full size;
+  height: 2.71875em; //3.625em is full size;
+  background: url('../../assets/stp-logo.png');
+  @include background-size(100%); // Kin Mixin
+  // Retina-quality asset load:
+  @media (-webkit-min-device-pixel-ratio: 1.5), 
+         (min--moz-device-pixel-ratio: 1.5), 
+         (-o-min-device-pixel-ratio: 2/1), 
+         (min-device-pixel-ratio: 1.5), 
+         (min-resolution: 1.5dppx) {
+    background: url('../../assets/stp-logo@2x.png');  
+    @include background-size(100%); // Kin Mixin 
+  }
+  border-bottom: none;
+  margin: 1.2em 0 0.9em 0;
+}
+
+// Arbitrary breakpoint from handheld -> full layout - 
+// your choice should vary depending at what width your
+// header can float on the same row
+
+@media only all and (min-width: 41em) {
+  
+  .header {
+    padding: 1.7em 0 0 0;
+  }
+  
+  .header__contents {
+    width: 90%;
+    margin: 0 5%; // This depends on what sizes you
+    // need to use to line edges up with content edges
+  }
+  
+  .header__title {
+    float: left;
+    text-align: left;
+    width: auto;
+    padding: 1.65em 1.8em 1.45em 1.8em;
+    border-bottom: 0.2em solid darken($mid-aqua,3%);
+  }
+  
+  .header__logo {
+    float: right;
+    width: 13.75em; 
+    height: 3.625em;
+    margin: 0.3em 0 0.9em 0;
+  }
+  
+  .header__trim {
+    display: inline-block;
+    float: left;
+    height: 0.4em;
+    width: 100%;
+    background-color: lighten($aqua,5%);
+    border-top: 0.1em solid lighten($aqua,15%);
+  }
+
+} // End min 41em

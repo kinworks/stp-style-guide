@@ -1,0 +1,103 @@
+.heading {
+  font-weight: 500; //Medium - see below
+  font-style: normal;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.heading__large {
+  font-size: 2em;
+}
+
+.heading__medium {
+  font-size: 1.75em;
+}
+
+.heading__small {
+  font-size: 1.5em;
+}
+
+p,
+ul,
+ol,
+.text {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.text__callout {
+  font-size: 1.4em;
+}
+
+.text__small {
+  font-size: 1em;
+}
+
+.text--aqua {
+  color: $mid-aqua;
+  //WCAG 2 AA Compliant only at >=18pt; ratio 4.31 against $white
+}
+
+b, 
+strong {
+  font-weight: 700;
+}
+
+i, 
+em {
+  font-style: italic;
+}
+
+a {
+  color: $mid-aqua;
+  border-bottom: 0.1em dotted $mid-aqua;
+  text-decoration: none;
+}
+
+.link--dark-aqua {
+  color: $dark-aqua;
+  border-bottom: 0.1em dotted $dark-aqua;
+}
+
+.link--aqua {
+  color: $aqua;
+  border-bottom: 0.1em dotted $aqua;
+}
+
+.link--white {
+  color: $white;
+  border-bottom: 0.1em dotted $white;
+}
+
+//// Franklin Gothic URW - Typekit Weights and Styles available 
+// in the STP Kit for reference;
+
+/* Light 
+  font-weight: 300;
+  font-style: normal;
+
+// Book 
+  font-weight: 400;
+  font-style: normal;
+
+// Book Italic 
+  font-weight: 400;
+  font-style: italic;
+
+// Medium 
+  font-weight: 500;
+  font-style: normal;
+
+// Demi 
+  font-weight: 700;
+  font-style: normal;
+
+// Heavy 
+  font-weight: 900;
+  font-style: normal;
+  
+font-family: "franklin-gothic-urw";
+
+//////// */

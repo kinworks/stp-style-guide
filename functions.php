@@ -1,4 +1,3 @@
-
 <?php 
   //APPROACH 1
   

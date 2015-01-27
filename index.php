@@ -524,6 +524,30 @@
           </div>
 
 
+<?php // BLOCK LAYOUT PATTERN ==================== ?>
+    
+    <div class="pattern pattern-blocks">
+      
+          <h2 class="guidance">Layout: Blocks</h2>
+          <br/>
+          <p class="guidance">
+            Layout across STP sites is handled using modules or 'blocks' against a $grey background. Blocks can be any width or height, provided that certain layout rules are adhered to.
+          </p>
+          
+          <div class="blocks clearfix">
+            
+            <div class="block block--50">
+              Stuff
+            </div>
+            
+            <div class="block block--50 block--aqua">
+              Stuff
+            </div>
+            
+          </div><!--/blocks-->
+          
+    </div><!--/pattern-->               
+
         
   <?php // BEGIN REGULAR PATTERN LIBRARY ============================
         

@@ -1,0 +1,30 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_2-mixins.scss'; @import '_4-colours.scss';
+
+/* Blocks - Mobile-first styles */
+
+.block {
+  background-color: $white;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 0.2em solid $shadow;
+}
+
+.block--aqua {
+  background-color: $mid-aqua;
+}
+
+// Arbitrary breakpoint from handheld -> full layout - 
+// your choice should vary depending on your layout
+
+@media only all and (min-width: 41em) {
+
+/* Layout Classes */
+
+.block--50 {
+  width: 47%;
+  margin: 0 1.5% 2em 1.5%;
+  float: left;
+}
+
+} // end min 41em;

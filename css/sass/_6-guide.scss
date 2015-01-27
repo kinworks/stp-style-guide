@@ -218,6 +218,14 @@ p.guidance {
   padding: 1em;
 }
 
+.blocks {
+  width: 100%;
+  background-color: $grey;
+  padding: 2em 2.5% 2em 2.5%;
+  margin: 0 0 2em 0;
+}
+
+
 @media only all and (min-width: 41em) {
   .guide .pattern .display, 
   .guide .pattern .panels {

@@ -64,6 +64,10 @@
         For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
       </p>
       
+      <p class="guidance">
+        <b>Warning:</b> This guide has not been extensively browser tested, and should be viewed in Google Chrome, with the resulting rendering being taken as the target for reproducing the assets visually. With further development and improvement we hope to add to it and document any UA bugs that arise.
+      </p>
+      
       <br/>
       
       <h1 class="guidance">Core Assets</h1>
@@ -728,6 +732,7 @@
             <ul class="guidance">
               <li>Where possible, a neat solution to scaling images for different viewports is to use them as background images; this is what our examples use, with the image URLs and heights set in markup for demo purposes. If you're able to, looking into a solution for serving scaled images with &lt;picture&gt; or similar would be advantageous, but isn't mandated by this guide.</li>
               <li>For blocks with a block__image--top, don't set a top trim. Similarly, for blocks with a block__image--bottom, don't set a bottom trim.</li>
+              <li>We've set block__image--left and --right to 50% width, along with the related classes on block__content - but these are sizes that can of course be more adjusted to suit your content.</li>
             </ul>
           </div>
           

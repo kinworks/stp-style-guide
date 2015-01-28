@@ -6,12 +6,112 @@
 .block {
   background-color: $white;
   display: inline-block;
+  margin-bottom: 1.5em;
   width: 100%;
   border-bottom: 0.2em solid $shadow;
 }
 
+/* /// Block colours */
+
 .block--aqua {
   background-color: $mid-aqua;
+}
+
+.block--dark-aqua {
+  background-color: $dark-aqua;
+  color: $white;
+}
+
+.block--charcoal {
+  background-color: $charcoal;
+  color: $white;
+}
+
+/* /// Top trim - only for blocks with no header bar */
+
+.block--trim-top-aqua {
+  border-top: 0.4em solid $aqua;
+}
+
+.block--trim-top-dark-aqua {
+  border-top: 0.4em solid $dark-aqua;
+}
+
+.block--trim-top-charcoal {
+  border-top: 0.4em solid $charcoal;
+}
+
+/* /// Bottom trim should only be used on white blocks */
+
+.block--trim-bottom-aqua {
+  // block shadows are border-bottom so we use :after to 
+  // allow bottom trim colors; works in IE8 and up, 
+  // so ¯\_(ツ)_/¯ it's an enhancement!
+  &:after {
+    content: "";
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 0.3em;
+    background-color: $aqua;
+  }
+}
+
+.block--trim-bottom-dark-aqua {
+  // block shadows are border-bottom so we use :after to 
+  // allow bottom trim colors; works in IE8 and up, 
+  // so ¯\_(ツ)_/¯ it's an enhancement!
+  &:after {
+    content: "";
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 0.3em;
+    background-color: $dark-aqua;
+  }
+}
+
+.block--trim-bottom-charcoal {
+  // block shadows are border-bottom so we use :after to 
+  // allow bottom trim colors; works in IE8 and up, 
+  // so ¯\_(ツ)_/¯ it's an enhancement!
+  &:after {
+    content: "";
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 0.3em;
+    background-color: $charcoal;
+  }
+}
+
+/* /// Block heading bar */
+
+.block__heading {
+  padding: 0.6em 1.2em 0.5em 1.2em;
+  background-color: $charcoal;
+  color: $white;
+}
+
+.block__heading--aqua {
+  background-color: $mid-aqua;
+}
+
+.block__heading--dark-aqua {
+  background-color: $dark-aqua;
+}
+
+.block__heading .heading {
+  font-size: 1.2em;
+}
+
+/* /// Block Content */
+
+.block__content {
+  padding: 1em 1.2em 1.2em 1.2em;
+  margin: 0 0 0 0;
+  font-size: 1.1em;
+  line-height: 1.3em;
 }
 
 // Arbitrary breakpoint from handheld -> full layout - 
@@ -19,12 +119,45 @@
 
 @media only all and (min-width: 41em) {
 
+/* Block changes */
+
+.block {
+  margin: 0 1.5% 2em 1.5%;
+  float: left;
+}
+
 /* Layout Classes */
+
+.block--25 {
+  width: 22%;
+}
+
+.block--33 {
+  width: 30.3%;
+}
+
+.block--40 {
+  width: 37%;
+}
 
 .block--50 {
   width: 47%;
-  margin: 0 1.5% 2em 1.5%;
-  float: left;
+}
+
+.block--60 {
+  width: 57%;
+}
+
+.block--66 {
+  width: 63.6%;
+}
+
+.block--75 {
+  width: 72%;
+}
+
+.block--100 {
+  width: 97%;
 }
 
 } // end min 41em;

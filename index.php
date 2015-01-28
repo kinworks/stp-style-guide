@@ -268,7 +268,7 @@
             <p class="guidance">
               To use the Typekit webfonts and fallbacks selected for STP's digital branding, you'll need: 
             </p>
-            <ul>
+            <ul class="guidance">
               <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
               <li>The &lt;script&gt; found in 'Markup' (right) in your &lt;head&gt;, and; </li>
               <li>the fallback CSS (right)</li>
@@ -537,14 +537,171 @@
           <div class="blocks clearfix">
             
             <div class="block block--50">
-              Stuff
+              <div class="block__heading">
+                <span class="heading">Standard Block</span>
+              </div>
+              <div class="block__content">
+                Standard Block, charcoal heading bar (default bar);
+                Layout: 50% (.block--50)
+              </div>
             </div>
             
             <div class="block block--50 block--aqua">
-              Stuff
+              <div class="block__heading">
+                <span class="heading">Aqua Block</span>
+              </div>
+              <div class="block__content">
+                Aqua Block, charcoal heading bar (default bar);
+                Layout: 50% (.block--50)
+              </div>
+            </div>
+            
+            <div class="block block--75 block--dark-aqua">
+              <div class="block__heading block__heading--aqua">
+                <span class="heading">Dark Aqua Block</span>
+              </div>
+              <div class="block__content">
+                Dark Aqua Block, aqua heading bar;
+                Layout: 75% (.block--75)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--charcoal">
+              <div class="block__heading block__heading--dark-aqua">
+                <span class="heading">Charcoal Block</span>
+              </div>
+              <div class="block__content">
+                Charcoal Block, dark aqua heading bar;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--33 block--trim-bottom-aqua">
+              <div class="block__content">
+                White Block with aqua bottom trim;
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--33 block--trim-bottom-charcoal">
+              <div class="block__content">
+                White Block with charcoal bottom trim;
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--33 block--trim-bottom-dark-aqua">
+              <div class="block__content">
+                White Block with dark aqua bottom trim;
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--trim-top-aqua">
+              <div class="block__content">
+                White block with .block--trim-top-aqua;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--aqua block--trim-top-dark-aqua">
+              <div class="block__content">
+                Aqua block with .block--trim-top-dark-aqua;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--dark-aqua block--trim-top-charcoal">
+              <div class="block__content">
+                Dark aqua block with .block--trim-top-charcoal;
+                Layout: 25% (.block--25)
+              </div>  
+            </div>
+            
+            <div class="block block--25 block--charcoal block--trim-top-dark-aqua">
+              <div class="block__content">
+                Charcoal Block with .block--trim-top-dark-aqua;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--66">
+              <div class="block__heading">
+                <span class="heading">66% Standard Block</span>
+              </div>
+              <div class="block__content">
+                Standard Block, charcoal heading bar (default bar);
+                Layout: 66% (.block--66)
+              </div>
+            </div>
+            
+            <div class="block block--33">
+              <div class="block__heading">
+                <span class="heading">33% Standard Block</span>
+              </div>
+              <div class="block__content">
+                Standard Block, charcoal heading bar (default bar);
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--100 block--aqua">
+              <div class="block__heading block__heading--aqua">
+                <span class="heading">100% Aqua Block</span>
+              </div>
+              <div class="block__content">
+                Aqua Block, aqua heading bar;
+                Layout: 100% (.block--100)
+              </div>
             </div>
             
           </div><!--/blocks-->
+          
+          <div class="display">
+            <h2 class="guidance">Block rules / guidance</h2>
+            <br/>
+            <ul class="guidance">
+              <li>
+                Adding top 'trim' uses border-top in css, but due to the use of border-bottom for block shadows, adding bottom trim requires the optional markup element .block__bottom-trim which is simply a 100% width div at the end of the block;
+              </li>
+              <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block;</li>
+              <li>Bottom trim should only be used on white blocks, and only in $aqua;</li>
+              <li>Top trim should only be used where there's no heading bar;</li>
+              <li>Feel free to use <a href="http://masonry.desandro.com/" target="_blank">Masonry</a> for layout - we're doing so for news and resource content on the main website;</li>
+              <li>Block width classes are for guidance; the actual widths and implementation for your app can differ, however a 3% side margin and 1em top/bottom margin should be observed regardless.</li>
+            </ul>
+          </div>
+          
+          <div class="js-tab-ui panels">
+              <ul class="js-tabs-list" role="tablist">
+                <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
+                </li>
+                <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
+                  SCSS
+                </li>
+                <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                  Generated CSS
+                </li>
+              </ul>
+              <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
+                <h2 class="js-panel__title">Markup</h2>
+                <pre>
+                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/footer.html")); ?></code>
+                </pre>
+              </div>
+              <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+                <h2 class="js-panel__title">SCSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/sass/0-header.scss"); ?></code>
+                </pre>
+              </div>            
+              <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+                <h2 class="js-panel__title">Generated CSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/output/0-footer.css"); ?></code>
+                </pre>
+              </div>
+            </div>
           
     </div><!--/pattern-->               
 

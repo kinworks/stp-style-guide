@@ -75,6 +75,20 @@ p.guidance {
   max-width: 61em;
 }
 
+ul.guidance li {
+  list-style-type: none;
+  &:before {
+    content: "— ";
+  }
+  margin: 0 0 1.4em 1em;
+  font-size: 1.1em;
+}
+
+.js-tabs ul.guidance li [aria-selected=true] {
+  color: $charcoal;
+  background-color: $white;
+}
+
 .swatches h2 {
   width: 100%;
   float: left;
@@ -218,7 +232,32 @@ p.guidance {
   padding: 1em;
 }
 
+.blocks {
+  width: 100%;
+  background-color: $grey;
+  padding: 2em 0 2em 0;
+  margin: 0 0 2em 0;
+}
+
+.pattern-blocks .hljs {
+  max-height: 40em;
+}
+
+
 @media only all and (min-width: 41em) {
+  
+  .blocks {
+    padding: 2em 2.5% 2em 2.5%;
+  }
+  
+  .blocks .block--66 {
+    margin-bottom: 4em;
+  }
+  
+  .blocks .guide-lastbanff {
+    margin-bottom: 3em;
+  }
+  
   .guide .pattern .display, 
   .guide .pattern .panels {
     width: 48%;
@@ -306,7 +345,7 @@ p.guidance {
 	}
 }
 
-.js-tabs [aria-selected=true] {
+.js-tabs .js-tab-ui [aria-selected=true] {
 	color: #fff;
 	background-color: $charcoal;
 	border: 0.1em solid $charcoal;

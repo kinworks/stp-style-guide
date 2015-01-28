@@ -268,7 +268,7 @@
             <p class="guidance">
               To use the Typekit webfonts and fallbacks selected for STP's digital branding, you'll need: 
             </p>
-            <ul>
+            <ul class="guidance">
               <li>The webfont loader script (<a href="https://raw.githubusercontent.com/kinworks/stp-style-guide/<?php echo $tagname; ?>/js/webfontloader.min.js" target="_blank">here,</a> minified)</li>
               <li>The &lt;script&gt; found in 'Markup' (right) in your &lt;head&gt;, and; </li>
               <li>the fallback CSS (right)</li>
@@ -523,6 +523,246 @@
             </div>
           </div>
 
+
+<?php // BLOCK LAYOUT PATTERN ==================== ?>
+    
+    <div class="pattern pattern-blocks">
+      
+          <h2 class="guidance">Layout: Blocks</h2>
+          <br/>
+          <p class="guidance">
+            Layout across STP sites is handled using modules or 'blocks' against a $grey background. Blocks can be any width or height, provided that certain layout rules are adhered to.
+          </p>
+          
+          <div class="blocks clearfix">
+            
+            <div class="block block--50">
+              <div class="block__heading">
+                <span class="heading">Standard Block</span>
+              </div>
+              <div class="block__content">
+                Standard Block, charcoal heading bar (default bar);
+                Layout: 50% (.block--50)
+              </div>
+            </div>
+            
+            <div class="block block--50 block--aqua">
+              <div class="block__heading">
+                <span class="heading">Aqua Block</span>
+              </div>
+              <div class="block__content">
+                Aqua Block, charcoal heading bar (default bar);
+                Layout: 50% (.block--50)
+              </div>
+            </div>
+            
+            <div class="block block--75 block--dark-aqua">
+              <div class="block__heading block__heading--aqua">
+                <span class="heading">Dark Aqua Block</span>
+              </div>
+              <div class="block__content">
+                Dark Aqua Block, aqua heading bar;
+                Layout: 75% (.block--75)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--charcoal">
+              <div class="block__heading block__heading--dark-aqua">
+                <span class="heading">Charcoal Block</span>
+              </div>
+              <div class="block__content">
+                Charcoal Block, dark aqua heading bar;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--33 block--trim-bottom-aqua">
+              <div class="block__content">
+                White Block with aqua bottom trim;
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--33 block--trim-bottom-charcoal">
+              <div class="block__content">
+                White Block with charcoal bottom trim;
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--33 block--trim-bottom-dark-aqua">
+              <div class="block__content">
+                White Block with dark aqua bottom trim;
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--trim-top-aqua">
+              <div class="block__content">
+                White block with .block--trim-top-aqua;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--aqua block--trim-top-dark-aqua">
+              <div class="block__content">
+                Aqua block with .block--trim-top-dark-aqua;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--25 block--dark-aqua block--trim-top-charcoal">
+              <div class="block__content">
+                Dark aqua block with .block--trim-top-charcoal;
+                Layout: 25% (.block--25)
+              </div>  
+            </div>
+            
+            <div class="block block--25 block--charcoal block--trim-top-dark-aqua">
+              <div class="block__content">
+                Charcoal Block with .block--trim-top-dark-aqua;
+                Layout: 25% (.block--25)
+              </div>
+            </div>
+            
+            <div class="block block--66">
+              <div class="block__heading">
+                <span class="heading">66% Standard Block</span>
+              </div>
+              <div class="block__content">
+                Standard Block, charcoal heading bar (default bar);
+                Layout: 66% (.block--66)
+              </div>
+            </div>
+            
+            <div class="block block--33">
+              <div class="block__heading">
+                <span class="heading">33% Standard Block</span>
+              </div>
+              <div class="block__content">
+                Standard Block, charcoal heading bar (default bar);
+                Layout: 33% (.block--33)
+              </div>
+            </div>
+            
+            <div class="block block--100 block--aqua">
+              <div class="block__heading block__heading--aqua">
+                <span class="heading">100% Aqua Block</span>
+              </div>
+              <div class="block__content">
+                Aqua Block, aqua heading bar;
+                Layout: 100% (.block--100)
+              </div>
+            </div>
+            
+            <div class="block block--50 block--trim-bottom-aqua">
+              <div class="block__image block__image--top"
+                style="background: url('guidepatterns/images/banff.jpg');
+                  min-height: 12.5625em">
+                &nbsp;
+              </div>
+              <div class="block__content">
+                White Block, block__image--top;
+                Layout: 50% (.block--50), block--trim-bottom-aqua
+              </div>
+            </div>
+            
+            <div class="block block--50 guide-lastbanff">
+              <div class="block__content">
+                White Block, block__image--top;
+                Layout: 50% (.block--50)
+              </div>
+              <div class="block__image block__image--bottom"
+                style="background: url('guidepatterns/images/banff.jpg');
+                  height: 12.5625em">
+                &nbsp;
+              </div>
+            </div>
+            
+            <div class="block block--50">
+              <div class="block__heading">
+                <span class="heading">Standard Block</span>
+              </div>
+              <div class="block__image block__image--left"
+                style="background: url('guidepatterns/images/edinburgh.jpg') bottom center;
+                  height: 30em">
+                &nbsp;
+              </div>
+              <div class="block__content block__content--right">
+                White Block, with content set to block__content--left and image set to block__image--right;
+                Layout: 50% (.block--50)
+              </div>
+            </div>
+            
+            <div class="block block--50">
+              <div class="block__heading">
+                <span class="heading">Standard Block</span>
+              </div>
+              <div class="block__content block__content--left">
+                White Block, with content set to block__content--left and image set to block__image--right;
+                Layout: 50% (.block--50)
+              </div>
+              <div class="block__image block__image--right"
+                style="background: url('guidepatterns/images/edinburgh.jpg') bottom center;
+                  height: 30em">
+                &nbsp;
+              </div>
+            </div>
+            
+          </div><!--/blocks-->
+          
+          <div class="display">
+            <h2 class="guidance">Block / layout rules & guidance</h2>
+            <br/>
+            <ul class="guidance">
+              <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block.</li>
+              <li>Bottom trim should only be used on white blocks.</li>
+              <li>Top trim should only be used where there's no heading bar on a block.</li>
+              <li>Feel free to use <a href="http://masonry.desandro.com/" target="_blank">Masonry</a> for layout - we're doing so for news and resource content on the main website.</li>
+              <li>Block width classes are for guidance; the actual widths and implementation for your app can differ, however a 3% side margin and 1em top/bottom margin should be observed regardless.</li>
+              <li>Stacking blocks using media queries (e.g. for tablet sizes, turning a row of block--25 into two rows of block--50) is at your own discretion based on your block content. We don't provide any classes in this style guide for doing these manipulations.</li>
+            </ul>
+            <br/>
+            <h3 class="guidance">For Image Blocks;</h3>
+            <br/>
+            <ul class="guidance">
+              <li>Where possible, a neat solution to scaling images for different viewports is to use them as background images; this is what our examples use, with the image URLs and heights set in markup for demo purposes. If you're able to, looking into a solution for serving scaled images with &lt;picture&gt; or similar would be advantageous, but isn't mandated by this guide.</li>
+              <li>For blocks with a block__image--top, don't set a top trim. Similarly, for blocks with a block__image--bottom, don't set a bottom trim.</li>
+            </ul>
+          </div>
+          
+          <div class="js-tab-ui panels">
+              <ul class="js-tabs-list" role="tablist">
+                <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
+                </li>
+                <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
+                  SCSS
+                </li>
+                <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                  Generated CSS
+                </li>
+              </ul>
+              <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
+                <h2 class="js-panel__title">Markup</h2>
+                <pre>
+                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/blocks.html")); ?></code>
+                </pre>
+              </div>
+              <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+                <h2 class="js-panel__title">SCSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/sass/1-blocks.scss"); ?></code>
+                </pre>
+              </div>            
+              <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+                <h2 class="js-panel__title">Generated CSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/output/1-blocks.css"); ?></code>
+                </pre>
+              </div>
+            </div>
+          
+    </div><!--/pattern-->               
 
         
   <?php // BEGIN REGULAR PATTERN LIBRARY ============================

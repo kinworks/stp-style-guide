@@ -64,6 +64,10 @@
         For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
       </p>
       
+      <p class="guidance">
+        <b>Warning:</b> This guide has not been extensively browser tested, and should be viewed in Google Chrome, with the resulting rendering being taken as the target for reproducing the assets visually. With further development and improvement we hope to add to it and document any UA bugs that arise.
+      </p>
+      
       <br/>
       
       <h1 class="guidance">Core Assets</h1>

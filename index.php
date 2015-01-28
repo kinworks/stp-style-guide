@@ -655,20 +655,79 @@
               </div>
             </div>
             
+            <div class="block block--50 block--trim-bottom-aqua">
+              <div class="block__image block__image--top"
+                style="background: url('guidepatterns/images/banff.jpg');
+                  min-height: 12.5625em">
+                &nbsp;
+              </div>
+              <div class="block__content">
+                White Block, block__image--top;
+                Layout: 50% (.block--50), block--trim-bottom-aqua
+              </div>
+            </div>
+            
+            <div class="block block--50 guide-lastbanff">
+              <div class="block__content">
+                White Block, block__image--top;
+                Layout: 50% (.block--50)
+              </div>
+              <div class="block__image block__image--bottom"
+                style="background: url('guidepatterns/images/banff.jpg');
+                  height: 12.5625em">
+                &nbsp;
+              </div>
+            </div>
+            
+            <div class="block block--50">
+              <div class="block__heading">
+                <span class="heading">Standard Block</span>
+              </div>
+              <div class="block__image block__image--left"
+                style="background: url('guidepatterns/images/edinburgh.jpg') bottom center;
+                  height: 30em">
+                &nbsp;
+              </div>
+              <div class="block__content block__content--right">
+                White Block, with content set to block__content--left and image set to block__image--right;
+                Layout: 50% (.block--50)
+              </div>
+            </div>
+            
+            <div class="block block--50">
+              <div class="block__heading">
+                <span class="heading">Standard Block</span>
+              </div>
+              <div class="block__content block__content--left">
+                White Block, with content set to block__content--left and image set to block__image--right;
+                Layout: 50% (.block--50)
+              </div>
+              <div class="block__image block__image--right"
+                style="background: url('guidepatterns/images/edinburgh.jpg') bottom center;
+                  height: 30em">
+                &nbsp;
+              </div>
+            </div>
+            
           </div><!--/blocks-->
           
           <div class="display">
-            <h2 class="guidance">Block rules / guidance</h2>
+            <h2 class="guidance">Block / layout rules & guidance</h2>
             <br/>
             <ul class="guidance">
-              <li>
-                Adding top 'trim' uses border-top in css, but due to the use of border-bottom for block shadows, adding bottom trim requires the optional markup element .block__bottom-trim which is simply a 100% width div at the end of the block;
-              </li>
-              <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block;</li>
-              <li>Bottom trim should only be used on white blocks, and only in $aqua;</li>
-              <li>Top trim should only be used where there's no heading bar;</li>
-              <li>Feel free to use <a href="http://masonry.desandro.com/" target="_blank">Masonry</a> for layout - we're doing so for news and resource content on the main website;</li>
+              <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block.</li>
+              <li>Bottom trim should only be used on white blocks.</li>
+              <li>Top trim should only be used where there's no heading bar on a block.</li>
+              <li>Feel free to use <a href="http://masonry.desandro.com/" target="_blank">Masonry</a> for layout - we're doing so for news and resource content on the main website.</li>
               <li>Block width classes are for guidance; the actual widths and implementation for your app can differ, however a 3% side margin and 1em top/bottom margin should be observed regardless.</li>
+              <li>Stacking blocks using media queries (e.g. for tablet sizes, turning a row of block--25 into two rows of block--50) is at your own discretion based on your block content. We don't provide any classes in this style guide for doing these manipulations.</li>
+            </ul>
+            <br/>
+            <h3 class="guidance">For Image Blocks;</h3>
+            <br/>
+            <ul class="guidance">
+              <li>Where possible, a neat solution to scaling images for different viewports is to use them as background images; this is what our examples use, with the image URLs and heights set in markup for demo purposes. If you're able to, looking into a solution for serving scaled images with &lt;picture&gt; or similar would be advantageous, but isn't mandated by this guide.</li>
+              <li>For blocks with a block__image--top, don't set a top trim. Similarly, for blocks with a block__image--bottom, don't set a bottom trim.</li>
             </ul>
           </div>
           
@@ -686,19 +745,19 @@
               <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
                 <h2 class="js-panel__title">Markup</h2>
                 <pre>
-                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/footer.html")); ?></code>
+                  <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/blocks.html")); ?></code>
                 </pre>
               </div>
               <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/sass/0-header.scss"); ?></code>
+                  <code><?php echo file_get_contents("css/sass/1-blocks.scss"); ?></code>
                 </pre>
               </div>            
               <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
                 <h2 class="js-panel__title">Generated CSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/output/0-footer.css"); ?></code>
+                  <code><?php echo file_get_contents("css/output/1-blocks.css"); ?></code>
                 </pre>
               </div>
             </div>

@@ -9,7 +9,8 @@
   width: 100%;
   margin: 0 0 1.5em 0;
   text-align: center;
-  border-bottom: 0.2em solid $shadow;
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid darken($mid-aqua,2%);
 }
 
 .header__contents {
@@ -87,7 +88,7 @@
   .header__trim {
     display: inline-block;
     float: left;
-    height: 0.4em;
+    height: 0.5em;
     width: 100%;
     background-color: lighten($aqua,5%);
     border-top: 0.1em solid lighten($aqua,15%);

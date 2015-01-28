@@ -15,16 +15,22 @@
 
 .block--aqua {
   background-color: $mid-aqua;
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid darken($mid-aqua,8%);
 }
 
 .block--dark-aqua {
   background-color: $dark-aqua;
   color: $white;
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid darken($dark-aqua,7%);
 }
 
 .block--charcoal {
   background-color: $charcoal;
   color: $white;
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid lighten($charcoal,20%);
 }
 
 /* /// Top trim - only for blocks with no header bar */
@@ -53,8 +59,11 @@
     float: left;
     width: 100%;
     height: 0.3em;
-    background-color: $aqua;
+    margin-top: 0.4em;
+    background-color: $mid-aqua;
   }
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid darken($mid-aqua,8%);
 }
 
 .block--trim-bottom-dark-aqua {
@@ -67,8 +76,11 @@
     float: left;
     width: 100%;
     height: 0.3em;
+    margin-top: 0.4em;
     background-color: $dark-aqua;
   }
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid darken($dark-aqua,7%);
 }
 
 .block--trim-bottom-charcoal {
@@ -81,16 +93,23 @@
     float: left;
     width: 100%;
     height: 0.3em;
+    margin-top: 0.4em;
     background-color: $charcoal;
   }
+  // shadow colour-context tweak
+  border-bottom: 0.2em solid lighten($charcoal,20%);
 }
 
-/* /// Block heading bar */
+/* /// Block heading bars */
 
 .block__heading {
-  padding: 0.6em 1.2em 0.5em 1.2em;
+  padding: 0.7em 1.4em 0.6em 1.4em;
   background-color: $charcoal;
   color: $white;
+}
+
+.block__heading .heading {
+  font-size: 1.2em;
 }
 
 .block__heading--aqua {
@@ -101,18 +120,68 @@
   background-color: $dark-aqua;
 }
 
-.block__heading .heading {
-  font-size: 1.2em;
+/* Padding tweaks; if using a heading bar the same
+colour as the block, give the title text a little more breathing room vertically */
+
+.block--aqua .block__heading--aqua,
+.block--dark-aqua .block__heading--dark-aqua,
+.block--charcoal .block__heading {
+  padding: 1.2em 1.4em 0.4em 1.4em;
+}
+
+.block--charcoal .block__heading--aqua,
+.block--charcoal .block__heading--dark-aqua {
+  padding: 0.7em 1.4em 0.6em 1.4em;
 }
 
 /* /// Block Content */
 
 .block__content {
-  padding: 1em 1.2em 1.2em 1.2em;
+  padding: 1.2em 1.4em 1.4em 1.4em;
   margin: 0 0 0 0;
   font-size: 1.1em;
   line-height: 1.3em;
 }
+
+// for use with .block__image--right:
+.block__content--left {
+  width: 50%;
+  float: left;
+}
+
+// for use with .block__image--left:
+.block__content--right {
+  width: 50%;
+  float: right;
+}
+
+/* /// Blocks with Images */
+
+// Examples use CSS background images set inline - 
+// your usage may vary
+
+.block__image {
+  background-position: center;
+}
+
+.block__image--top {
+  margin-bottom: 0.5em;
+}
+
+.block__image--bottom {
+  margin-top: 0.5em;
+}
+
+.block__image--right {
+  width: 50%;
+  float: right;
+}
+
+.block__image--left {
+  width: 50%;
+  float: left;
+}
+
 
 // Arbitrary breakpoint from handheld -> full layout - 
 // your choice should vary depending on your layout

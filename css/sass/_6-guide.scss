@@ -80,7 +80,7 @@ ul.guidance li {
   &:before {
     content: "— ";
   }
-  margin: 0 0 1em 1em;
+  margin: 0 0 1.4em 1em;
   font-size: 1.1em;
 }
 
@@ -239,6 +239,10 @@ ul.guidance li {
   margin: 0 0 2em 0;
 }
 
+.pattern-blocks .hljs {
+  max-height: 40em;
+}
+
 
 @media only all and (min-width: 41em) {
   
@@ -248,6 +252,10 @@ ul.guidance li {
   
   .blocks .block--66 {
     margin-bottom: 4em;
+  }
+  
+  .blocks .guide-lastbanff {
+    margin-bottom: 3em;
   }
   
   .guide .pattern .display, 

@@ -70,7 +70,10 @@
       
       <br/>
       
-      <h1 class="guidance">Core Assets</h1>
+      <div class="pattern elements-heading">
+        <h1 class="guidance">Core Assets</h1>
+        <br/>
+      </div>
       
     <?php // CSS reset pattern box ======================================================?>
       
@@ -756,19 +759,25 @@
               <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/sass/1-blocks.scss"); ?></code>
+                  <code><?php echo file_get_contents("css/sass/01-blocks.scss"); ?></code>
                 </pre>
               </div>            
               <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
                 <h2 class="js-panel__title">Generated CSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/output/1-blocks.css"); ?></code>
+                  <code><?php echo file_get_contents("css/output/01-blocks.css"); ?></code>
                 </pre>
               </div>
             </div>
           
     </div><!--/pattern-->               
 
+  <?php // Heading for elements section ======================== ?>
+  
+  <div class="pattern elements-heading">
+    <h1 class="guidance">Page Elements Style Guide:</h1>
+    <br/>
+  </div>
         
   <?php // BEGIN REGULAR PATTERN LIBRARY ============================
         
@@ -783,7 +792,12 @@
       $scss = ++$i;
       
       ?>
-        <div class="pattern pattern-<?php echo substr(basename($file, ".html"), 2) ;?>">
+        <div class="pattern elements-heading">
+          <h2 class="guidance"><?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?></h2>
+          <br/>
+        </div>
+      
+        <div class="pattern pattern-<?php echo substr(basename($file, ".html"), 3) ;?>">
           <div class="display">
           <?php include($file); ?>
           </div>

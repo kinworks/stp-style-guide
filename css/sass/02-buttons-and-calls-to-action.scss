@@ -22,6 +22,25 @@
   }
 }
 
+/* Removes awkward default styles on some inputs for mobile */
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+  -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none; 
+}
+
+/* Removes awkward UA side borders set, and pads to right height */
+button,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+  border-left: 0;
+  border-right: 0;
+  height: 3em;
+}
+
 .cta--charcoal {
   background-color: $charcoal;
   border-bottom: 0.2em solid darken($shadow,15%);

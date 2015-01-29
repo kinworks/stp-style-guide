@@ -65,7 +65,7 @@
 h1.guidance,
 h2.guidance {
   color: $dark-aqua;
-  text-transform: none;
+  text-transform: capitalize;
   font-weight: 500;
 }
 
@@ -206,29 +206,38 @@ ul.guidance li {
   background-color: $mid-aqua;
 }
 
-.pattern-buttons h2 {
+.pattern-buttons-and-calls-to-action h2 {
   margin-bottom: 1em;
 }
 
-.pattern-buttons .bg-grey,
-.pattern-buttons .bg-charcoal,
-.pattern-buttons .bg-aqua { 
+.pattern-buttons-and-calls-to-action .bg-grey,
+.pattern-buttons-and-calls-to-action .bg-charcoal,
+.pattern-buttons-and-calls-to-action .bg-aqua { 
   margin-top: 2em;
   padding: 1em 1em 0 1em
 }
 
-.pattern-buttons .panels,
-.pattern-buttons .panels div {
+.pattern-buttons-and-calls-to-action .bg-aqua {
+  margin-bottom: 2em;
+}
+
+.pattern-buttons-and-calls-to-action button.cta,
+.pattern-buttons-and-calls-to-action input.cta {
+  margin-bottom: 3em;
+}
+
+.pattern-buttons-and-calls-to-action .panels,
+.pattern-buttons-and-calls-to-action .panels div {
   margin-top: 0;
 }
 
-.pattern-buttons .cta {
+.pattern-buttons-and-calls-to-action .cta {
   margin-right: 1em;
   margin-bottom: 1em;
 }
 
-.pattern-buttons .hljs {
-  max-height: 22em;
+.pattern-buttons-and-calls-to-action .hljs {
+  max-height: 24.5em;
   padding: 1em;
 }
 
@@ -243,6 +252,13 @@ ul.guidance li {
   max-height: 43em;
 }
 
+.pattern-form-fields form {
+  width: 60%;
+}
+
+.pattern-form-fields .hljs {
+  max-height: 32em;
+}
 
 @media only all and (min-width: 41em) {
   

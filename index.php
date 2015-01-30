@@ -407,13 +407,13 @@
               <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/sass/0-header.scss"); ?></code>
+                  <code><?php echo file_get_contents("css/sass/patterns/0-header.scss"); ?></code>
                 </pre>
               </div>            
               <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
                 <h2 class="js-panel__title">Generated CSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/output/0-header.css"); ?></code>
+                  <code><?php echo file_get_contents("css/output/patterns/0-header.css"); ?></code>
                 </pre>
               </div>
             </div>
@@ -501,31 +501,31 @@
           </div>
           <div class="js-tab-ui panels">
               <ul class="js-tabs-list" role="tablist">
-                <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
+                <li role="tab" id="tab-footer-markup" aria-controls="tab-footer-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="footer">Markup
                 </li>
-                <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
+                <li role="tab" id="tab-footer-scss" aria-controls="tab-footer-scss-panel" aria-selected="false" data-tabgroup="footer">
                   SCSS
                 </li>
-                <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                <li role="tab" id="tab-footer-css" aria-controls="tab-footer-css-panel" aria-selected="false" data-tabgroup="footer">
                   Generated CSS
                 </li>
               </ul>
-              <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
+              <div class="source js-panel first" id="tab-footer-markup-panel" role="tabpanel" aria-labelledby="tab-footer-markup" data-tabgroup="footer">
                 <h2 class="js-panel__title">Markup</h2>
                 <pre>
                   <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/footer.html")); ?></code>
                 </pre>
               </div>
-              <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+              <div class="style js-panel" id="tab-footer-scss-panel" role="tabpanel" aria-labelledby="tab-footer-scss" data-tabgroup="footer">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/sass/0-header.scss"); ?></code>
+                  <code><?php echo file_get_contents("css/sass/patterns/0-footer.scss"); ?></code>
                 </pre>
               </div>            
-              <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+              <div class="style js-panel" id="tab-footer-css-panel" role="tabpanel" aria-labelledby="tab-footer-css" data-tabgroup="footer">
                 <h2 class="js-panel__title">Generated CSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/output/0-footer.css"); ?></code>
+                  <code><?php echo file_get_contents("css/output/patterns/0-footer.css"); ?></code>
                 </pre>
               </div>
             </div>
@@ -742,31 +742,31 @@
           
           <div class="js-tab-ui panels">
               <ul class="js-tabs-list" role="tablist">
-                <li role="tab" id="tab-header-markup" aria-controls="tab-header-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="header">Markup
+                <li role="tab" id="tab-blocks-markup" aria-controls="tab-blocks-markup-panel" tabindex="0" aria-selected="true" data-tabgroup="blocks">Markup
                 </li>
-                <li role="tab" id="tab-header-scss" aria-controls="tab-header-scss-panel" aria-selected="false" data-tabgroup="header">
+                <li role="tab" id="tab-blocks-scss" aria-controls="tab-blocks-scss-panel" aria-selected="false" data-tabgroup="blocks">
                   SCSS
                 </li>
-                <li role="tab" id="tab-header-css" aria-controls="tab-header-css-panel" aria-selected="false" data-tabgroup="header">
+                <li role="tab" id="tab-blocks-css" aria-controls="tab-blocks-css-panel" aria-selected="false" data-tabgroup="blocks">
                   Generated CSS
                 </li>
               </ul>
-              <div class="source js-panel first" id="tab-header-markup-panel" role="tabpanel" aria-labelledby="tab-header-markup" data-tabgroup="header">
+              <div class="source js-panel first" id="tab-blocks-markup-panel" role="tabpanel" aria-labelledby="tab-blocks-markup" data-tabgroup="blocks">
                 <h2 class="js-panel__title">Markup</h2>
                 <pre>
                   <code><?php echo htmlspecialchars(file_get_contents("guidepatterns/blocks.html")); ?></code>
                 </pre>
               </div>
-              <div class="style js-panel" id="tab-header-scss-panel" role="tabpanel" aria-labelledby="tab-header-scss" data-tabgroup="header">
+              <div class="style js-panel" id="tab-blocks-scss-panel" role="tabpanel" aria-labelledby="tab-blocks-scss" data-tabgroup="blocks">
                 <h2 class="js-panel__title">SCSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/sass/01-blocks.scss"); ?></code>
+                  <code><?php echo file_get_contents("css/sass/patterns/01-blocks.scss"); ?></code>
                 </pre>
               </div>            
-              <div class="style js-panel" id="tab-header-css-panel" role="tabpanel" aria-labelledby="tab-header-css" data-tabgroup="header">
+              <div class="style js-panel" id="tab-blocks-css-panel" role="tabpanel" aria-labelledby="tab-blocks-css" data-tabgroup="blocks">
                 <h2 class="js-panel__title">Generated CSS</h2>
                 <pre>
-                  <code><?php echo file_get_contents("css/output/01-blocks.css"); ?></code>
+                  <code><?php echo file_get_contents("css/output/patterns/01-blocks.css"); ?></code>
                 </pre>
               </div>
             </div>
@@ -823,13 +823,13 @@
             <div class="style js-panel" id="scss<?php echo $scss ?>" role="tabpanel" aria-labelledby="tab<?php echo $scss ?>" data-tabgroup="<?php echo $i ?>">
               <h2 class="js-panel__title">SCSS</h2>
               <pre>
-                <code><?php echo file_get_contents("css/sass/".basename($file, ".html").".scss"); ?></code>
+                <code><?php echo file_get_contents("css/sass/patterns/".basename($file, ".html").".scss"); ?></code>
               </pre>
             </div>
             <div class="style js-panel" id="css<?php echo $css ?>" role="tabpanel" aria-labelledby="tab<?php echo $css ?>" data-tabgroup="<?php echo $i ?>">
               <h2 class="js-panel__title">Generated CSS</h2>
               <pre>
-                <code><?php echo file_get_contents("css/output/".basename($file, ".html").".css"); ?></code>
+                <code><?php echo file_get_contents("css/output/patterns/".basename($file, ".html").".css"); ?></code>
               </pre>
             </div>
           </div>

@@ -71,7 +71,7 @@ h2.guidance {
 
 p.guidance {
   margin-bottom: 2em;
-  font-size: 1.2em;
+  font-size: 1.1em;
   max-width: 61em;
 }
 
@@ -80,8 +80,8 @@ ul.guidance li {
   &:before {
     content: "— ";
   }
-  margin: 0 0 1.4em 1em;
-  font-size: 1.1em;
+  margin: 0 0 1.3em 1em;
+  font-size: 1em;
 }
 
 .js-tabs ul.guidance li [aria-selected=true] {
@@ -258,6 +258,11 @@ ul.guidance li {
 
 .pattern-form-fields .hljs {
   max-height: 32em;
+}
+
+.pattern-pagination ol.pagination {
+  padding: 2em;
+  background-color: $grey;
 }
 
 @media only all and (min-width: 41em) {

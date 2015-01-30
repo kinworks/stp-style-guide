@@ -1,19 +1,53 @@
 <form>
   <!-- Your for= and id= will depend on context -->
-  <label for="text">Text field label</label>
-  <input type="text" id="text" />
+  <label for="text">.required Text field label 
+    <span class="required">
+      (Required)
+    </span>
+  </label>
+  <input class="required" type="text" id="text" placeholder="Enter some text..."/>
   
   <label for="textarea">Textarea field label</label>
-  <textarea rows="5" cols="20" ></textarea>
+  <textarea rows="5" cols="20" placeholder="Enter a whole bunch of text..."></textarea>
+  
+  <label for="movielist">Movies: </label><input list="movies" id="movielist" placeholder="Type or choose your favourite movie..." >
+    <datalist id="movies">
+        <option value="All About Eve">
+        <option value="Chariots of Fire">
+        <option value="A Clockwork Orange">
+        <option value="Creation">
+        <option value="Frida">
+        <option value="The Great Gatsby">
+        <option value="Inception">
+        <option value="The Prestige">
+        <option value="The Princess Bride">
+        <option value="Star Wars">
+        <option value="Up"> 
+  </datalist>
+
+  <fieldset>
+    <legend>Radios</legend>
+    <ul>
+      <li>
+        <label for="radio1"><input id="radio1" name="radio" type="radio" checked/> Option 1</label>
+      </li>
+      <li>
+        <label for="radio2"><input id="radio2" name="radio" type="radio"/> Option 2</label>
+      </li>
+      <li>
+        <label for="radio3"><input id="radio3" name="radio" type="radio"/> Option 3</label>
+      </li>
+    </ul>
+  </fieldset>
   
   <label for="email">Email field label</label>
-  <input type="email" id="email"/>
+  <input type="email" id="email" placeholder="e.g. you@domain.com" />
   
   <label for="number">Number field label</label>
-  <input type="number" id="number" />
+  <input type="number" id="number" placeholder="e.g. 53" />
   
   <label for="url">URL field label</label>
-  <input type="url" id="url"/>
+  <input type="url" id="url" placeholder="Enter a web address..."/>
   
   <label class="checkbox" for="checkbox-one">
     <input type="checkbox" id="checkbox-one"/>Checkbox Label

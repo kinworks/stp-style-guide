@@ -431,6 +431,7 @@
           <p class="guidance">
             When using this pattern, be sure to verify the hardcoded links to the top-level sections of scotlandtowns.org have not changed on the main site. <b>At time of writing, these URLs do not exist but will at STP launch.</b> If using this pattern on an external site, or subdomain of scotlandstowns.org, the links could open in a new window/tab at your discretion.
           </p>
+
           <p class="guidance">
             For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
           </p>

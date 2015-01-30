@@ -8,8 +8,8 @@
   border-color: lighten($grey,10%);
 	padding: 1em 1em;
 	font-style: italic;
-	font-size: 1.6em;
-	line-height: 1.4em;
+	font-size: 1.5em;
+	line-height: 1.3em;
 	color: $mid-aqua;
 }
 
@@ -22,7 +22,7 @@
   }
   &:before,
   &:after {
-    font-size: 1.7em;
+    font-size: 1.6em;
     vertical-align: -0.2em;
     margin-left: -0.1em;
     color: $grey;

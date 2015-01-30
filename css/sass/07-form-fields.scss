@@ -10,6 +10,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[list],
 textarea,
 select {
   display: inline-block;
@@ -41,6 +42,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[list],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -61,6 +63,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
+input[list]:focus,
 textarea:focus,
 select:focus {
   border: 0.1em solid $mid-aqua;
@@ -77,7 +80,12 @@ legend {
 
 fieldset {
   padding: 0;
-  border-width: 0; 
+  border-width: 0;
+  border: 0;
+}
+
+fieldset ul {
+  list-style-type: none;
 }
 
 input[type="checkbox"],
@@ -89,6 +97,11 @@ label > .label-body {
   display: inline-block;
   margin-left: 0.5em;
   font-weight: normal; 
+}
+
+.required span {
+  font-weight: 400;
+  color: $shadow;
 }
 
 /* Form buttons are covered in the 'Buttons

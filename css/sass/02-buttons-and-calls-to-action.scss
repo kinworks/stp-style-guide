@@ -81,3 +81,16 @@ input[type="submit"] {
     background-color: lighten($aqua,50%);
   }
 }
+
+.cta--disabled {
+  background-color: $grey;
+  color: darken($shadow,10%);
+  border-bottom: 0.2em solid $shadow;
+  border-top: 0.1em solid lighten($grey,5%);
+  cursor: not-allowed;
+  &:hover {
+    background-color: $grey;
+    cursor: not-allowed;
+    text-decoration: none;
+  }
+}

@@ -4,6 +4,11 @@ ul {
   margin-top: 0; 
 }
 
+ol {
+  list-style: none;
+  counter-reset: item; 
+}
+
 ul ul,
 ul ol {
   margin: 1em 0 1em 2em;
@@ -12,4 +17,9 @@ ul ol {
 
 li {
   margin-bottom: 1em; 
+}
+
+ol li:before { 
+  content: counters(item, ".") " "; 
+  counter-increment: item; 
 }

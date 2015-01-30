@@ -1,5 +1,6 @@
 ol {
-  list-style: decimal inside; 
+  list-style: none;
+  counter-reset: item; 
 }
 
 ol ol,
@@ -10,4 +11,14 @@ ol ul {
 
 li {
   margin-bottom: 1em; 
+}
+
+ol li:before { 
+  content: counters(item, ".") " "; 
+  counter-increment: item 
+}
+
+ol ul li:before { 
+  content: " "; 
+  counter-increment: none; 
 }

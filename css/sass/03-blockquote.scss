@@ -1,21 +1,44 @@
 // Ignore - Pattern uses mixins, which have to be imported directly
-@import '_2-mixins.scss';
+@import '_2-mixins.scss', '_4-colours.scss';
 
-blockquote {
-	margin: 1em;
+.quote {
+	margin: 1.5em 0;
 	border-top: 0.1em solid;
 	border-bottom: 0.1em solid;
-	padding: 0 1em;
-	font-family: Palatino, Georgia, serif;
+  border-color: lighten($grey,10%);
+	padding: 1em 1em;
 	font-style: italic;
-	font-size: 1.25em;
-	line-height: 1.5;
-	letter-spacing: 0.05em;
-	color: #888;
-	border-color: #ccc;
-	border-color: rgba(0,0,0,0.2);
-	@include border-radius(0.25em);
+	font-size: 1.6em;
+	line-height: 1.4em;
+	color: $mid-aqua;
 }
-blockquote em {
+
+.quote__blockquote {
+  &:before {
+    content: '“';
+  }
+  &:after {
+    content: '”';
+  }
+  &:before,
+  &:after {
+    font-size: 1.7em;
+    vertical-align: -0.2em;
+    margin-left: -0.1em;
+    color: $grey;
+  }
+}
+
+.quote em {
 	font-style: normal;
+}
+
+.quote__caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: $charcoal;
+  margin-top: 0.8em;
+  &:before {
+    content: "— ";
+  }
 }

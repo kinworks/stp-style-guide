@@ -54,6 +54,6 @@ ol.pagination li {
 .pagination__next.no-more a {
   background-color: $shadow;
   color: darken($shadow,20%);
-  border-bottom: 0.2em solid darken($shadow,20%);
+  border-bottom: 0.2em solid darken($shadow,15%);
   cursor: not-allowed;
 }

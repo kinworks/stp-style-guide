@@ -1,0 +1,148 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_2-mixins.scss'; @import '_4-colours.scss';
+
+// Mobile-first - stacking header with 100% wide
+// sections, then enhanced via media query
+
+.footer {
+  background-color: $mid-aqua;
+  width: 100%;
+  border-top: 0.8em solid $aqua;
+  padding: 1em 0 0 0;
+}
+
+.footer__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer__container.footer__container--dark {
+  width: 100%;
+  padding: 0 5%;
+  margin: 0;
+  background-color: $charcoal;
+  border-top: 0.9em solid $dark-aqua;
+}
+
+.footer__container .heading__medium {
+  color: $white;
+  margin: 0.3em auto 0 auto;
+  line-height: 1.1em;
+  border-bottom: none;
+}
+
+.footer__twitter {
+  width: auto;
+  max-width: 15.4em;
+  display: inline-block;
+  background-color: $charcoal;
+  margin: 1.6em 0;
+  border-bottom: 0.2em solid darken($dark-aqua,5%);
+  border-top: 0.1em solid lighten($aqua,5%);
+  &:hover .heading {
+    text-decoration: underline;
+    background-color: darken($dark-aqua,5%);
+  }
+}
+
+.footer__twitter .heading {
+  font-size: 1em;
+  color: $white;
+  font-weight: 500;
+  display: inline-block;
+  float: right;
+  width: auto;
+  padding: 0.6em 0.8em 0.4em 0.8em;
+  margin: 0;
+  @include transition(background-color,0.12s); // Kin Mixin
+}
+
+.footer__twitter .icon {
+  display: inline-block;
+  float: right;
+  width: 2.5em;
+  height: 2.5em;
+  background: url('../../assets/twitter-icon.png');
+  background-repeat: no-repeat;
+  @include background-size(100%); // Kin Mixin
+  // Retina-quality asset load:
+  @media (-webkit-min-device-pixel-ratio: 1.5), 
+         (min--moz-device-pixel-ratio: 1.5), 
+         (-o-min-device-pixel-ratio: 2/1), 
+         (min-device-pixel-ratio: 1.5), 
+         (min-resolution: 1.5dppx) {
+    background: url('../../assets/twitter-icon@2x.png');  
+    @include background-size(100%); // Kin Mixin 
+  }
+}
+
+.footer__nav {
+  margin-bottom: 1.5em;
+}
+
+.footer__nav li {
+  list-style-type: none;
+  margin: 0 0 0.8em 0;
+}
+
+.footer__nav a {
+  color: $charcoal;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:after {
+    content: " »";
+  }
+  &:hover {
+    border-bottom: 0.1em dotted $white;
+  }
+}
+
+.footer__terms {
+  margin-bottom: 2em;
+  color: $grey;
+}
+
+// Arbitrary breakpoint from handheld -> full layout - 
+// your choice should vary depending on your layout
+
+@media only all and (min-width: 41em) {
+  
+  .footer {
+    padding-top: 1.5em;
+  }
+    
+  .footer__container {
+    width: 90%;
+    margin: 0 5%; // This depends on what sizes you
+    // need to use to line edges up with content edges
+  }
+  
+  .footer__container .heading__medium {
+    float: left;
+    margin-top: 0.5em;
+    width: 50%;
+  }
+  
+  .footer__twitter {
+    float: right;
+    margin: 0.5em 0 0 0;
+    width: 50%;
+  }
+  
+  .footer__nav {
+    width: 100%;
+    float: left;
+    margin-top: 2em;
+  }
+  
+  .footer__nav li {
+    float: left;
+    margin-right: 4.5%;
+  }
+  
+  .footer__terms {
+    width: 100%;
+    float: left;
+  }
+
+} // End min 41em

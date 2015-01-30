@@ -1,0 +1,44 @@
+// Ignore - Pattern uses mixins, which have to be imported directly
+@import '_2-mixins.scss', '_4-colours.scss';
+
+.quote {
+	margin: 1.5em 0;
+	border-top: 0.1em solid;
+	border-bottom: 0.1em solid;
+  border-color: lighten($grey,10%);
+	padding: 1em 1em;
+	font-style: italic;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	color: $mid-aqua;
+}
+
+.quote__blockquote {
+  &:before {
+    content: '“';
+  }
+  &:after {
+    content: '”';
+  }
+  &:before,
+  &:after {
+    font-size: 1.6em;
+    vertical-align: -0.2em;
+    margin-left: -0.1em;
+    color: $grey;
+  }
+}
+
+.quote em {
+	font-style: normal;
+}
+
+.quote__caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: $charcoal;
+  margin-top: 0.8em;
+  &:before {
+    content: "— ";
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="guide no-js" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" class="guide no-js" xmlns:html="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -61,7 +61,7 @@
       <?php // ReadMe ?>
       
       <h1 class="guidance">Introduction</h1>
-      
+      <br/>
       <p class="guidance">
         For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
       </p>

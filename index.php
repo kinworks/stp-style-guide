@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="styles/solarized_dark.css">
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script type="text/javascript">
-      // Webfont loader - see https://github.com/typekit/webfontloader for details
-	    WebFontConfig = {
-	      typekit: { id: 'ovp2cfb' }
-	    };
-	    (function() {
-	      var wf = document.createElement('script');
-	      wf.src = ('js/webfontloader.min.js');
-	      wf.type = 'text/javascript';
-	      wf.async = 'true';
-	      var s = document.getElementsByTagName('script')[0];
-	      s.parentNode.insertBefore(wf, s);
-	    })();
-	  </script>
+    <![if !IE 6]>  
+      <script type="text/javascript">
+        // Webfont loader - see https://github.com/typekit/webfontloader for details
+  	    WebFontConfig = {
+  	      typekit: { id: 'ovp2cfb' }
+  	    };
+  	    (function() {
+  	      var wf = document.createElement('script');
+  	      wf.src = ('js/webfontloader.min.js');
+  	      wf.type = 'text/javascript';
+  	      wf.async = 'true';
+  	      var s = document.getElementsByTagName('script')[0];
+  	      s.parentNode.insertBefore(wf, s);
+  	    })();
+  	  </script>
+    <![endif]>
 	  
 	  <script>
   	  // Outline focus method without disrupting UI via @decadecity - https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus

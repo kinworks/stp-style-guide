@@ -2,6 +2,7 @@
 <html lang="en" class="guide no-js" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STP Style Guide</title>
     <script>(function(b,a){"querySelector"in b&&(a.className=a.className.replace(/\bno-js\b/,"js-tabs"))})(document,document.documentElement);</script>

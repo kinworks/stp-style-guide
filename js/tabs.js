@@ -70,11 +70,6 @@ var helper = (function(win, doc, undefined) {
 				}
 				
 				el.setAttribute('aria-selected','true');
-
-				// put the tab id into localStorage
-				if(storage) {
-					localStorage['tab'] = el.id;
-				}
 			}
 
 
@@ -110,40 +105,42 @@ var helper = (function(win, doc, undefined) {
 				key_code = event.keyCode || event.which;
 
 				focused_element = event.target || event.srcElement;
-
-				// up or right arrow key moves focus to the next tab
-				if(key_code === 38 || key_code === 39) {
-					next = focused_element.nextSibling;
-
-					// make sure we're on an element node
-					if(next.nodeType !== 1) {
-						next = next.nextSibling;
-					}
-
-					next.setAttribute('tabindex', 0);
-					next.focus();
-				}
-
-				// left or down arrow key moves focus to the previous tab
-				if(key_code === 37 || key_code === 40) {
-					prev = focused_element.previousSibling;
-
-					// make sure we're on an element node
-					if(prev.nodeType !== 1) {
-						prev = prev.previousSibling;
-					}
-
-					prev.setAttribute('tabindex', 0);
-					prev.focus();
-				}
-
-				// space bar
-				if(key_code === 32) {
-					show_hide(focused_element);
-				}
-
-				// Prevent space bar moving the page down
-				event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        
+        if(focused_element.tagName.indexOf('LI') !== -1) {
+  				// up or right arrow key moves focus to the next tab
+  				if(key_code === 38 || key_code === 39) {
+  					next = focused_element.nextSibling;
+  
+  					// make sure we're on an element node
+  					if(next.nodeType !== 1) {
+  						next = next.nextSibling;
+  					}
+  
+  					next.setAttribute('tabindex', 0);
+  					next.focus();
+  				}
+  
+  				// left or down arrow key moves focus to the previous tab
+  				if(key_code === 37 || key_code === 40) {
+  					prev = focused_element.previousSibling;
+  
+  					// make sure we're on an element node
+  					if(prev.nodeType !== 1) {
+  						prev = prev.previousSibling;
+  					}
+  
+  					prev.setAttribute('tabindex', 0);
+  					prev.focus();
+  				}
+  
+  				// space bar
+  				if(key_code === 32) {
+  					show_hide(focused_element);
+  				}
+  
+  				// Prevent space bar moving the page down
+  				event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        }
 			}
 
 

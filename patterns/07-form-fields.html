@@ -5,12 +5,12 @@
       (Required)
     </span>
   </label>
-  <input class="required" type="text" id="text" placeholder="Enter some text..."/>
+  <input type="text" id="text" name="text" placeholder="Enter some text..." required />
   
   <label for="textarea">Textarea field label</label>
-  <textarea rows="5" cols="20" placeholder="Enter a whole bunch of text..."></textarea>
+  <textarea id="textarea" name="textarea" rows="5" cols="20" placeholder="Enter a whole bunch of text..."></textarea>
   
-  <label for="movielist">Movies: </label><input list="movies" id="movielist" placeholder="Type or choose your favourite movie..." >
+  <label for="movielist">Movies: </label><input list="movies" id="movielist" name="movielist" placeholder="Type or choose your favourite movie..." >
     <datalist id="movies">
         <option value="All About Eve">
         <option value="Chariots of Fire">
@@ -27,38 +27,83 @@
 
   <fieldset>
     <legend>Radios</legend>
-    <ul>
-      <li>
         <label for="radio1"><input id="radio1" name="radio" type="radio" checked/> Option 1</label>
-      </li>
-      <li>
         <label for="radio2"><input id="radio2" name="radio" type="radio"/> Option 2</label>
-      </li>
-      <li>
         <label for="radio3"><input id="radio3" name="radio" type="radio"/> Option 3</label>
       </li>
     </ul>
   </fieldset>
   
   <label for="email">Email field label</label>
-  <input type="email" id="email" placeholder="e.g. you@domain.com" />
+  <input type="email" id="email" name="email" placeholder="e.g. you@domain.com" />
   
   <label for="number">Number field label</label>
-  <input type="number" id="number" placeholder="e.g. 53" />
+  <input type="number" id="number" name="number" placeholder="e.g. 53" />
   
   <label for="url">URL field label</label>
-  <input type="url" id="url" placeholder="Enter a web address..."/>
+  <input type="url" id="url" name="url" placeholder="Enter a web address..."/>
   
   <label class="checkbox" for="checkbox-one">
-    <input type="checkbox" id="checkbox-one"/>Checkbox Label
+    <input type="checkbox" id="checkbox-one" name="checkbox-one"/>Checkbox Label
   </label>
   <label class="checkbox" for="checkbox-two">
-    <input type="checkbox" id="checkbox-two">Checkbox Label
+    <input type="checkbox" id="checkbox-two" name="checkbox-two"/>Checkbox Label
   </label>
   
-  <select>
+  <label for="select">Select</label>
+  <select id="select" name="select">
     <option>Option text</option>
     <option>Another option</option>
   </select>
+  
+  <label for="upload">Upload</label>
+  <input name="upload" id="upload" type="file" />
+  
+  <label for="date">Pick a date</label>
+  <input name="date" id="date" type="date"/>
+  
+  <label for="date-month">Pick a month</label>
+  <input name="date-month" id="date-month" type="month"/>
+  
+  <label for="date-week">Pick a week</label>
+  <input name="date-week" id="date-week" type="week"/>
+  
+  <label for="date-time">Pick a time</label>
+  <input name="date-time" id="date-time" type="time"/>
+  
+  <label for="password">Password</label>
+  <input name="password" id="password" type="password" />
+  
+  <label for="number-range">Pick a number</label>
+  <input name="number-range" id="number-range" type="range" min="1" max="100" value="0"/>
+  
+  <input type="search" placeholder="Search" autocomplete="on" />
+  
+  <label for="phone-number">Phone number</label>
+  <input name="phone-number" id="phone-number" type="tel" />
+  
+  <label for="text-disabled">Disabled text</label>
+  <input name="text-disabled" id="text-disabled" type="text" disabled/>
+  
+  <label for="select-disabled">Disabled Select</label>
+  <select id="select-disabled" name="select-disabled" disabled>
+    <option>Option text</option>
+    <option>Another option</option>
+  </select>
+  
+  <label for="select-multiple">Multiple select</label>
+  <select id="select-multiple" name="select-multiple" multiple>
+    <option>Option text</option>
+    <option>Another option</option>
+  </select>
+  
+  <label for="select-multiple-disabled">Disabled multiple select</label>
+  <select id="select-multiple-disabled" name="select-multiple-disabled" multiple disabled>
+    <option>Option text</option>
+    <option>Another option</option>
+  </select>
+  
+  <label for="textarea-disabled">Disabled textarea</label>
+  <textarea id="textarea-disabled" name="textarea-disabled" rows="5" cols="20" placeholder="Enter a whole bunch of text..." disabled></textarea>
   
 </form>

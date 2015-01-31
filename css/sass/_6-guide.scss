@@ -339,7 +339,11 @@ ul.guidance li {
 
 /* Tabs
    ========================================================================== */
+[role=tablist] {
+  display: none;
+}
 .js-tabs [role=tablist] {
+  display: inline;
 	padding: 0;
 }
 

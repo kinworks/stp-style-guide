@@ -11,6 +11,13 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 input[list],
+input[type="file"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="range"],
+input[type="search"],
 textarea,
 select {
   display: inline-block;
@@ -49,7 +56,7 @@ textarea {
           appearance: none; 
 }
 
-form textarea {
+textarea {
   min-height: 4.0625em;
   padding-top: 0.375em;
   padding-bottom: 0.375em;
@@ -80,6 +87,7 @@ legend {
 
 fieldset {
   padding: 0;
+  margin-bottom: 1.5em;
   border-width: 0;
   border: 0;
 }
@@ -93,15 +101,33 @@ input[type="radio"] {
   display: inline; 
 }
 
-label > .label-body {
-  display: inline-block;
-  margin-left: 0.5em;
-  font-weight: normal; 
+input[type="radio"] {
+  margin-bottom: 0.8em;
 }
 
-.required span {
+input[type="radio"]:last-child {
+  margin-bottom: 0;
+}
+
+.required {
   font-weight: 400;
   color: $shadow;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+textarea[disabled], input[disabled], select[disabled] {
+  background-color: darken($grey, 10%);
+}
+
+textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
+  cursor: not-allowed;
+}
+
+select:-internal-list-box option:checked {
+  background-color: $aqua;
 }
 
 /* Form buttons are covered in the 'Buttons

@@ -69,8 +69,12 @@ h2.guidance {
   font-weight: 500;
 }
 
+h2.guidance {
+  margin-bottom: 1.4em;
+}
+
 p.guidance {
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
   font-size: 1.1em;
   max-width: 61em;
 }
@@ -143,6 +147,14 @@ ul.guidance li {
 
 .swatches span.blue {
   background-color: $blue;
+}
+
+.swatches span.feedback {
+  background-color: $feedback;
+}
+
+.swatches span.error {
+  background-color: $error;
 }
 
 .swatches li b {

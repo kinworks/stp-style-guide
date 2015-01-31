@@ -1,5 +1,7 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_4-colours.scss';
+
 .feedback {
-	$feedback: #D9F2F9;
 	background-color: $feedback;
 	border-bottom: 0.2em solid darken($feedback,8%);
 	font-weight: 500;

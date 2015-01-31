@@ -69,9 +69,13 @@ h2.guidance {
   font-weight: 500;
 }
 
+h2.guidance {
+  margin-bottom: 1.4em;
+}
+
 p.guidance {
-  margin-bottom: 2em;
-  font-size: 1.2em;
+  margin-bottom: 1.4em;
+  font-size: 1.1em;
   max-width: 61em;
 }
 
@@ -80,13 +84,22 @@ ul.guidance li {
   &:before {
     content: "— ";
   }
-  margin: 0 0 1.4em 1em;
-  font-size: 1.1em;
+  margin: 0 0 1.3em 1em;
+  font-size: 1em;
 }
 
 .js-tabs ul.guidance li [aria-selected=true] {
   color: $charcoal;
   background-color: $white;
+}
+
+pre {
+  margin: 1em 0 1em 0;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .swatches h2 {
@@ -143,6 +156,14 @@ ul.guidance li {
 
 .swatches span.blue {
   background-color: $blue;
+}
+
+.swatches span.feedback {
+  background-color: $feedback;
+}
+
+.swatches span.error {
+  background-color: $error;
 }
 
 .swatches li b {
@@ -237,7 +258,7 @@ ul.guidance li {
 }
 
 .pattern-buttons-and-calls-to-action .hljs {
-  max-height: 35em;
+  max-height: 50em;
   padding: 1em;
 }
 
@@ -257,7 +278,12 @@ ul.guidance li {
 }
 
 .pattern-form-fields .hljs {
-  max-height: 32em;
+  max-height: 40em;
+}
+
+.pattern-pagination ol.pagination {
+  padding: 2em;
+  background-color: $grey;
 }
 
 @media only all and (min-width: 41em) {

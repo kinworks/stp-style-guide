@@ -1,15 +1,18 @@
 // Inside the document HEAD, as a script tag:
- 
-  WebFontConfig = {
-    typekit: { id: 'ovp2cfb' } // STP Kit on Typekit
-  };
 
-  (function() {
-    var wf = document.createElement('script');
-    // Config required here for your usage:
-    wf.src = ('/path/to/js/webfontloader.min.js'); 
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
+<![if !IE 6]>  
+  script type="text/javascript"
+    // Webfont loader - see https://github.com/typekit/webfontloader for details
+    WebFontConfig = {
+      typekit: { id: 'ovp2cfb' }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('js/webfontloader.min.js');
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  /script
+<![endif]>

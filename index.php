@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="guide no-js">
+<html lang="en" class="guide no-js" xmlns:html="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,20 +10,22 @@
     <link rel="stylesheet" href="styles/solarized_dark.css">
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script type="text/javascript">
-      // Webfont loader - see https://github.com/typekit/webfontloader for details
-	    WebFontConfig = {
-	      typekit: { id: 'ovp2cfb' }
-	    };
-	    (function() {
-	      var wf = document.createElement('script');
-	      wf.src = ('js/webfontloader.min.js');
-	      wf.type = 'text/javascript';
-	      wf.async = 'true';
-	      var s = document.getElementsByTagName('script')[0];
-	      s.parentNode.insertBefore(wf, s);
-	    })();
-	  </script>
+    <![if !IE 6]>  
+      <script type="text/javascript">
+        // Webfont loader - see https://github.com/typekit/webfontloader for details
+  	    WebFontConfig = {
+  	      typekit: { id: 'ovp2cfb' }
+  	    };
+  	    (function() {
+  	      var wf = document.createElement('script');
+  	      wf.src = ('js/webfontloader.min.js');
+  	      wf.type = 'text/javascript';
+  	      wf.async = 'true';
+  	      var s = document.getElementsByTagName('script')[0];
+  	      s.parentNode.insertBefore(wf, s);
+  	    })();
+  	  </script>
+    <![endif]>
 	  
 	  <script>
   	  // Outline focus method without disrupting UI via @decadecity - https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus
@@ -59,7 +61,7 @@
       <?php // ReadMe ?>
       
       <h1 class="guidance">Introduction</h1>
-      
+      <br/>
       <p class="guidance">
         For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
       </p>
@@ -67,8 +69,6 @@
       <p class="guidance">
         <b>Warning:</b> This guide has not been extensively browser tested, and should be viewed in Google Chrome, with the resulting rendering being taken as the target for reproducing the assets visually. With further development and improvement we hope to add to it and document any UA bugs that arise...
       </p>
-      
-      <br/>
       
       <div class="pattern elements-heading">
         <h1 class="guidance">Core Assets</h1>
@@ -179,8 +179,9 @@
         
       <?php // COLOUR / COLOR / COLUUÜUR ==============================================?>
         
-        <br/>
-        <h1 class="guidance">Colour</h1>
+        <div class="pattern">
+          <h1 class="guidance">Colour</h1>
+        </div>
         
         <div class="pattern colour">
           <div class="display">
@@ -222,7 +223,7 @@
                   </li>
                 </ul>
                 
-                <h2 class="guidance">Calls to Action / Contrast</h2>
+                <h2 class="guidance">Calls to Action / Contrast / Feedback</h2>
                 <ul>
                   <li>
                     <span class="purple"><!--color fill--></span>
@@ -231,6 +232,14 @@
                   <li>
                     <span class="blue"><!--color fill--></span>
                     <b>$blue</b>
+                  </li>
+                  <li>
+                    <span class="feedback"><!--color fill--></span>
+                    <b>$feedback</b>
+                  </li>
+                  <li>
+                    <span class="error"><!--color fill--></span>
+                    <b>$error</b>
                   </li>
                 </ul>
               </div>
@@ -257,9 +266,10 @@
         </div>
         
   <?php // TYPOGRAPHY ============================================?>
-        
-        <br/>
-        <h1 class="guidance">Typography</h1>
+
+        <div class="pattern">
+          <h1 class="guidance">Typography</h1>
+        </div>
         
         <?php // Webfont loading ============ ?>
         
@@ -346,10 +356,12 @@
         
   <?php // HEADER BLOCK PATTERN FOR EXTERNAL SITES ==================== ?>
     
-    <div class="pattern pattern-header">
+        <div class="pattern">
+          <h1 class="guidance">Layout</h1>
+        </div>
+        <div class="pattern pattern-header">
       
           <h2 class="guidance">Header Block (External Sites / Tools)</h2>
-          <br/>
           <p class="guidance">
             This is the header block style to be used on sites external to — or on a subdomain of — the main STP site at scotlandstowns.org.
           </p>
@@ -359,7 +371,7 @@
           <p class="guidance">
             For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
           </p>
-                
+          <br/>      
           <header class="header clearfix">
             <div class="header__contents">
               <div class="header__title">
@@ -424,7 +436,6 @@
     <div class="pattern pattern-footer">
       
           <h2 class="guidance">Footer Block</h2>
-          <br/>
           <p class="guidance">
             This is the footer block style to be on all STP web properties.
           </p>
@@ -435,7 +446,7 @@
           <p class="guidance">
             For the purposes of this guide, the image asset required is switching to higher resolution PNG based on a media query. Our preferred method would actually be to use the SVG provided in the /assets folder and a PNG fallback, using Modernizr or similar. Either way, resolution independence for all vector-based visual assets is a requirement of any interface built for STP projects.
           </p>
-                
+          <br/>     
           <footer class="footer">
             <div class="footer__container clearfix">
               <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
@@ -537,11 +548,10 @@
     <div class="pattern pattern-blocks">
       
           <h2 class="guidance">Layout: Blocks</h2>
-          <br/>
           <p class="guidance">
             Layout across STP sites is handled using modules or 'blocks' against a $grey background. Blocks can be any width or height, provided that certain layout rules are adhered to.
           </p>
-          
+          <br/>
           <div class="blocks clearfix">
             
             <div class="block block--50">
@@ -721,7 +731,6 @@
           
           <div class="display">
             <h2 class="guidance">Block / layout rules & guidance</h2>
-            <br/>
             <ul class="guidance">
               <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block.</li>
               <li>Bottom trim should only be used on white blocks.</li>
@@ -777,7 +786,6 @@
   
   <div class="pattern elements-heading">
     <h1 class="guidance">Page Elements Style Guide:</h1>
-    <br/>
   </div>
         
   <?php // BEGIN REGULAR PATTERN LIBRARY ============================
@@ -795,7 +803,6 @@
       ?>
         <div class="pattern elements-heading">
           <h2 class="guidance"><?php echo str_replace('-',' ', substr(basename($file, ".html"), 3)) ;?></h2>
-          <br/>
         </div>
       
         <div class="pattern pattern-<?php echo substr(basename($file, ".html"), 3) ;?>">

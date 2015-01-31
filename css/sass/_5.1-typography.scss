@@ -27,8 +27,13 @@ ol,
   font-weight: 400;
 }
 
+p,
+.text {
+  margin-bottom: 1.3em;
+}
+
 .text__lead {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .text__small {
@@ -88,14 +93,6 @@ a {
 
 // Medium 
   font-weight: 500;
-  font-style: normal;
-
-// Demi 
-  font-weight: 700;
-  font-style: normal;
-
-// Heavy 
-  font-weight: 900;
   font-style: normal;
   
 font-family: "franklin-gothic-urw";

@@ -1,20 +1,7 @@
-p {
-  margin: 1.25em 0;
-}
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_4-colours.scss';
 
-.feedback {
-	background-color: #ffc;
-	padding: 0.125em 1em;
-	margin: 1em 0;
-	border-top: 0.125em solid #cc9;
-	-webkit-border-radius: 0.25em;
-	-moz-border-radius: 0.25em;
-	-o-border-radius: 0.25em;
-	border-radius: 0.25em;
-	background-clip: padding-box;
-}
-
-.error {
-	background-color: #fcc;
-	border-color: #c99;
+.feedback--error {
+	background-color: $error;
+	border-bottom: 0.2em solid darken($error,5%);
 }

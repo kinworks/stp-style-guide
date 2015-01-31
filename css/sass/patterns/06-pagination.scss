@@ -1,0 +1,59 @@
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_2-mixins.scss'; @import '_4-colours.scss';
+
+/* Pagination */
+
+ol.pagination {
+  list-style-type: none;
+}
+
+ol.pagination li {
+  display: inline-block;
+  &:before { 
+  content: " "; 
+  counter-increment: none; 
+  }
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 0.3em 0.5em 0;
+  padding: 0.51em 0.5em;
+  height: 2.2em;
+  min-width: 2.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  background-color: $white;
+  border-bottom: 0.2em solid $shadow;
+}
+
+.pagination__current a {
+  background-color: $mid-aqua;
+  color: $white;
+  border-bottom: 0.2em solid lighten($dark-aqua,10%);
+  cursor: not-allowed;
+}
+
+.pagination__previous a,
+.pagination__next a {
+  background-color: $mid-aqua;
+  color: $white;
+  border-bottom: 0.2em solid lighten($dark-aqua,10%);
+  padding: 0.1em 0.1em;
+  height: 2.2em;
+  width: 2.2em;
+}
+
+.pagination__previous span,
+.pagination__next span{
+  font-size: 1.5em;
+}
+
+.pagination__previous.no-more a,
+.pagination__next.no-more a {
+  background-color: $shadow;
+  color: darken($shadow,20%);
+  border-bottom: 0.2em solid darken($shadow,15%);
+  cursor: not-allowed;
+}

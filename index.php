@@ -8,6 +8,7 @@
     <script>(function(b,a){"querySelector"in b&&(a.className=a.className.replace(/\bno-js\b/,"js-tabs"))})(document,document.documentElement);</script>
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="styles/solarized_dark.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <![if !IE 6]>  

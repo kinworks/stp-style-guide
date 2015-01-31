@@ -1,3 +1,5 @@
 .feedback--error {
-	background-color: #fcc;
+  $feedback-error: #fcc;
+	background-color: $feedback-error;
+	border-bottom: 0.2em solid darken($feedback-error,5%);
 }

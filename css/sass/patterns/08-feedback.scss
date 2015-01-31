@@ -1,5 +1,7 @@
 .feedback {
-	background-color: #D9F2F9;
+	$feedback: #D9F2F9;
+	background-color: $feedback;
+	border-bottom: 0.2em solid darken($feedback,8%);
 	font-weight: 500;
 	padding: 0.8em 1.4em;
 	margin: 0 0 1.5em 0;

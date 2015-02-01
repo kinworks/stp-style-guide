@@ -296,6 +296,10 @@
               The current kit ID, from a Typekit account owned by STP, is <b>ovp2cfb</b> and weighs around 98kb.
             </p>
             
+            <p class="guidance">
+              IE6 has trouble with <em>document.createElement</em>, so the &lt;script&gt; tag in your document head should be wrapped in an IE6 conditional comment.
+            </p>
+            
           </div>
           <div class="js-tab-ui panels">
               <ul class="js-tabs-list" role="tablist">
@@ -479,36 +483,11 @@
       
           <div class="display">
           
-            <footer class="footer">
-              <div class="footer__container clearfix">
-                <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
-                <a class="footer__twitter clearfix" href="https://twitter.com/ScotlandsTowns" target="_blank">
-                  <span class="heading heading__small">Follow us on Twitter &raquo;</span>
-                  <span class="icon"></span>
-                </a>
-                <nav class="footer__nav clearfix">
-                  <ul>
-                    <li><a href="http://www.scotlandstowns.org/">Home</a></li>
-                    <li><a href="http://www.scotlandstowns.org/news-and-resources">News &amp; Resources</a></li>
-                    <li><a href="http://www.scotlandstowns.org/community">Community</a></li>
-                    <li><a href="http://www.scotlandstowns.org/about-us">About Us</a></li>
-                    <li><a href="http://www.scotlandstowns.org/get-involved">Get Involved</a></li>
-                  </ul>
-                </nav>
-                
-              </div>
-              <div class="footer__container footer__container--dark clearfix">
-                <div class="footer__terms">
-                  <p class="text__small">
-                    &copy; 2015 Scotland's Towns Ltd. Registered in Scotland No. SC419769. All Rights Reserved. 
-                  </p>
-                </div>
-              </div>
-            </footer>
+            <iframe class="thicker" src="guidepatterns/mobilefooter.html"></iframe>
 
             <br/>
                       
-            <iframe src="guidepatterns/mobilefooter.html"></iframe>
+            <iframe class="thinner" src="guidepatterns/mobilefooter.html"></iframe>
           
           </div>
           <div class="js-tab-ui panels">

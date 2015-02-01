@@ -39,17 +39,34 @@
   padding: 2em 0 0.5em 0;
 }
 
+.guide .pattern .display, 
+.guide .pattern .panels {
+  width: 90%;
+  display: inline-block;
+}
+
 .guide .pattern-header iframe {
   outline: 0;
   border: 0;
-  width: 30em;
+  width: 100%;
+  max-width: 30em;
   overflow: hidden;
 }
 
-.guide .pattern-footer iframe {
+.guide .pattern-footer iframe.thicker {
   outline: 0;
   border: 0;
-  width: 30em;
+  width: 100%;
+  max-width: 40em;
+  height: 33em;
+  overflow: hidden;
+}
+
+.guide .pattern-footer iframe.thinner {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  max-width: 30em;
   height: 33em;
   overflow: hidden;
 }
@@ -60,14 +77,6 @@
   width: 30em;
   height: 30em;
   overflow: visible;
-}
-
-.guide .pattern-responsive-tables iframe tr {
-  max-width: 30em;
-}
-
-.guide .pattern-footer .hljs {
-  min-height: 50em;
 }
 
 .guide .pattern .panels {
@@ -202,11 +211,6 @@ pre {
   margin-bottom: 3em;
 }
 
-.webfontloader .hljs {
-  min-height: 26em;
-  max-height: 26em;
-}
-
 .hierarchy h2.guidance {
   padding-bottom: 1em;
   margin-bottom: 2em;
@@ -215,10 +219,6 @@ pre {
 
 .hierarchy .panels {
   padding-top: 3em;
-}
-
-.hierarchy .hljs {
-  max-height: 42em;
 }
 
 .bg-grey,
@@ -269,11 +269,6 @@ pre {
   margin-bottom: 1em;
 }
 
-.pattern-buttons-and-calls-to-action .hljs {
-  max-height: 50em;
-  padding: 1em;
-}
-
 .blocks {
   width: 100%;
   background-color: $grey;
@@ -281,16 +276,8 @@ pre {
   margin: 0 0 2em 0;
 }
 
-.pattern-blocks .hljs {
-  max-height: 43em;
-}
-
 .pattern-form-fields form {
   width: 60%;
-}
-
-.pattern-form-fields .hljs {
-  max-height: 130em;
 }
 
 .pattern-pagination ol.pagination {
@@ -298,26 +285,18 @@ pre {
   background-color: $grey;
 }
 
-.pattern-site-favicon .hljs {
-  height: 8.75em;
-}
-
-.pattern-responsive-tables .hljs {
-  max-height: 50em;
-}
-
-@media only all and (min-width: 41em) {
-  
-  .blocks {
-    padding: 2em 2.5% 2em 2.5%;
-  }
-  
-  .blocks .block--66 {
+.blocks .block--66 {
     margin-bottom: 4em;
   }
   
-  .blocks .guide-lastbanff {
-    margin-bottom: 5em;
+.blocks .guide-lastbanff {
+  margin-bottom: 5em;
+}
+
+@media only all and (min-width: 74em) {
+  
+  .blocks {
+    padding: 2em 2.5% 2em 2.5%;
   }
   
   .guide .pattern .display, 
@@ -330,6 +309,45 @@ pre {
   .guide .pattern .panels {
     margin-left: 4%;
   }
+  
+  .guide .pattern-footer .hljs {
+    min-height: 50em;
+  }
+  
+  .webfontloader .hljs {
+    min-height: 26em;
+    max-height: 26em;
+  }
+  
+  .hierarchy .hljs {
+    max-height: 42em;
+  }
+  
+  .pattern-buttons-and-calls-to-action .hljs {
+    max-height: 50em;
+    padding: 1em;
+  }
+  
+  .pattern-blocks .hljs {
+    max-height: 43em;
+  }
+  
+  .pattern-form-fields .hljs {
+    max-height: 130em;
+  }
+
+  .pattern-site-favicon .hljs {
+    height: 8.75em;
+  }
+  
+  .pattern-responsive-tables .hljs {
+    max-height: 50em;
+  }
+  
+  .colour .hljs {
+    max-height: 50em;
+  }
+  
 }
 
 /* =======================
@@ -356,10 +374,6 @@ pre {
     background-color: rgba(255,255,255,.7);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
   }
-}
-
-.colour .hljs {
-  max-height: 50em;
 }
 
 .source pre,

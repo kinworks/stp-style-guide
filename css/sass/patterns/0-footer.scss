@@ -29,6 +29,9 @@
   margin: 0.3em auto 0 auto;
   line-height: 1.1em;
   border-bottom: none;
+  @media only all and (min-width: 36.26em) {
+    width: 100%;
+  }
 }
 
 .footer__twitter {

@@ -26,6 +26,12 @@ ol.pagination li {
   text-align: center;
   background-color: $white;
   border-bottom: 0.2em solid $shadow;
+  &:hover {
+    text-decoration: underline;
+    background-color: $charcoal;
+    color: $white;
+    border-color: darken($shadow,10%);
+  }
 }
 
 .pagination__current a {
@@ -33,6 +39,12 @@ ol.pagination li {
   color: $white;
   border-bottom: 0.2em solid lighten($dark-aqua,10%);
   cursor: not-allowed;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background-color: $mid-aqua;
+    border-color: lighten($dark-aqua,10%);
+  }
 }
 
 .pagination__previous a,
@@ -56,4 +68,9 @@ ol.pagination li {
   color: darken($shadow,20%);
   border-bottom: 0.2em solid darken($shadow,15%);
   cursor: not-allowed;
+  &:hover {
+    text-decoration: none;
+    color: darken($shadow,20%);
+    border-color: darken($shadow,15%);
+  }
 }

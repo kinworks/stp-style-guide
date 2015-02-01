@@ -96,30 +96,38 @@ fieldset ul {
   list-style-type: none;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"] {
   display: inline; 
 }
 
 input[type="radio"] {
-  margin-bottom: 0.8em;
-}
-
-input[type="radio"]:last-child {
-  margin-bottom: 0;
+  display: inline-block;
+  margin-bottom: 0.5em;
 }
 
 .required {
   font-weight: 400;
-  color: $shadow;
+  color: darken($shadow,16%);
+}
+
+.format {
+  font-weight: 400;
+  font-style: italic;
+  color: darken($shadow,16%);
+  margin-left: 0.75em;
 }
 
 input[type="search"] {
   box-sizing: border-box;
 }
 
+select[multiple] {
+  height: auto;
+}
+
 textarea[disabled], input[disabled], select[disabled] {
-  background-color: darken($grey, 10%);
+  background-color: lighten($grey, 10%);
+  color: $shadow;
 }
 
 textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {

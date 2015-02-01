@@ -1,191 +1,177 @@
-/* RWD Tables for device listing */
+// StyleGuide Imports (dependencies for this pattern): 
+@import '_4-colours.scss';
+
+/* /// Responsive Tables */
 
 /* make each table separate from other ones */
 table {
-	border: 0;
-	padding-bottom: 0;
-	display: block;
-	width: 100%;
-	}
+  border: 0;
+  padding-bottom: 0;
+  display: block;
+  width: 100%;
+}
 	
 /* make sure captions are displayed */
 caption {
-		display: block;
-	}
+  display: block;
+}
 
 /* hide the thead in an accessible fashion */
-	thead {
-		display: none;
-	}
+thead {
+  display: none;
+}
 
-/*
- * make everything display block so it 
- * aligns vertically
- */
-	tbody, tr, th, td {
-		border: 0;
-		display: block;
-		padding: 0;
-		text-align: left;
-		white-space: normal;
-	}
+/* make everything display block so it 
+ aligns vertically */
+tbody, tr, th, td {
+  border: 0;
+  padding: 0;
+  display: block;
+  text-align: left;
+  white-space: normal;
+}
 
-/* Labeling
- * adding a data-title attribute to the cells
- * lets us add text before the content to provide
- * the missing context
- * 
- * Markup: 
- *   <td data-title="Column Header">Content Here</td>
- * 
- * Display:
- *   Column Header: Content Here
- */
-	th[data-title]:before,
-	td[data-title]:before {
-		content: attr(data-title) ":\00A0";
-		font-weight: bold;
-	}
-	th:not([data-title]) {
-		font-weight: bold;
-	}
+/* Labeling:
+Adding a data-title attribute to the cells
+lets us add text before the content to provide
+the missing context
+
+Markup: 
+<td data-title="Column Header">Content Here</td>
+
+Display:
+Column Header: Content Here */
+th[data-title]:before,
+td[data-title]:before {
+  content: attr(data-title) ":\00A0";
+  font-weight: bold;
+}
+  th:not([data-title]) {
+  font-weight: bold;
+}
 
 /* hide empty cells*/
-	td:empty {
-	    display: none;
-	}
+td:empty {
+  display: none;
+}
 
 /* Table styling time */
 
 tr {
-	display: inline-block;
-	margin: 0 0 1.5em 0;
-	width: 100%;
-	font-size: 1.1em;
-	background-color: #ededed;
-	padding: 1em;
+  display: inline-block;
+  margin: 0 0 1.5em 0;
+  width: 100%;
+  font-size: 1.1em;
+  background-color: lighten($grey,10%);
+  border-top: 0.2em solid $dark-aqua;
+  border-bottom: 0.2em solid $grey;
+  padding: 1em;
 }
 
 /* Arbitrary breakpoint from handheld -> 
 full layout - your choice should vary depending 
-at what width your table columns can be shown side by side rather than stacked */
+at what width your table columns can be shown side 
+by side rather than stacked */
 
 @media only all and (min-width: 41em) {
   
   /* /////// RWD tables for device lists */
 
   table {
-  	width: 100%;
-  	display: table;
-  	margin: 0 0 2em 0;
-  	border-style: none;
-  	border-top-width: 0;
+    width: 100%;
+    display: table;
+    margin: 0 0 2em 0;
+    border-style: none;
+    border-top-width: 0;
+    border-bottom: 0.2em solid $grey;
   }
   
   /* Labeling
    * Hide the mobile labels */
   th[data-title]:before,
   td[data-title]:before {
-  	content: "";
-  	font-weight: bold;
+    content: "";
+    font-weight: 500;
   }
   th:not([data-title]) {
-  	font-weight: bold;
+    font-weight: 500;
   }
   
   /* re-show empty cells*/
   td:empty {
-      display: table-cell;
+    display: table-cell;
   }
   
   /* show the thead again */
   thead, tbody {
-  	display: table-header-group;
+    display: table-header-group;
   }
   
-  /*
-   * make everything display regularly again
-   */
+  /* make everything display regularly again */
   tr, th, td {
-  	border: 0;
-  	display: table-cell;
-  	padding: 0;
-  	text-align: left;
-  	white-space: normal;
+    border: 0;
+    display: table-cell;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
   }
   
   tr {
-  	border-style: none;
-  	border-bottom-width: 0;
-  	display: table-row;
-  	width: 100%;
+    border-style: none;
+    border-bottom-width: 0;
+    display: table-row;
+    width: 100%;
   }
   
   th, td {
-  	border-style: none;
-  	padding-right: 1em;
-  	text-align: left;
-  	width: 100%;
-  	display: block;
-  	vertical-align: top;
-  }
-  
-  th + th,
-  th + td,
-  td + th,
-  td + td {
-  	border-left-width: 1px;
-  }
-  
-  thead tr:last-child {
-  	border-bottom-width: 2px;
+    border-style: none;
+    padding: 0 1em 0 0.3em;
+    text-align: left;
+    vertical-align: top;
   }
   
   thead th,
   tr.index th {
-  	font-weight: bold;
-  	line-height: 1.25;
-  	text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.25em;
+    text-transform: uppercase;
   }
   
   thead th {
-      padding-bottom: .25em;
+    padding-bottom: 0.25em;
   }
   
   tbody:first-of-type tr.index th {
-      padding-top: 1em;
+    padding-top: 1em;
   }
   
   tbody th {
-      font-weight: normal;
+    font-weight: normal;
   }
   
   /* Style table */
   
-  .colourtitle {font-weight: normal;}
-  
   thead tr{
-  	background-color: #404040;
-  	border-left: 0.4em solid #404040;
+    background-color: $dark-aqua;
   }
   
   thead tr th {
-  	color: #fff;
-  	padding: 0.5em 0.5em 0.5em 0;
+    color: #fff;
+    padding: 0.5em 0.5em 0.5em 0.8em;
   }
   
   tbody tr td{
-  	padding: 0.8em 0.8em 0.8em 0;
+    padding: 0.8em 0.8em 0.8em 0.8em;
   }
   
   tbody tr th b {
-  	display: inline-block;
-  	margin: 0 0 0 0.5em;
-  	padding: 0.8em 0 0 0;
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+    padding: 0.8em 0 0 0;
   }
   
   tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: lighten($grey,20%);
   }
   
 } // end min 41em

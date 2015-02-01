@@ -302,6 +302,10 @@ pre {
   height: 8.75em;
 }
 
+.pattern-responsive-tables .hljs {
+  max-height: 50em;
+}
+
 @media only all and (min-width: 41em) {
   
   .blocks {

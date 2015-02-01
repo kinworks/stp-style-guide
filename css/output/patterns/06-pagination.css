@@ -1,0 +1,75 @@
+/* Pagination */
+ol.pagination {
+  list-style-type: none;
+}
+
+ol.pagination li {
+  display: inline-block;
+}
+ol.pagination li:before {
+  content: " ";
+  counter-increment: none;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 0.3em 0.5em 0;
+  padding: 0.51em 0.5em;
+  height: 2.2em;
+  min-width: 2.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  border-bottom: 0.2em solid #9f9f9f;
+}
+.pagination a:hover {
+  text-decoration: underline;
+  background-color: #1a1919;
+  color: white;
+  border-color: #868686;
+}
+
+.pagination__current a {
+  background-color: #00a2bb;
+  color: white;
+  border-bottom: 0.2em solid #018699;
+  cursor: not-allowed;
+}
+.pagination__current a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #00a2bb;
+  border-color: #018699;
+}
+
+.pagination__previous a,
+.pagination__next a {
+  background-color: #00a2bb;
+  color: white;
+  border-bottom: 0.2em solid #018699;
+  padding: 0.1em 0.1em;
+  height: 2.2em;
+  width: 2.2em;
+}
+
+.pagination__previous span,
+.pagination__next span {
+  font-size: 1.5em;
+}
+
+.pagination__previous.no-more a,
+.pagination__next.no-more a {
+  background-color: #9f9f9f;
+  color: #6c6c6c;
+  border-bottom: 0.2em solid #797979;
+  cursor: not-allowed;
+}
+.pagination__previous.no-more a:hover,
+.pagination__next.no-more a:hover {
+  text-decoration: none;
+  color: #6c6c6c;
+  border-color: #797979;
+}
+
+/*# sourceMappingURL=06-pagination.css.map */

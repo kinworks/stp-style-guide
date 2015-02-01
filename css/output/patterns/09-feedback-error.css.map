@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,gBAAiB;EAChB,gBAAgB,ECwBT,OAAI;EDvBX,aAAa,EAAE,mBAA6B",
+"sources": ["../../sass/patterns/09-feedback-error.scss","../../sass/_4-colours.scss"],
+"names": [],
+"file": "09-feedback-error.css"
+}

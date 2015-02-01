@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.quote {
+  margin: 1.5em 0;
+  border-top: 0.1em solid;
+  border-bottom: 0.1em solid;
+  border-color: #dddddd;
+  padding: 1em 1em;
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  color: #00a2bb;
+}
+
+.quote__blockquote:before {
+  content: '“';
+}
+.quote__blockquote:after {
+  content: '”';
+}
+.quote__blockquote:before, .quote__blockquote:after {
+  font-size: 1.6em;
+  vertical-align: -0.2em;
+  margin-left: -0.1em;
+  color: #c3c3c3;
+}
+
+.quote em {
+  font-style: normal;
+}
+
+.quote__caption {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #1a1919;
+  margin-top: 0.8em;
+}
+.quote__caption:before {
+  content: "— ";
+}
+
+/*# sourceMappingURL=03-blockquote.css.map */

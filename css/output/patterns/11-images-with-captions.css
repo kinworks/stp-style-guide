@@ -1,0 +1,23 @@
+.image {
+  display: inline-block;
+  margin: 0 0 2em 0;
+}
+
+.image img {
+  max-width: 100%;
+  display: block;
+}
+
+.image__caption {
+  display: inline-block;
+  width: 100%;
+  background-color: #d0d0d0;
+  padding: 0.3em 0.8em 0.4em 0.8em;
+}
+
+.image__caption a {
+  color: #015966;
+  border-color: #015966;
+}
+
+/*# sourceMappingURL=11-images-with-captions.css.map */

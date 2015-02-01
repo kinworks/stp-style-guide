@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* Buttons / CTAs */
+.cta {
+  background-color: #00a2bb;
+  color: #fff;
+  border-bottom: 0.2em solid #007688;
+  border-top: 0.1em solid #1ce1fe;
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.12s ease-in-out;
+  -moz-transition: background-color 0.12s ease-in-out;
+  -ms-transition: background-color 0.12s ease-in-out;
+  -o-transition: background-color 0.12s ease-in-out;
+  transition: background-color 0.12s ease-in-out;
+}
+.cta:after {
+  content: ' »';
+}
+.cta:hover {
+  text-decoration: underline;
+  background-color: #00b8d4;
+}
+
+/* Removes awkward default styles on some inputs for mobile */
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Removes awkward UA side borders set, and pads to right height */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-left: 0;
+  border-right: 0;
+  height: 3em;
+}
+
+.cta--charcoal {
+  background-color: #1a1919;
+  border-bottom: 0.2em solid #797979;
+  border-top: 0.1em solid #ebebeb;
+}
+.cta--charcoal:hover {
+  text-decoration: underline;
+  background-color: #494646;
+}
+
+.cta--blue {
+  background-color: #085fb1;
+  border-bottom: 0.2em solid #064580;
+  border-top: 0.1em solid #429ff6;
+}
+.cta--blue:hover {
+  text-decoration: underline;
+  background-color: #0a79e2;
+}
+
+.cta--purple {
+  background-color: #612b8f;
+  border-bottom: 0.2em solid #411d60;
+  border-top: 0.1em solid #a168d2;
+}
+.cta--purple:hover {
+  text-decoration: underline;
+  background-color: #7634ae;
+}
+
+.cta--white {
+  background-color: white;
+  color: #1a1919;
+  border-bottom: 0.2em solid #9f9f9f;
+  border-top: 0.1em solid white;
+}
+.cta--white:hover {
+  text-decoration: underline;
+  background-color: #cdf8ff;
+}
+
+.cta--disabled {
+  background-color: #c3c3c3;
+  color: #868686;
+  border-bottom: 0.2em solid #9f9f9f;
+  border-top: 0.1em solid #d0d0d0;
+  cursor: not-allowed;
+}
+.cta--disabled:hover {
+  background-color: #c3c3c3;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=02-buttons-and-calls-to-action.css.map */

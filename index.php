@@ -62,7 +62,7 @@
   <?php include 'functions.php'; ?>
   <body>
     
-    <header class="header clearfix">
+    <header class="header guide clearfix">
       <div class="header__contents">
         <div class="header__title">
           <a href="#"><h1 class="heading heading__large">Style Guide</h1></a>
@@ -844,7 +844,7 @@
         <?php $i++; ?>
       <?php endforeach; ?>
     </div>
-    <footer class="footer">
+    <footer class="footer guide">
       <div class="footer__container clearfix">
         <h1 class="heading heading__medium">Scotland's Towns Partnership</h1>
         <a class="footer__twitter clearfix" href="https://twitter.com/ScotlandsTowns" target="_blank">

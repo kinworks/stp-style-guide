@@ -6,7 +6,18 @@
 }
 
 .lt-ie8 body {
-  width: 41em;
+  width: 60em;
+  margin: 0 auto;
+}
+
+.lt-ie8 .header.guide {
+  width: 52em;
+  margin: 0 auto 1.5em auto;
+}
+
+.lt-ie8 .footer.guide {
+  width: 52em;
+  margin: 0 auto 0 auto;
 }
 
 .lt-ie8 .header__logo {
@@ -26,7 +37,7 @@
   width: 100%;
 }
 
-.lt-ie9 .header__title {
+.ie8 .header__title {
   padding-top: 0;
 }
 

@@ -2,6 +2,7 @@ ul {
   list-style: circle inside;
   padding-left: 0;
   margin: 0;
+  padding: 0;
 }
 
 ol {

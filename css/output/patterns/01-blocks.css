@@ -1,6 +1,6 @@
 /* Blocks - Mobile-first styles */
 .block {
-  background-color: white;
+  background-color: #ffffff;
   display: inline-block;
   margin-bottom: 1.5em;
   width: 100%;
@@ -9,25 +9,25 @@
 
 /* /// Block colours */
 .block--aqua {
-  background-color: #00a2bb;
+  background-color: #00A2BB;
   border-bottom: 0.2em solid #007f92;
 }
 
 .block--dark-aqua {
   background-color: #015966;
-  color: white;
+  color: #ffffff;
   border-bottom: 0.2em solid #003a43;
 }
 
 .block--charcoal {
-  background-color: #1a1919;
-  color: white;
+  background-color: #1A1919;
+  color: #ffffff;
   border-bottom: 0.2em solid #4e4b4b;
 }
 
 /* /// Top trim - only for blocks with no header bar */
 .block--trim-top-aqua {
-  border-top: 0.4em solid #01b2cc;
+  border-top: 0.4em solid #01B2CC;
 }
 
 .block--trim-top-dark-aqua {
@@ -35,7 +35,7 @@
 }
 
 .block--trim-top-charcoal {
-  border-top: 0.4em solid #1a1919;
+  border-top: 0.4em solid #1A1919;
 }
 
 /* /// Bottom trim should only be used on white blocks */
@@ -49,7 +49,7 @@
   width: 100%;
   height: 0.3em;
   margin-top: 0.4em;
-  background-color: #00a2bb;
+  background-color: #00A2BB;
 }
 
 .block--trim-bottom-dark-aqua {
@@ -75,14 +75,14 @@
   width: 100%;
   height: 0.3em;
   margin-top: 0.4em;
-  background-color: #1a1919;
+  background-color: #1A1919;
 }
 
 /* /// Block heading bars */
 .block__heading {
   padding: 0.7em 1.4em 0.6em 1.4em;
-  background-color: #1a1919;
-  color: white;
+  background-color: #1A1919;
+  color: #ffffff;
 }
 
 .block__heading .heading {
@@ -90,7 +90,7 @@
 }
 
 .block__heading--aqua {
-  background-color: #00a2bb;
+  background-color: #00A2BB;
 }
 
 .block__heading--dark-aqua {
@@ -131,6 +131,7 @@ colour as the block, give the title text a little more breathing room vertically
 /* /// Blocks with Images */
 .block__image {
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .block__image--top {

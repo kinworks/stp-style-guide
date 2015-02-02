@@ -45,6 +45,10 @@
   display: inline-block;
 }
 
+iframe {
+  display: none;
+}
+
 .guide .pattern-header iframe {
   outline: 0;
   border: 0;
@@ -292,6 +296,12 @@ pre {
   
 .blocks .guide-lastbanff {
   margin-bottom: 5em;
+}
+
+@media only all and (min-width: 41em) {
+  iframe {
+    display: block;
+  }  
 }
 
 @media only all and (min-width: 74em) {

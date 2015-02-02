@@ -2088,7 +2088,7 @@ by side rather than stacked */
   display: inline;
 }
 
-.lt-ie7 .image {
+.lt-ie7 .image, .lt-ie7 .image img {
   width: 100%;
 }
 

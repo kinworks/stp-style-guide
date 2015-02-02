@@ -22,7 +22,7 @@
   display: inline;
 }
 
-.lt-ie7 .image {
+.lt-ie7 .image, .lt-ie7 .image img {
   width: 100%;
 }
 

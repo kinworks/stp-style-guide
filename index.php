@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STP Style Guide</title>
     <script>(function(b,a){"querySelector"in b&&(a.className=a.className.replace(/\bno-js\b/,"js-tabs"))})(document,document.documentElement);</script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="css/solarized_dark.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -39,7 +42,7 @@
       document.addEventListener('keydown', addKeyboardHook);
     </script>
   </head>
-  <?php include('functions.php'); ?>
+  <?php include 'functions.php'; ?>
   <body>
     
     <header class="header clearfix">
@@ -667,7 +670,7 @@
             
             <div class="block block--50 guide-lastbanff">
               <div class="block__content">
-                White Block, block__image--top;
+                White Block, block__image--bottom;
                 Layout: 50% (.block--50)
               </div>
               <div class="block__image block__image--bottom"
@@ -687,7 +690,7 @@
                 &nbsp;
               </div>
               <div class="block__content block__content--right">
-                White Block, with content set to block__content--left and image set to block__image--right;
+                White Block, with content set to block__content--right and image set to block__image--left;
                 Layout: 50% (.block--50)
               </div>
             </div>
@@ -720,7 +723,7 @@
               <li>Stacking blocks using media queries (e.g. for tablet sizes, turning a row of block--25 into two rows of block--50) is at your own discretion based on your block content. We don't provide any classes in this style guide for doing these manipulations.</li>
             </ul>
             <br/>
-            <h3 class="guidance">For Image Blocks;</h3>
+            <h3 class="guidance">For Image Blocks:/h3>
             <br/>
             <ul class="guidance">
               <li>Where possible, a neat solution to scaling images for different viewports is to use them as background images; this is what our examples use, with the image URLs and heights set in markup for demo purposes. If you're able to, looking into a solution for serving scaled images with &lt;picture&gt; or similar would be advantageous, but isn't mandated by this guide.</li>

@@ -38,6 +38,9 @@ The Style Guide components and patterns have been tested as functional / complia
 
 - Buttons: IE9: &lt;button&gt; or &lt;input&gt; elements with .cta set on them have a brightly coloured border-bottom rather than a darker shade as a pseudo-shadow. This seems to be due to a [bug in IE9](http://stackoverflow.com/questions/11165061/ie9-input-button-element-border-color-issue). 
 
+- Guide: Responsive Tables pattern: It appears that the responsive table pattern seems broken in the guide in certain browsers, however the pattern itself is fine and it's simply the fact that the mobile view is shown in an iframe that causes the bug.
+
+
 ## Working on this repo
 
 ### Pull Requests

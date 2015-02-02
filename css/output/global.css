@@ -1937,11 +1937,11 @@ Column Header: Content Here */
 th[data-title]:before,
 td[data-title]:before {
   content: attr(data-title) ":\00A0";
-  font-weight: bold;
+  font-weight: 500;
 }
 
 th:not([data-title]) {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* hide empty cells*/

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB;EACd,OAAO,EAAE,IAAI;;;AAGf,wBAAyB;EACvB,OAAO,EAAC,KAAK",
+"sources": ["../../sass/patterns/14-legacy-ie-styles.scss"],
+"names": [],
+"file": "14-legacy-ie-styles.css"
+}

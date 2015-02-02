@@ -30,7 +30,7 @@ var helper = (function(win, doc, undefined) {
 	'use strict';
 
 	// Quick feature test
-	if('querySelector' in doc) {
+	if(window.STYLE_GUIDE.ctm) {
 
 		var tabs = function() {
 

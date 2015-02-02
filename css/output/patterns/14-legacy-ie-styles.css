@@ -1,0 +1,9 @@
+.ie-lt8 .panels {
+  display: none;
+}
+
+.ie-lt8 ol.pagination li {
+  display: block;
+}
+
+/*# sourceMappingURL=14-legacy-ie-styles.css.map */

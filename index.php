@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" class="guide no-js" xmlns:html="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 8 ]><html lang="en" class="guide no-js ie-lt8" xmlns:html="http://www.w3.org/1999/xhtml"><![endif]--> 
+<!--[if (gte IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en" class="guide no-js" xmlns:html="http://www.w3.org/1999/xhtml"><!--<![endif]--> 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STP Style Guide</title>
-    <script>(function(b,a){"querySelector"in b&&(a.className=a.className.replace(/\bno-js\b/,"js-tabs"))})(document,document.documentElement);</script>
+    <script>
+      window.STYLE_GUIDE = {
+        ctm: false
+      }; 
+      if ('querySelector' in document && 'addEventListener' in window  && ("classList" in document.createElement("_")) && Object.prototype.toString.call(window.operamini) !== "[object OperaMini]") {
+        window.STYLE_GUIDE.ctm = true;  
+      }
+    </script>
+    <script>(function(b,a){b&&(a.className=a.className.replace(/\bno-js\b/,"js-tabs"))})(window.STYLE_GUIDE.ctm,document.documentElement);</script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="css/solarized_dark.css">
-    <![if IE 8]>  
+    <!--[if IE 8]>  
       <script type="text/javascript" src="js/respond.min.js"></script>
-    <![endif]>
+    <![endif]-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-    <![if lte IE 8]>
-      <style>.panels {display: none !important;}</style>
-    <![endif]>
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <![if !IE 6]>  
+    <!--[if !IE 6]>  
       <script type="text/javascript">
         // Webfont loader - see https://github.com/typekit/webfontloader for details
   	    WebFontConfig = {
@@ -35,17 +41,19 @@
   	      s.parentNode.insertBefore(wf, s);
   	    })();
   	  </script>
-    <![endif]>
+    <![endif]-->
 	  
 	  <script>
   	  // Outline focus method without disrupting UI via @decadecity - https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus
       // This assumes we are using a modern browser - you'll need to cut the mustard to use this reliably.
-      document.querySelector('html').classList.add('js');
-      var addKeyboardHook = function () {
-        document.querySelector('html').classList.add('keyboard');
-        document.removeEventListener('keydown', addKeyboardHook);
-      };
-      document.addEventListener('keydown', addKeyboardHook);
+      if(window.STYLE_GUIDE.ctm) {
+        document.querySelector('html').classList.add('js');
+        var addKeyboardHook = function () {
+          document.querySelector('html').classList.add('keyboard');
+          document.removeEventListener('keydown', addKeyboardHook);
+        };
+        document.addEventListener('keydown', addKeyboardHook);
+      }
     </script>
   </head>
   <?php include 'functions.php'; ?>
@@ -664,7 +672,7 @@
             
             <div class="block block--50 block--trim-bottom-aqua">
               <div class="block__image block__image--top"
-                style="background: url('guidepatterns/images/banff.jpg');
+                style="background-image: url('guidepatterns/images/banff.jpg');
                   min-height: 12.5625em">
                 &nbsp;
               </div>
@@ -680,7 +688,7 @@
                 Layout: 50% (.block--50)
               </div>
               <div class="block__image block__image--bottom"
-                style="background: url('guidepatterns/images/banff.jpg');
+                style="background-image: url('guidepatterns/images/banff.jpg');
                   height: 12.5625em">
                 &nbsp;
               </div>
@@ -691,7 +699,7 @@
                 <span class="heading">Standard Block</span>
               </div>
               <div class="block__image block__image--left"
-                style="background: url('guidepatterns/images/edinburgh.jpg') bottom center;
+                style="background-image: url('guidepatterns/images/edinburgh.jpg');
                   height: 30em">
                 &nbsp;
               </div>
@@ -710,7 +718,7 @@
                 Layout: 50% (.block--50)
               </div>
               <div class="block__image block__image--right"
-                style="background: url('guidepatterns/images/edinburgh.jpg') bottom center;
+                style="background-image: url('guidepatterns/images/edinburgh.jpg');
                   height: 30em">
                 &nbsp;
               </div>
@@ -729,7 +737,7 @@
               <li>Stacking blocks using media queries (e.g. for tablet sizes, turning a row of block--25 into two rows of block--50) is at your own discretion based on your block content. We don't provide any classes in this style guide for doing these manipulations.</li>
             </ul>
             <br/>
-            <h3 class="guidance">For Image Blocks:/h3>
+            <h3 class="guidance">For Image Blocks:</h3>
             <br/>
             <ul class="guidance">
               <li>Where possible, a neat solution to scaling images for different viewports is to use them as background images; this is what our examples use, with the image URLs and heights set in markup for demo purposes. If you're able to, looking into a solution for serving scaled images with &lt;picture&gt; or similar would be advantageous, but isn't mandated by this guide.</li>

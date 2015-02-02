@@ -1399,6 +1399,10 @@ colour as the block, give the title text a little more breathing room vertically
   float: left;
 }
 
+.block__image--right, .block__image--left {
+  background-position: center bottom;
+}
+
 @media only all and (min-width: 41em) {
   /* Block changes */
   .block {
@@ -2055,6 +2059,13 @@ by side rather than stacked */
   tbody tr:nth-child(odd) {
     background-color: #f6f6f6;
   }
+}
+.ie-lt8 .panels {
+  display: none;
+}
+
+.ie-lt8 ol.pagination li {
+  display: block;
 }
 
 /*# sourceMappingURL=global.css.map */

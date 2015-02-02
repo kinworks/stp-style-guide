@@ -623,7 +623,7 @@ font-family: "franklin-gothic-urw";
   outline: 0;
   border: 0;
   width: 30em;
-  height: 30em;
+  height: 33em;
   overflow: visible;
 }
 
@@ -1030,6 +1030,7 @@ pre {
 .footer__twitter {
   width: auto;
   max-width: 15.4em;
+  height: 2.7em;
   display: inline-block;
   background-color: #1a1919;
   margin: 1.6em 0;
@@ -1048,7 +1049,8 @@ pre {
   display: inline-block;
   float: right;
   width: auto;
-  padding: 0.6em 0.8em 0.4em 0.8em;
+  padding: 0.6em 0.8em 0.6em 0.8em;
+  max-height: 2.5em;
   margin: 0;
   -webkit-transition: background-color 0.12s ease-in-out;
   -moz-transition: background-color 0.12s ease-in-out;
@@ -1846,6 +1848,7 @@ html\:abbr, abbr {
 .image {
   display: inline-block;
   margin: 0 0 2em 0;
+  max-width: 100%;
 }
 
 .image img {

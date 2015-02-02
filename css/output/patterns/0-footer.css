@@ -34,6 +34,7 @@
 .footer__twitter {
   width: auto;
   max-width: 15.4em;
+  height: 2.7em;
   display: inline-block;
   background-color: #1a1919;
   margin: 1.6em 0;
@@ -52,7 +53,8 @@
   display: inline-block;
   float: right;
   width: auto;
-  padding: 0.6em 0.8em 0.4em 0.8em;
+  padding: 0.6em 0.8em 0.6em 0.8em;
+  max-height: 2.5em;
   margin: 0;
   -webkit-transition: background-color 0.12s ease-in-out;
   -moz-transition: background-color 0.12s ease-in-out;

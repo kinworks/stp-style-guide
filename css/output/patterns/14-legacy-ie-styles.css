@@ -1,8 +1,13 @@
-.ie-lt8 .panels {
+.lt-ie9 .panels {
   display: none;
 }
 
-.ie-lt8 ol.pagination li {
+.lt-ie9 .heading {
+  font-style: bold;
+  font-weight: 500;
+}
+
+.lt-ie8 ol.pagination li {
   display: block;
 }
 

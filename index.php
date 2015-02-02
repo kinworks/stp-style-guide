@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/solarized_dark.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <![if lte IE 7]>
-      <style>.panels {display: none;}</style>
+      <style>.panels {display: none !important;}</style>
     <![endif]>
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

@@ -29,7 +29,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <![if (gt IE 8)|(!IE)]>
+    <![if (gt IE 8)]>
       <script type="text/javascript">
         // Webfont loader - see https://github.com/typekit/webfontloader for details
   	    WebFontConfig = {
@@ -86,9 +86,10 @@
       <p class="guidance">
         For information about this style guide and to file issues / pull requests, please refer to the project on <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">GitHub</a>.
       </p>
-      
+      <br/>
+      <h2 class="guidance">Browser Tests</h2>
       <p class="guidance">
-        <b>Warning:</b> This guide has not been extensively browser tested, and should be viewed in Google Chrome, with the resulting rendering being taken as the target for reproducing the assets visually. With further development and improvement we hope to add to it and document any UA bugs that arise...
+        This guide has been tested for compliance and functionality to the coverage extent described in the STP tender document - the browser list is also summarised in the <a href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">readme on Github</a>. There will doubtless be other browser bugs uncovered, which should be filed as <a href="https://github.com/kinworks/stp-style-guide/issues" target="_blank">issues on Github</a>.
       </p>
       
       <div class="pattern elements-heading">

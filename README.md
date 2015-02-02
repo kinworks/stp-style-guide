@@ -9,8 +9,30 @@ This Style Guide is based on [Jeremy Keith's](https://adactio.com/) [Pattern Pri
 ## View online
 You can view the Style Guide at [http://style.stp.kin.works](http://style.stp.kin.works)
 
-## Test Coverage
-**TODO**
+## Testing Coverage
+The guideline list of functional and compliant browsers from the STP tender is as follows:
+
+- MS Internet Explorer 8 and above: Compliant
+- MS Internet Explorer 6 & 7: Functional
+- Google Chrome (Latest Version, Windows): Compliant
+- Mozilla Firefox (Latest Version, Windows): Compliant
+- Safari 7, OS X: Compliant
+- Google Chrome (Latest Version, OS X): Compliant
+- Mozilla Firefox (Latest Version, OS X): Compliant
+- Mobile Safari on iOS 8.x: Compliant
+- Google Chrome on iOS 8.x: Compliant
+- Mobile Safari on iOS 7.x: Compliant
+- Google Chrome on iOS 7.x: Compliant
+- Mobile Safari on iOS 6.x: Compliant
+- Mobile Safari on iOS 5.x: Functional
+- Google Chrome on Android 4.x: Compliant
+- 'Browser' on Android 4.x: Compliant
+- 'Browser' on Android 2.3.x: Functional
+- Internet Explorer (10) on Windows Phone 8.x: Functional
+- BlackBerry Browser on Blackberry OS 7.x: Functional
+
+The Style Guide components and patterns have been tested as functional / compliant as appropriate across these browsers, making it a pragmatic baseline to develop web projects for STP from.
+
 
 ## Known Bugs
 
@@ -44,3 +66,11 @@ We tend to alias a [Sass watch](http://sass-lang.com/documentation/file.SASS_REF
 ```alias stylewatch='sass --watch -r sass-globbing --style expanded --sourcemap css/sass:css/output'```
 
 _Don't forget to [source your bash_profile again](http://stackoverflow.com/questions/4608187/how-to-reload-bash-profile-from-the-command-line) after editing it, or the alias won't work._
+
+## Merge drivers for Git: committing compiled SCSS
+
+It may seem strange that the repo contains the compiled SCSS, however this is for easy deployment and CI. To ensure the generated CSS from the remote doesn't clash with your local copy when pulling, run the following commands in your local repo to tell Git to use the merge driver 'keepRemote' included in the repo and referenced from css/output/.gitattributes when pulling:
+
+```git config merge.keepRemote.name "Always prefer remote files for this folder"```
+
+```git config merge.keepRemote.driver "sh keepRemote.sh %O %A %B"```

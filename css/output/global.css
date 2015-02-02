@@ -2071,6 +2071,18 @@ by side rather than stacked */
   font-weight: 700;
 }
 
+.lt-ie8 body {
+  width: 41em;
+}
+
+.lt-ie8 .header__logo {
+  display: block;
+}
+
+.lt-ie8 ol {
+  list-style-type: decimal;
+}
+
 .lt-ie8 ol.pagination li {
   display: inline;
 }

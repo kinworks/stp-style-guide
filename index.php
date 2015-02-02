@@ -2,8 +2,7 @@
 <!--[if lt IE 7]> <html lang="en" class="guide no-js lt-ie9 lt-ie8 lt-ie7" xmlns:html="http://www.w3.org/1999/xhtml"> <![endif]-->
 <!--[if IE 7]>    <html lang="en" class="guide no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html lang="en" class="guide no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="guide no-js ie"> <!--<![endif]-->
-<html lang="en" class="guide no-js">
+<!--[if gt IE 8]><!--> <html lang="en" class="guide no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

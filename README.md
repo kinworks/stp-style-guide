@@ -9,6 +9,13 @@ This Style Guide is based on [Jeremy Keith's](https://adactio.com/) [Pattern Pri
 ## View online
 You can view the Style Guide at [http://style.stp.kin.works](http://style.stp.kin.works)
 
+## Test Coverage
+**TODO**
+
+## Known Bugs
+
+- Buttons: IE9: &lt;button&gt; or &lt;input&gt; elements with .cta set on them have a brightly coloured border-bottom rather than a darker shade as a pseudo-shadow. This seems to be due to a [bug in IE9](http://stackoverflow.com/questions/11165061/ie9-input-button-element-border-color-issue). 
+
 ## Working on this repo
 
 ### Pull Requests

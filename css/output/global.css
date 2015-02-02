@@ -2061,11 +2061,11 @@ by side rather than stacked */
   }
 }
 .lt-ie9 .panels {
-  display: none;
+  display: none !important;
 }
 
 .lt-ie9 .heading {
-  font-style: bold;
+  font-style: bold !important;
   font-weight: 500;
 }
 

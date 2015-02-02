@@ -501,7 +501,7 @@ p,
 }
 
 .text--aqua {
-  color: #00A2BB;
+  color: #00a2bb;
 }
 
 b,
@@ -515,8 +515,8 @@ em {
 }
 
 a {
-  color: #00A2BB;
-  border-bottom: 0.1em dotted #00A2BB;
+  color: #00a2bb;
+  border-bottom: 0.1em dotted #00a2bb;
   text-decoration: none;
 }
 
@@ -526,13 +526,13 @@ a {
 }
 
 .link--aqua {
-  color: #01B2CC;
-  border-bottom: 0.1em dotted #01B2CC;
+  color: #01b2cc;
+  border-bottom: 0.1em dotted #01b2cc;
 }
 
 .link--white {
-  color: #ffffff;
-  border-bottom: 0.1em dotted #ffffff;
+  color: white;
+  border-bottom: 0.1em dotted white;
 }
 
 /* Light 
@@ -555,7 +555,7 @@ font-family: "franklin-gothic-urw";
 
 //////// */
 .guide {
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
   line-height: 1.5em;
   font-size: 16px;
   border: none;
@@ -663,8 +663,8 @@ ul.guidance li:before {
 }
 
 .js-tabs ul.guidance li [aria-selected=true] {
-  color: #1A1919;
-  background-color: #ffffff;
+  color: #1a1919;
+  background-color: white;
 }
 
 pre {
@@ -698,15 +698,15 @@ pre {
   padding: 0.7em;
   margin: 0 2em 2em 0;
   float: left;
-  border-bottom: 0.2em solid #C3C3C3;
+  border-bottom: 0.2em solid #c3c3c3;
 }
 
 .swatches span.aqua {
-  background-color: #01B2CC;
+  background-color: #01b2cc;
 }
 
 .swatches span.mid-aqua {
-  background-color: #00A2BB;
+  background-color: #00a2bb;
 }
 
 .swatches span.dark-aqua {
@@ -714,15 +714,15 @@ pre {
 }
 
 .swatches span.charcoal {
-  background-color: #1A1919;
+  background-color: #1a1919;
 }
 
 .swatches span.white {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .swatches span.grey {
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
 }
 
 .swatches span.shadow {
@@ -730,19 +730,19 @@ pre {
 }
 
 .swatches span.purple {
-  background-color: #612B8F;
+  background-color: #612b8f;
 }
 
 .swatches span.blue {
-  background-color: #085FB1;
+  background-color: #085fb1;
 }
 
 .swatches span.feedback {
-  background-color: #D9F2F9;
+  background-color: #d9f2f9;
 }
 
 .swatches span.error {
-  background-color: #fcc;
+  background-color: #ffcccc;
 }
 
 .swatches li b {
@@ -786,15 +786,15 @@ pre {
 }
 
 .bg-grey {
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
 }
 
 .bg-charcoal {
-  background-color: #1A1919;
+  background-color: #1a1919;
 }
 
 .bg-aqua {
-  background-color: #00A2BB;
+  background-color: #00a2bb;
 }
 
 .pattern-buttons-and-calls-to-action h2 {
@@ -829,7 +829,7 @@ pre {
 
 .blocks {
   width: 100%;
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
   padding: 2em 0 2em 0;
   margin: 0 0 2em 0;
 }
@@ -840,7 +840,7 @@ pre {
 
 .pattern-pagination ol.pagination {
   padding: 2em;
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
 }
 
 .blocks .block--66 {
@@ -919,7 +919,7 @@ pre {
 }
 
 .hljs {
-  background-color: #1A1919 !important;
+  background-color: #1a1919 !important;
   font-size: 1.1em;
   padding: 1em !important;
   max-height: 17em;
@@ -930,7 +930,7 @@ pre {
 }
 .hljs::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  border: 0.2em solid #1A1919;
+  border: 0.2em solid #1a1919;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
@@ -985,8 +985,8 @@ pre {
 }
 .js-tabs .js-tab-ui [aria-selected=true] {
   color: #fff;
-  background-color: #1A1919;
-  border: 0.1em solid #1A1919;
+  background-color: #1a1919;
+  border: 0.1em solid #1a1919;
 }
 .js-tabs .js-tab-ui [aria-selected=true]:focus {
   border: 0.1em solid #E1BC29;
@@ -1006,9 +1006,9 @@ pre {
 }
 
 .footer {
-  background-color: #00A2BB;
+  background-color: #00a2bb;
   width: 100%;
-  border-top: 0.8em solid #01B2CC;
+  border-top: 0.8em solid #01b2cc;
   padding: 1em 0 0 0;
 }
 
@@ -1021,12 +1021,12 @@ pre {
   width: 100%;
   padding: 0 5%;
   margin: 0;
-  background-color: #1A1919;
+  background-color: #1a1919;
   border-top: 0.9em solid #015966;
 }
 
 .footer__container .heading__medium {
-  color: #ffffff;
+  color: white;
   margin: 0.3em auto 0 auto;
   line-height: 1.1em;
   border-bottom: none;
@@ -1042,7 +1042,7 @@ pre {
   max-width: 15.4em;
   height: 2.7em;
   display: inline-block;
-  background-color: #1A1919;
+  background-color: #1a1919;
   margin: 1.6em 0;
   border-bottom: 0.2em solid #00434d;
   border-top: 0.1em solid #01c8e5;
@@ -1054,7 +1054,7 @@ pre {
 
 .footer__twitter .heading {
   font-size: 1em;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
   display: inline-block;
   float: right;
@@ -1103,7 +1103,7 @@ pre {
 }
 
 .footer__nav a {
-  color: #1A1919;
+  color: #1a1919;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -1111,12 +1111,12 @@ pre {
   content: " »";
 }
 .footer__nav a:hover {
-  border-bottom: 0.1em dotted #ffffff;
+  border-bottom: 0.1em dotted white;
 }
 
 .footer__terms {
   margin: 1.5em 0 2em 0;
-  color: #C3C3C3;
+  color: #c3c3c3;
 }
 
 @media only all and (min-width: 41em) {
@@ -1158,7 +1158,7 @@ pre {
   }
 }
 .header {
-  background-color: #1A1919;
+  background-color: #1a1919;
   width: 100%;
   margin: 0 0 1.5em 0;
   text-align: center;
@@ -1173,15 +1173,15 @@ pre {
 .header__title {
   display: inline-block;
   width: 100%;
-  background-color: #01B2CC;
+  background-color: #01b2cc;
   text-align: center;
   padding: 0.8em 1em 1em 1em;
-  border-bottom: 0.4em solid #00A2BB;
+  border-bottom: 0.4em solid #00a2bb;
   border-top: 0.2em solid #02defe;
 }
 
 .header__title .heading {
-  color: #ffffff;
+  color: white;
   margin: 0 auto;
   line-height: 1.1em;
   border-bottom: none;
@@ -1247,7 +1247,7 @@ pre {
 }
 /* Blocks - Mobile-first styles */
 .block {
-  background-color: #ffffff;
+  background-color: white;
   display: inline-block;
   margin-bottom: 1.5em;
   width: 100%;
@@ -1256,25 +1256,25 @@ pre {
 
 /* /// Block colours */
 .block--aqua {
-  background-color: #00A2BB;
+  background-color: #00a2bb;
   border-bottom: 0.2em solid #007f92;
 }
 
 .block--dark-aqua {
   background-color: #015966;
-  color: #ffffff;
+  color: white;
   border-bottom: 0.2em solid #003a43;
 }
 
 .block--charcoal {
-  background-color: #1A1919;
-  color: #ffffff;
+  background-color: #1a1919;
+  color: white;
   border-bottom: 0.2em solid #4e4b4b;
 }
 
 /* /// Top trim - only for blocks with no header bar */
 .block--trim-top-aqua {
-  border-top: 0.4em solid #01B2CC;
+  border-top: 0.4em solid #01b2cc;
 }
 
 .block--trim-top-dark-aqua {
@@ -1282,7 +1282,7 @@ pre {
 }
 
 .block--trim-top-charcoal {
-  border-top: 0.4em solid #1A1919;
+  border-top: 0.4em solid #1a1919;
 }
 
 /* /// Bottom trim should only be used on white blocks */
@@ -1296,7 +1296,7 @@ pre {
   width: 100%;
   height: 0.3em;
   margin-top: 0.4em;
-  background-color: #00A2BB;
+  background-color: #00a2bb;
 }
 
 .block--trim-bottom-dark-aqua {
@@ -1322,14 +1322,14 @@ pre {
   width: 100%;
   height: 0.3em;
   margin-top: 0.4em;
-  background-color: #1A1919;
+  background-color: #1a1919;
 }
 
 /* /// Block heading bars */
 .block__heading {
   padding: 0.7em 1.4em 0.6em 1.4em;
-  background-color: #1A1919;
-  color: #ffffff;
+  background-color: #1a1919;
+  color: white;
 }
 
 .block__heading .heading {
@@ -1337,7 +1337,7 @@ pre {
 }
 
 .block__heading--aqua {
-  background-color: #00A2BB;
+  background-color: #00a2bb;
 }
 
 .block__heading--dark-aqua {
@@ -1399,10 +1399,6 @@ colour as the block, give the title text a little more breathing room vertically
   float: left;
 }
 
-.block__image--right, .block__image--left {
-  background-position: center bottom;
-}
-
 @media only all and (min-width: 41em) {
   /* Block changes */
   .block {
@@ -1445,7 +1441,7 @@ colour as the block, give the title text a little more breathing room vertically
 }
 /* Buttons / CTAs */
 .cta {
-  background-color: #00A2BB;
+  background-color: #00a2bb;
   color: #fff;
   border-bottom: 0.2em solid #007688;
   border-top: 0.1em solid #1ce1fe;
@@ -1487,7 +1483,7 @@ input[type="submit"] {
 }
 
 .cta--charcoal {
-  background-color: #1A1919;
+  background-color: #1a1919;
   border-bottom: 0.2em solid #797979;
   border-top: 0.1em solid #ebebeb;
 }
@@ -1497,7 +1493,7 @@ input[type="submit"] {
 }
 
 .cta--blue {
-  background-color: #085FB1;
+  background-color: #085fb1;
   border-bottom: 0.2em solid #064580;
   border-top: 0.1em solid #429ff6;
 }
@@ -1507,7 +1503,7 @@ input[type="submit"] {
 }
 
 .cta--purple {
-  background-color: #612B8F;
+  background-color: #612b8f;
   border-bottom: 0.2em solid #411d60;
   border-top: 0.1em solid #a168d2;
 }
@@ -1517,8 +1513,8 @@ input[type="submit"] {
 }
 
 .cta--white {
-  background-color: #ffffff;
-  color: #1A1919;
+  background-color: white;
+  color: #1a1919;
   border-bottom: 0.2em solid #9f9f9f;
   border-top: 0.1em solid white;
 }
@@ -1528,14 +1524,14 @@ input[type="submit"] {
 }
 
 .cta--disabled {
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
   color: #868686;
   border-bottom: 0.2em solid #9f9f9f;
   border-top: 0.1em solid #d0d0d0;
   cursor: not-allowed;
 }
 .cta--disabled:hover {
-  background-color: #C3C3C3;
+  background-color: #c3c3c3;
   cursor: not-allowed;
   text-decoration: none;
 }
@@ -1549,7 +1545,7 @@ input[type="submit"] {
   font-style: italic;
   font-size: 1.4em;
   line-height: 1.3em;
-  color: #00A2BB;
+  color: #00a2bb;
 }
 
 blockquote.quote__blockquote {
@@ -1566,7 +1562,7 @@ blockquote.quote__blockquote {
   font-size: 1.6em;
   vertical-align: -0.2em;
   margin-left: -0.1em;
-  color: #C3C3C3;
+  color: #c3c3c3;
 }
 
 .quote em {
@@ -1576,7 +1572,7 @@ blockquote.quote__blockquote {
 .quote__caption {
   font-style: italic;
   font-size: 0.8em;
-  color: #1A1919;
+  color: #1a1919;
   margin-top: 0.8em;
 }
 .quote__caption:before {
@@ -1659,33 +1655,33 @@ ol.pagination li:before {
   font-size: 1.1em;
   font-weight: 500;
   text-align: center;
-  background-color: #ffffff;
+  background-color: white;
   border-bottom: 0.2em solid #9f9f9f;
 }
 .pagination a:hover {
   text-decoration: underline;
-  background-color: #1A1919;
-  color: #ffffff;
+  background-color: #1a1919;
+  color: white;
   border-color: #868686;
 }
 
 .pagination__current a {
-  background-color: #00A2BB;
-  color: #ffffff;
+  background-color: #00a2bb;
+  color: white;
   border-bottom: 0.2em solid #018699;
   cursor: not-allowed;
 }
 .pagination__current a:hover {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #00A2BB;
+  color: white;
+  background-color: #00a2bb;
   border-color: #018699;
 }
 
 .pagination__previous a,
 .pagination__next a {
-  background-color: #00A2BB;
-  color: #ffffff;
+  background-color: #00a2bb;
+  color: white;
   border-bottom: 0.2em solid #018699;
   padding: 0.1em 0.1em;
   height: 2.2em;
@@ -1737,7 +1733,7 @@ select {
   /* ^ The 0.375em vertically centers text on FF, 
   ignored by Webkit */
   background-color: #fff;
-  border: 0.1em solid #C3C3C3;
+  border: 0.1em solid #c3c3c3;
   box-shadow: none;
 }
 
@@ -1782,7 +1778,7 @@ input[type="password"]:focus,
 input[list]:focus,
 textarea:focus,
 select:focus {
-  border: 0.1em solid #00A2BB;
+  border: 0.1em solid #00a2bb;
   outline: 0;
 }
 
@@ -1844,13 +1840,13 @@ textarea[disabled]:hover, input[disabled]:hover, select[disabled]:hover {
 }
 
 select:-internal-list-box option:checked {
-  background-color: #01B2CC;
+  background-color: #01b2cc;
 }
 
 /* Form buttons are covered in the 'Buttons
   and calls to action' section above */
 .feedback {
-  background-color: #D9F2F9;
+  background-color: #d9f2f9;
   border-bottom: 0.2em solid #b6e6f3;
   font-weight: 500;
   padding: 0.8em 1.4em;
@@ -1858,7 +1854,7 @@ select:-internal-list-box option:checked {
 }
 
 .feedback--error {
-  background-color: #fcc;
+  background-color: #ffcccc;
   border-bottom: 0.2em solid #ffb3b3;
 }
 
@@ -1932,7 +1928,7 @@ Display:
 Column Header: Content Here */
 th[data-title]:before,
 td[data-title]:before {
-  content: attr(data-title) ": ";
+  content: attr(data-title) ":\00A0";
   font-weight: bold;
 }
 
@@ -1953,7 +1949,7 @@ tr {
   font-size: 1.1em;
   background-color: #dddddd;
   border-top: 0.2em solid #015966;
-  border-bottom: 0.2em solid #C3C3C3;
+  border-bottom: 0.2em solid #c3c3c3;
   padding: 1em;
 }
 
@@ -1969,7 +1965,7 @@ by side rather than stacked */
     margin: 0 0 2em 0;
     border-style: none;
     border-top-width: 0;
-    border-bottom: 0.2em solid #C3C3C3;
+    border-bottom: 0.2em solid #c3c3c3;
   }
 
   /* Labeling
@@ -2059,13 +2055,6 @@ by side rather than stacked */
   tbody tr:nth-child(odd) {
     background-color: #f6f6f6;
   }
-}
-.ie-lt8 .panels {
-  display: none;
-}
-
-.ie-lt8 ol.pagination li {
-  display: block;
 }
 
 /*# sourceMappingURL=global.css.map */

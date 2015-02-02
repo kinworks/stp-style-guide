@@ -1,6 +1,8 @@
 ol {
   list-style: none;
-  counter-reset: item; 
+  counter-reset: item;
+  margin: 0; 
+  padding: 0;
 }
 
 ol ol,

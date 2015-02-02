@@ -2068,8 +2068,11 @@ by side rather than stacked */
   display: none !important;
 }
 
-.lt-ie9 .heading {
-  font-weight: 500;
+.lt-ie9 .heading,
+.lt-ie9 h1.guidance,
+.lt-ie9 h2.guidance,
+.lt-ie9 h3.guidance {
+  font-weight: 700;
 }
 
 .lt-ie8 ol.pagination li {

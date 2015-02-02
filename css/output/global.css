@@ -1537,6 +1537,10 @@ input[type="submit"] {
   color: #00a2bb;
 }
 
+blockquote.quote__blockquote {
+  margin: 0;
+}
+
 .quote__blockquote:before {
   content: '“';
 }

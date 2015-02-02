@@ -13,6 +13,10 @@
 	color: $mid-aqua;
 }
 
+blockquote.quote__blockquote {
+  margin: 0; // Firefox default override
+}
+
 .quote__blockquote {
   &:before {
     content: '“';

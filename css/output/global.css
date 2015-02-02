@@ -593,6 +593,10 @@ font-family: "franklin-gothic-urw";
   display: inline-block;
 }
 
+.lt-ie9 .guide .pattern .panels {
+  display: none !important;
+}
+
 iframe {
   display: none;
 }

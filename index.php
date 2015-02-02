@@ -11,16 +11,16 @@
     <![endif]-->
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="css/solarized_dark.css">
-    <![if IE 8]>  
+    <!--[if IE 8]>  
       <script type="text/javascript" src="js/respond.min.js"></script>
-    <![endif]>
+    <![endif]-->
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-    <![if lte IE 8]>
+    <!--[if lte IE 8]>
       <style>.panels, iframe {display: none !important;}</style>
-    <![endif]>
+    <![endif]-->
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <![if !IE 6]>  
+    <!--[if (gt IE 8)|(!IE)]>  
       <script type="text/javascript">
         // Webfont loader - see https://github.com/typekit/webfontloader for details
   	    WebFontConfig = {
@@ -35,7 +35,7 @@
   	      s.parentNode.insertBefore(wf, s);
   	    })();
   	  </script>
-    <![endif]>
+    <![endif]-->
 	  
 	  <script>
   	  // Outline focus method without disrupting UI via @decadecity - https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus
@@ -306,7 +306,7 @@
             </p>
             
             <p class="guidance">
-              IE6 has trouble with <em>document.createElement</em>, so the &lt;script&gt; tag in your document head should be wrapped in an IE6 conditional comment.
+              We've had some issues with the webfont loader on IE 8 and below, so we wrap the &lt;script&gt; tag in the document head with an IE conditional comment. For the guide document itself, we're using the BBC's <a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard" target="_blank">'cutting the mustard'</a> technique to avoid JS errors from both the webfont loader and <a href="https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus" target="_blank">@decadecity's focus pattern</a>, which you could also consider doing.
             </p>
             
           </div>

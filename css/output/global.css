@@ -461,7 +461,7 @@ body,
 .heading {
   font-weight: 500;
   font-style: normal;
-  margin-bottom: 1em;
+  margin: 0 0 1em 0;
   text-transform: uppercase;
 }
 

@@ -21,6 +21,10 @@
   display: inline;
 }
 
-.footer__twitter {
+.lt-ie7 .image {
+  width: 100%;
+}
+
+.lt-ie9 .footer__twitter {
   width: 18em;
 }

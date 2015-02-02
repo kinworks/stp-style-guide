@@ -5,11 +5,27 @@
   font-weight: 700;
 }
 
+.lt-ie8 body {
+  width: 41em;
+}
+
+.lt-ie8 .header__logo {
+  display: block;
+}
+
+.lt-ie8 ol {
+  list-style-type: decimal;
+}
+
 .lt-ie8 ol.pagination li {
   display: inline;
 }
 
-.footer__twitter {
+.lt-ie7 .image {
+  width: 100%;
+}
+
+.lt-ie9 .footer__twitter {
   width: 18em;
 }
 

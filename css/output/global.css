@@ -2061,7 +2061,7 @@ by side rather than stacked */
   }
 }
 .lt-ie9 .guide .pattern .panels {
-  display: none;
+  display: none !important;
 }
 
 .lt-ie9 .heading {

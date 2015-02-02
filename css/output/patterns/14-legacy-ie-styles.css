@@ -5,20 +5,12 @@
   font-weight: 700;
 }
 
-.lt-ie8 body {
-  width: 41em;
-}
-
-.lt-ie8 .header__logo {
-  display: block;
-}
-
-.lt-ie8 ol {
-  list-style-type: decimal;
-}
-
 .lt-ie8 ol.pagination li {
   display: inline;
+}
+
+.footer__twitter {
+  width: 18em;
 }
 
 /*# sourceMappingURL=14-legacy-ie-styles.css.map */

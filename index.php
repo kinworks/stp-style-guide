@@ -18,7 +18,8 @@
     </script>
     <script>(function(b,a){b&&(a.className=a.className.replace(/\bno-js\b/,"js-tabs"))})(window.STYLE_GUIDE.ctm,document.documentElement);</script>
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <style>.lt-ie9 .guide .pattern .panels {display: none !important;}</style>
     <![endif]-->
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="css/solarized_dark.css">

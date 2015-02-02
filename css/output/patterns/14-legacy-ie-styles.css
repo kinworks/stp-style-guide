@@ -1,5 +1,5 @@
-.lt-ie9 .panels {
-  display: none !important;
+.lt-ie9 .guide .pattern .panels {
+  display: none;
 }
 
 .lt-ie9 .heading {

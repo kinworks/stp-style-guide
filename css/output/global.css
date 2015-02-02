@@ -2060,8 +2060,8 @@ by side rather than stacked */
     background-color: #f6f6f6;
   }
 }
-.lt-ie9 .panels {
-  display: none !important;
+.lt-ie9 .guide .pattern .panels {
+  display: none;
 }
 
 .lt-ie9 .heading {

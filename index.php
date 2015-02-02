@@ -28,7 +28,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <!--[if (gt IE 8)|(!IE)]>
+    <![if (gt IE 8)|(!IE)]>
       <script type="text/javascript">
         // Webfont loader - see https://github.com/typekit/webfontloader for details
   	    WebFontConfig = {
@@ -43,7 +43,7 @@
   	      s.parentNode.insertBefore(wf, s);
   	    })();
   	  </script>
-    <![endif]-->
+    <![endif]>
 	  
 	  <script>
   	  // Outline focus method without disrupting UI via @decadecity - https://decadecity.net/blog/2012/11/06/building-a-layered-ui#focus

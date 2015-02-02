@@ -2081,6 +2081,7 @@ by side rather than stacked */
 
 .lt-ie8 ol {
   list-style-type: decimal;
+  list-style-position: inside;
 }
 
 .lt-ie8 ol.pagination li {
@@ -2091,7 +2092,12 @@ by side rather than stacked */
   width: 100%;
 }
 
+.lt-ie9 .header__title {
+  padding-top: 0;
+}
+
 .lt-ie9 .footer__twitter {
+  max-width: 18em;
   width: 18em;
 }
 

@@ -16,7 +16,7 @@
     <![endif]>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
     <![if lte IE 8]>
-      <style>.panels {display: none !important;}</style>
+      <style>.panels, iframe {display: none !important;}</style>
     <![endif]>
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

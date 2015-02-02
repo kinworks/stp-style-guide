@@ -152,6 +152,10 @@ colour as the block, give the title text a little more breathing room vertically
   float: left;
 }
 
+.block__image--right, .block__image--left {
+  background-position: center bottom;
+}
+
 @media only all and (min-width: 41em) {
   /* Block changes */
   .block {

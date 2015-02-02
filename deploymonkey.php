@@ -1,1 +1,1 @@
-<?php `sh deploy.sh 2>&1`; ?>
+<?php `sh deploy.sh`; ?>

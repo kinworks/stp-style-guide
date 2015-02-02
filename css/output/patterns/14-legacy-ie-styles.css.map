@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;mBAGoB;EAClB,WAAW,EAAE,GAAG;;;AAGlB,wBAAyB;EACvB,OAAO,EAAE,MAAM;;;AAGjB,gBAAiB;EACf,KAAK,EAAE,IAAI",
+"mappings": "AAAA;;;mBAGoB;EAClB,WAAW,EAAE,GAAG;;;AAGlB,wBAAyB;EACvB,OAAO,EAAE,MAAM;;;AAGjB,sBAAuB;EACrB,WAAW,EAAE,CAAC;;;AAGhB,gBAAiB;EACf,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI",
 "sources": ["../../sass/patterns/14-legacy-ie-styles.scss"],
 "names": [],
 "file": "14-legacy-ie-styles.css"

@@ -9,7 +9,12 @@
   display: inline;
 }
 
+.lt-ie9 .header__title {
+  padding-top: 0;
+}
+
 .footer__twitter {
+  max-width: 18em;
   width: 18em;
 }
 

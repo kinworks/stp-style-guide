@@ -851,6 +851,19 @@ pre {
   margin-bottom: 5em;
 }
 
+.lt-ie9 .guide .pattern .panels {
+  display: none !important;
+}
+
+.lt-ie9 .heading {
+  font-style: bold !important;
+  font-weight: 500;
+}
+
+.lt-ie8 ol.pagination li {
+  display: inline;
+}
+
 @media only all and (min-width: 41em) {
   iframe {
     display: block;

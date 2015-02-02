@@ -599,6 +599,7 @@ font-family: "franklin-gothic-urw";
   width: 100%;
   max-width: 30em;
   overflow: hidden;
+  height: 15em;
 }
 
 .guide .pattern-footer iframe.thicker {

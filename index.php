@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="css/solarized_dark.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-    <![if lte IE 7]>
+    <![if lte IE 8]>
       <style>.panels {display: none !important;}</style>
     <![endif]>
     <script src="js/highlight.pack.js"></script>

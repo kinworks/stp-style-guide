@@ -11,7 +11,13 @@
     <![endif]-->
     <link rel="stylesheet" href="css/output/global.css">
     <link rel="stylesheet" href="css/solarized_dark.css">
+    <![if IE 8]>  
+      <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <![if lte IE 8]>
+      <style>.panels {display: none !important;}</style>
+    <![endif]>
     <script src="js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <![if !IE 6]>  

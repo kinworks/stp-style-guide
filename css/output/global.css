@@ -2075,4 +2075,8 @@ by side rather than stacked */
   display: inline;
 }
 
+.footer__twitter {
+  width: 18em;
+}
+
 /*# sourceMappingURL=global.css.map */

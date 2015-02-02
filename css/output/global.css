@@ -2070,7 +2070,7 @@ by side rather than stacked */
 }
 
 .lt-ie8 ol.pagination li {
-  display: block;
+  display: inline;
 }
 
 /*# sourceMappingURL=global.css.map */

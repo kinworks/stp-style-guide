@@ -590,9 +590,6 @@
             Layout across STP sites is handled using modules or 'blocks' against a $grey background. Blocks can be any width or height, provided that certain layout rules are adhered to.
           </p>
           <br/>
-          <div class="outsidedemo">
-            <h1 class="heading heading__large outside">Heading .outside blocks</h1>
-          </div>
           <div class="blocks clearfix">
             
             <div class="block block--50">

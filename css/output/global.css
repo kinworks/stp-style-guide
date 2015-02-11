@@ -1170,7 +1170,6 @@ pre {
   }
 
   .footer__terms {
-    width: 90%;
     margin: 1.5em auto 2em auto;
     max-width: 80em;
   }
@@ -1508,7 +1507,6 @@ colour as the block, give the title text a little more breathing room vertically
   }
 
   .footer__terms {
-    width: 90%;
     margin: 1.5em auto 2em auto;
     max-width: 80em;
   }

@@ -10,6 +10,15 @@ This Style Guide is based on [Jeremy Keith's](https://adactio.com/) [Pattern Pri
 You can view the Style Guide at [http://style.stp.kin.works](http://style.stp.kin.works)
 
 ## Changelog
+
+### v1.1.2
+
+- Removed an extra bit of demo markup that shouldn't have been left in the guide.
+
+### v1.1.1
+
+- Fixed the width of footer__terms which was incorrectly set to 90% at enhanced layout breakpoint
+
 ### v1.1
 
 _With thanks to Andy at Storm ID for his feedback!_

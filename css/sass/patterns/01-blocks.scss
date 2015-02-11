@@ -1,6 +1,23 @@
 // StyleGuide Imports (dependencies for this pattern): 
 @import '_2-mixins.scss'; @import '_4-colours.scss';
 
+/* Outside blocks
+   Sometimes we'll want to add a heading or CTA outside
+   of a layout block. For this we use .outside, which 
+   should be applied to a container around the object */
+
+.outside {
+  width: 100%;
+  padding-left: 1.4em; 
+  // Enhanced layout:
+  @media only all and (min-width: 41em) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80em;
+  }
+}
+
 /* Blocks - Mobile-first styles */
 
 .block {

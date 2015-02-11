@@ -72,10 +72,15 @@
       <div class="header__trim"></div>
     </header>
     
-    <span class="versioninfo">
-        Version <?php echo $tagname; ?> - <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
-          View on GitHub</a>
+    <div class="outside">
+      <h1 class="heading heading__large">Release <?php echo $tagname; ?></h1>
+    </div>
+    <div class="outside">
+      <span class="versioninfo">
+          <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
+            View on GitHub</a>
       </span>
+    </div>
     
     <div id="js-binder" class="styleguide container">
     
@@ -587,6 +592,9 @@
             Layout across STP sites is handled using modules or 'blocks' against a $grey background. Blocks can be any width or height, provided that certain layout rules are adhered to.
           </p>
           <br/>
+          <div class="outsidedemo">
+            <h1 class="heading heading__large outside">Heading .outside blocks</h1>
+          </div>
           <div class="blocks clearfix">
             
             <div class="block block--50">
@@ -767,6 +775,7 @@
           <div class="display">
             <h2 class="guidance">Block / layout rules & guidance</h2>
             <ul class="guidance">
+              <li>New in v1.1: Headings and CTAs can be placed directly on the grey background, if that suits your layout: use the .outside class detailed in SCSS here.</li>
               <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block.</li>
               <li>Bottom trim should only be used on white blocks.</li>
               <li>Top trim should only be used where there's no heading bar on a block.</li>

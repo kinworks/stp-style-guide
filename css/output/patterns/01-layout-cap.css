@@ -1,0 +1,36 @@
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+.footer__container.footer__container--dark {
+  max-width: none;
+}
+
+@media only all and (min-width: 41em) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 80em;
+  }
+
+  .header__contents {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80em;
+  }
+
+  .footer__container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80em;
+  }
+
+  .footer__terms {
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+    max-width: 80em;
+  }
+}
+
+/*# sourceMappingURL=01-layout-cap.css.map */

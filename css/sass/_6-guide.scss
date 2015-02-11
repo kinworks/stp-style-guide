@@ -18,8 +18,10 @@
 .versioninfo {
   font-size: 1.1em;
   color: #222;
-  display: inline-block;
-  margin: 0 0 1em 5%;
+  display: block;
+  margin: 0 auto 1em auto;
+  width: 90%;
+  max-width: 72.728em;
 }
 
 .versioninfo a {
@@ -28,7 +30,6 @@
 
 .guide .styleguide {
   background-color: #fff;
-  margin: 0 5%;
   padding: 1.5em 2.5%;
 }
 

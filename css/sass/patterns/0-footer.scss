@@ -22,6 +22,7 @@
   margin: 0;
   background-color: $charcoal;
   border-top: 0.9em solid $dark-aqua;
+  max-width: none;
 }
 
 .footer__container .heading__medium {
@@ -118,8 +119,8 @@
     
   .footer__container {
     width: 90%;
-    margin: 0 5%; // This depends on what sizes you
-    // need to use to line edges up with content edges
+    margin: 0 auto;
+    max-width: 80em;
   }
   
   .footer__container .heading__medium {
@@ -146,8 +147,10 @@
   }
   
   .footer__terms {
-    width: 100%;
-    float: left;
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+    max-width: 80em;
+
   }
 
 } // End min 41em

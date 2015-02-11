@@ -77,7 +77,7 @@
           View on GitHub</a>
       </span>
     
-    <div id="js-binder" class="styleguide">
+    <div id="js-binder" class="styleguide container">
     
       <?php // ReadMe ?>
       
@@ -543,6 +543,40 @@
             </div>
           </div>
 
+<?php // LAYOUT CAP ==================== ?>
+
+          <div class="pattern pattern-layout-cap">
+            <div class="display">
+              <h2 class="guidance">Layout cap</h2>
+    
+              <p class="guidance">The layout width should be capped to a maximum of 80em via a limitation on your layout container, also applied to the header and footer of the site.</p>
+              
+              <p class="guidance">Added in v1.1, This constraint was arrived at having measured the ideal text line length within 50% layout blocks.</p>
+            </div>
+                                         
+          <div class="js-tab-ui panels">
+              <ul class="js-tabs-list" role="tablist">
+                <li role="tab" id="tab-layout-cap-scss" aria-controls="tab-layout-cap-scss-panel" aria-selected="true" data-tabgroup="layout-cap">
+                  SCSS
+                </li>
+                <li role="tab" id="tab-layout-cap-css" aria-controls="tab-layout-cap-css-panel" aria-selected="false" data-tabgroup="layout-cap">
+                  Generated CSS
+                </li>
+              </ul>
+              <div class="style js-panel first" id="tab-layout-cap-scss-panel" role="tabpanel" aria-labelledby="tab-layout-cap-scss" data-tabgroup="layout-cap">
+                <h2 class="js-panel__title">SCSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/sass/patterns/01-layout-cap.scss"); ?></code>
+                </pre>
+              </div>            
+              <div class="style js-panel" id="tab-layout-cap-css-panel" role="tabpanel" aria-labelledby="tab-layout-cap-css" data-tabgroup="layout-cap">
+                <h2 class="js-panel__title">Generated CSS</h2>
+                <pre>
+                  <code><?php echo file_get_contents("css/output/patterns/01-layout-cap.css"); ?></code>
+                </pre>
+              </div>
+            </div>
+          </div>
 
 <?php // BLOCK LAYOUT PATTERN ==================== ?>
     

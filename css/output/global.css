@@ -570,13 +570,14 @@ font-family: "franklin-gothic-urw";
 .versioninfo {
   font-size: 1.1em;
   color: #222;
-  display: inline-block;
-  margin: 0 0 1em 5%;
+  display: block;
+  margin: 0 auto 1em auto;
+  width: 90%;
+  max-width: 72.728em;
 }
 
 .guide .styleguide {
   background-color: #fff;
-  margin: 0 5%;
   padding: 1.5em 2.5%;
 }
 
@@ -1027,6 +1028,7 @@ pre {
   margin: 0;
   background-color: #1a1919;
   border-top: 0.9em solid #015966;
+  max-width: none;
 }
 
 .footer__container .heading__medium {
@@ -1130,7 +1132,8 @@ pre {
 
   .footer__container {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 auto;
+    max-width: 80em;
   }
 
   .footer__container .heading__medium {
@@ -1157,8 +1160,9 @@ pre {
   }
 
   .footer__terms {
-    width: 100%;
-    float: left;
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+    max-width: 80em;
   }
 }
 .header {
@@ -1222,7 +1226,8 @@ pre {
 
   .header__contents {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 auto;
+    max-width: 80em;
   }
 
   .header__title {
@@ -1445,6 +1450,40 @@ colour as the block, give the title text a little more breathing room vertically
 
   .block--100 {
     width: 97%;
+  }
+}
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+.footer__container.footer__container--dark {
+  max-width: none;
+}
+
+@media only all and (min-width: 41em) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 80em;
+  }
+
+  .header__contents {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80em;
+  }
+
+  .footer__container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80em;
+  }
+
+  .footer__terms {
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+    max-width: 80em;
   }
 }
 /* Buttons / CTAs */

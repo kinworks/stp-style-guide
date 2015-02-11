@@ -17,6 +17,7 @@
   margin: 0;
   background-color: #1a1919;
   border-top: 0.9em solid #015966;
+  max-width: none;
 }
 
 .footer__container .heading__medium {
@@ -120,7 +121,8 @@
 
   .footer__container {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 auto;
+    max-width: 80em;
   }
 
   .footer__container .heading__medium {
@@ -147,8 +149,9 @@
   }
 
   .footer__terms {
-    width: 100%;
-    float: left;
+    width: 90%;
+    margin: 1.5em auto 2em auto;
+    max-width: 80em;
   }
 }
 

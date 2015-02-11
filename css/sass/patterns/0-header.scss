@@ -66,8 +66,8 @@
   
   .header__contents {
     width: 90%;
-    margin: 0 5%; // This depends on what sizes you
-    // need to use to line edges up with content edges
+    margin: 0 auto;
+    max-width: 80em;
   }
   
   .header__title {

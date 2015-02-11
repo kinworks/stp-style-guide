@@ -1,0 +1,51 @@
+// New style for constraining main 'body' layout width:
+
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+/// The following guide styles have also been changed
+/// to align with this layout cap:
+
+.footer__container.footer__container--dark {
+  max-width: none; // Added
+}
+
+// ::::::::::::::::::::::::::::::::::::::::: //
+
+// Breakpoint from handheld -> full layout; 
+// your choice may vary
+
+@media only all and (min-width: 41em) {
+  
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 80em;
+  }
+  
+  /// The following guide styles have also been changed
+  /// to align with this layout cap:
+  
+  /// 0-header.scss:
+  .header__contents {
+    width: 90%;
+    margin: 0 auto; // From 0 5% to <--
+    max-width: 80em; // Added
+  }
+  
+  /// 0-footer.scss:
+  .footer__container {
+    width: 90%;
+    margin: 0 auto; // From 0 5% to <--
+    max-width: 80em; // Added
+  }
+  
+  .footer__terms {
+    width: 90%; // from 100% to 90%
+    margin: 1.5em auto 2em auto; // From 1.5em 0 2em 0 to <--
+    max-width: 80em; // Added
+  }
+  
+}

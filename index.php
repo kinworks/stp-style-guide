@@ -775,7 +775,7 @@
           <div class="display">
             <h2 class="guidance">Block / layout rules & guidance</h2>
             <ul class="guidance">
-              <li>New in v1.1: Headings and CTAs can be placed directly on the grey background, if that suits your layout: use the .outside class detailed in SCSS here.</li>
+              <li>New in v1.1: Headings and CTAs can be placed directly on the grey background, if that suits your layout: use the .outside class detailed in SCSS here. Note that .outside only covers width alignment, and vertical margin will still be handled by the element within the .outside container.</li>
               <li>Adding trim to blocks is optional and should be used sparingly, rather than on every block.</li>
               <li>Bottom trim should only be used on white blocks.</li>
               <li>Top trim should only be used where there's no heading bar on a block.</li>

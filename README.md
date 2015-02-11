@@ -15,8 +15,8 @@ You can view the Style Guide at [http://style.stp.kin.works](http://style.stp.ki
 _With thanks to Andy at Storm ID for his feedback!_
 
 - Introduced a 'layout cap' max-width for sites - found just before the block layout section of the guide. The SCSS file for this (01-layout-cap.scss) also details anywhere in v1.0 that styles need to be amended to fit this new 80em max width.
-- Headings and CTAs can be placed directly on the grey background, if that suits your layout: use the .outside class detailed in 01-blocks.scss on a container around the object. For an example, see the 'Release' H1 at the top of the styleguide.
-- 
+- Headings and CTAs can be placed directly on the grey background, if that suits your layout: use the .outside class detailed in 01-blocks.scss on a container around the object. For an example, see the 'Release' H1 at the top of the styleguide. Note that .outside only covers width alignment, and vertical margin will still be handled by the element within the .outside container.
+- Added max-width of 34em to .text and p in _5.1-typography.scss for sensible line length capping
 
 ## Testing Coverage
 The guideline list of functional and compliant browsers from the STP tender is as follows:

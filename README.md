@@ -11,9 +11,11 @@ You can view the Style Guide at [http://style.stp.kin.works](http://style.stp.ki
 
 ## Changelog
 
-### v1.1.2
+### v1.1.3
 
 - Removed an extra bit of demo markup that shouldn't have been left in the guide.
+- Remembered to update and push the readme along with the release.
+- Successfully pretended v1.1.2 never happened.
 
 ### v1.1.1
 

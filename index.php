@@ -74,8 +74,6 @@
     
     <div class="outside">
       <h1 class="heading heading__large">Release <?php echo $tagname; ?></h1>
-    </div>
-    <div class="outside">
       <span class="versioninfo">
           <a class="cta cta--blue" href="https://github.com/kinworks/stp-style-guide/tree/<?php echo $tagname; ?>" target="_blank">
             View on GitHub</a>

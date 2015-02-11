@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA;;;mBAGoB;EAClB,WAAW,EAAE,GAAG;;;AAGlB,YAAa;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;;;AAGhB,qBAAsB;EACpB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,iBAAiB;;;AAG3B,qBAAsB;EACpB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,aAAa;;;AAGvB,qBAAsB;EACpB,OAAO,EAAE,KAAK;;;AAGhB,UAAW;EACT,eAAe,EAAE,OAAO;EACxB,mBAAmB,EAAE,MAAM;;;AAG7B,wBAAyB;EACvB,OAAO,EAAE,MAAM;;;AAGjB,kCAAmC;EACjC,KAAK,EAAE,IAAI;;;AAGb,mBAAoB;EAClB,WAAW,EAAE,CAAC;;;AAGhB,wBAAyB;EACvB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI",
-"sources": ["../../sass/patterns/14-legacy-ie-styles.scss"],
+"sources": ["../../sass/patterns/14-legacy-IE-styles.scss"],
 "names": [],
-"file": "14-legacy-ie-styles.css"
+"file": "14-legacy-IE-styles.css"
 }
